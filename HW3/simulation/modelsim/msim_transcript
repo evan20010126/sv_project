@@ -1,0 +1,229 @@
+# Reading D:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do mcu_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+D:/code/Program_sv/HW3/design {D:/code/Program_sv/HW3/design/mcu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mcu
+# 
+# Top level modules:
+# 	mcu
+# 
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# ** Error: ../tb/testbench.sv(16): near "[": syntax error, unexpected '[', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./compile.do line 6
+# D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog ../tb/testbench.sv"
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_seg_decoder
+# 
+# Top level modules:
+# 	seven_seg_decoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_10
+# 
+# Top level modules:
+# 	counter_10
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_10or4
+# 
+# Top level modules:
+# 	counter_10or4
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_6
+# 
+# Top level modules:
+# 	counter_6
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_3
+# 
+# Top level modules:
+# 	counter_3
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.counter_10
+# Loading work.seven_seg_decoder
+# Loading work.counter_6
+# Loading work.counter_10or4
+# Loading work.counter_3
+# ** Warning: (vsim-3015) ../tb/testbench.sv(43): [PCDPC] - Port size (4 or 4) does not match connection size (3) for port 'a'. The port definition is at: ../../design/seven_seg_decoder.sv(3).
+# 
+#         Region: /testbench/seven_seg_decoder_digit1
+# ** Warning: (vsim-3015) ../tb/testbench.sv(73): [PCDPC] - Port size (4 or 4) does not match connection size (2) for port 'a'. The port definition is at: ../../design/seven_seg_decoder.sv(3).
+# 
+#         Region: /testbench/seven_seg_decoder_digit3
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 85
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 85
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_seg_decoder
+# 
+# Top level modules:
+# 	seven_seg_decoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_10
+# 
+# Top level modules:
+# 	counter_10
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_10or4
+# 
+# Top level modules:
+# 	counter_10or4
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_6
+# 
+# Top level modules:
+# 	counter_6
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_3
+# 
+# Top level modules:
+# 	counter_3
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.counter_10
+# Loading work.seven_seg_decoder
+# Loading work.counter_6
+# Loading work.counter_10or4
+# Loading work.counter_3
+# ** Warning: (vsim-3015) ../tb/testbench.sv(46): [PCDPC] - Port size (4 or 4) does not match connection size (3) for port 'a'. The port definition is at: ../../design/seven_seg_decoder.sv(3).
+# 
+#         Region: /testbench/seven_seg_decoder_digit1
+# ** Warning: (vsim-3015) ../tb/testbench.sv(76): [PCDPC] - Port size (4 or 4) does not match connection size (2) for port 'a'. The port definition is at: ../../design/seven_seg_decoder.sv(3).
+# 
+#         Region: /testbench/seven_seg_decoder_digit3
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 88
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 88
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_seg_decoder
+# 
+# Top level modules:
+# 	seven_seg_decoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_10
+# 
+# Top level modules:
+# 	counter_10
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_10or4
+# 
+# Top level modules:
+# 	counter_10or4
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_6
+# 
+# Top level modules:
+# 	counter_6
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_3
+# 
+# Top level modules:
+# 	counter_3
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.counter_10
+# Loading work.seven_seg_decoder
+# Loading work.counter_6
+# Loading work.counter_10or4
+# Loading work.counter_3
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 88
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 88
+# MACRO ./sim.do PAUSED at line 7
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.counter_10
+# Loading work.seven_seg_decoder
+# Loading work.counter_6
+# Loading work.counter_10or4
+# Loading work.counter_3
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 88
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 88
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_seg_decoder
+# 
+# Top level modules:
+# 	seven_seg_decoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_10
+# 
+# Top level modules:
+# 	counter_10
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_10or4
+# 
+# Top level modules:
+# 	counter_10or4
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_6
+# 
+# Top level modules:
+# 	counter_6
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_3
+# 
+# Top level modules:
+# 	counter_3
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.counter_10
+# Loading work.seven_seg_decoder
+# Loading work.counter_6
+# Loading work.counter_10or4
+# Loading work.counter_3
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 88
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 88
+# MACRO ./sim.do PAUSED at line 7

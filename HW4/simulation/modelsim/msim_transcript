@@ -1,0 +1,172 @@
+# Reading D:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do mcu_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+D:/code/Program_sv/HW4/design {D:/code/Program_sv/HW4/design/mcu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mcu
+# 
+# Top level modules:
+# 	mcu
+# 
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module traffic_light2
+# 
+# Top level modules:
+# 	traffic_light2
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_wait4and9_plus
+# 
+# Top level modules:
+# 	counter_wait4and9_plus
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.traffic_light2
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 22
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 22
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module traffic_light2
+# 
+# Top level modules:
+# 	traffic_light2
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_wait4and9_plus
+# 
+# Top level modules:
+# 	counter_wait4and9_plus
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.traffic_light2
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 24
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 24
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module traffic_light2
+# ** Error: ../../design/traffic_light2.sv(13): near "<=": syntax error, unexpected <=, expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./compile.do line 7
+# D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog ../../design/traffic_light2.sv"
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module traffic_light2
+# ** Error: ../../design/traffic_light2.sv(13): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./compile.do line 7
+# D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog ../../design/traffic_light2.sv"
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module traffic_light2
+# 
+# Top level modules:
+# 	traffic_light2
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_wait4and9_plus
+# 
+# Top level modules:
+# 	counter_wait4and9_plus
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.traffic_light2
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 24
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 24
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module traffic_light2
+# 
+# Top level modules:
+# 	traffic_light2
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_wait4and9_plus
+# 
+# Top level modules:
+# 	counter_wait4and9_plus
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.traffic_light2
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 24
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 24
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module traffic_light2
+# 
+# Top level modules:
+# 	traffic_light2
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_wait4and9_plus
+# 
+# Top level modules:
+# 	counter_wait4and9_plus
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.traffic_light2
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 24
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 24
+# MACRO ./sim.do PAUSED at line 7

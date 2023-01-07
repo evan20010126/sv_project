@@ -1,0 +1,83 @@
+# Reading D:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do mcu_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+D:/code/Program_sv/HW2/design {D:/code/Program_sv/HW2/design/sub_8bit.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_8bit
+# 
+# Top level modules:
+# 	sub_8bit
+# vlog -sv -work work +incdir+D:/code/Program_sv/HW2/design {D:/code/Program_sv/HW2/design/mcu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mcu
+# 
+# Top level modules:
+# 	mcu
+# vlog -sv -work work +incdir+D:/code/Program_sv/HW2/design {D:/code/Program_sv/HW2/design/adder_8bit.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder_8bit
+# 
+# Top level modules:
+# 	adder_8bit
+# 
+do com
+# Cannot open macro file: com
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# ** Error: (vsim-3170) Could not find 'D:/code/Program_sv/HW2/simulation/modelsim/rtl_work.testbench'.
+# 
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./sim.do PAUSED at line 1
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder_8bit
+# 
+# Top level modules:
+# 	adder_8bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux8to1
+# 
+# Top level modules:
+# 	mux8to1
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_seg_decoder
+# 
+# Top level modules:
+# 	seven_seg_decoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_4bit
+# 
+# Top level modules:
+# 	ALU_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_seven_seg_decoder
+# 
+# Top level modules:
+# 	ALU_seven_seg_decoder
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.ALU_seven_seg_decoder
+# Loading work.ALU_4bit
+# Loading work.seven_seg_decoder
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 28
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 28
+# MACRO ./sim.do PAUSED at line 7
