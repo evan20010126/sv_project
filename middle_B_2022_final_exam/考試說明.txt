@@ -1,0 +1,11 @@
+考試說明：
+1. 壓縮檔內除此考試說明.txt外應有4樣東西，若有缺漏請通知助教。
+	(A) final_exam資料夾：quartus空專案供同學使用，所有SystemVerilog程式碼檔案除mcu.sv外皆不提供，do檔除sim.do外其餘皆為空白，如有需要請自行修改後使用。
+	(B) 考試題目
+	(C) Program_Rom.sv
+	(D) npp_portable.zip：notepad++免安裝使用版，203教室電腦因未安裝notepad++，故提供此程式讓在203進行考試的同學做使用。解壓縮後開啟資料夾內的notepad++.exe即可使用。
+
+2. 如需使用final_exam空專案，請將final_exam資料夾複製到桌面，並使用此專案作為期末考環境。
+3. 開啟quartus後請先至Tools→Options→EDA Tool Options中最後一行檔案路徑加上反斜線\，以免無法正確執行RTL simulation。
+4. 若考試時間結束或放棄作答請將專案資料夾改為學號並做成壓縮檔，並確定助教將檔案copy走後才可離開。
+

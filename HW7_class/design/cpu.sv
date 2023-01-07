@@ -1,0 +1,158 @@
+`timescale 1ns/10ps
+
+module cpu (
+    input clk,
+    input reset,
+    // output [13:0] IR
+    output logic [7:0] w_q
+);
+    logic [10:0] pc_next, pc_q;
+    logic [10:0] mar_q;
+    logic load_pc, load_mar;
+    logic [13:0] rom_out;
+    logic [3:0] ps, ns;
+    logic reset_IR, load_IR;
+    logic [13:0] ir_q;
+    logic [2:0] op;
+    logic load_w;
+
+    /* pc */
+    assign pc_next = pc_q + 1;
+
+    always_ff @(posedge clk) begin
+        if (reset)
+            pc_q <= #1 0;
+        else if(load_pc)
+            pc_q <= #1 pc_next;
+    end
+    
+    /* mar */
+    always_ff @(posedge clk) begin
+        if (reset)
+            mar_q <= #1 0;
+        else if(load_mar)
+            mar_q <= #1 pc_q;
+    end
+
+    /* rom */
+    ROM_hw7 ROM_unit(
+        .Rom_data_out(rom_out),
+        .Rom_addr_in(mar_q)
+    );
+
+    /* IR */
+    always_ff @(posedge clk) begin
+        if (reset_IR)
+            ir_q <= #1 0;
+        else if(load_IR)
+            ir_q <= #1 rom_out;
+    end
+
+    // assign IR = ir_q;  
+
+
+    /* ALU */
+    logic [7:0] alu_q;
+    // logic [7:0] w_q; output
+    always_comb
+    begin
+        case(op)
+            0: alu_q = ir_q[7:0] + w_q;
+            1: alu_q = ir_q[7:0] - w_q;
+            2: alu_q = ir_q[7:0] & w_q;
+            3: alu_q = ir_q[7:0] | w_q;
+            4: alu_q = ir_q[7:0] ^ w_q;
+            5: alu_q = ir_q[7:0];
+            default: alu_q = ir_q[7:0] + w_q;
+        endcase
+    end
+
+    /* w register */
+    always_ff @(posedge clk)
+    begin
+        if (reset)
+            w_q <= #1 0;
+        else if(load_w)
+            w_q <= #1 alu_q;
+    end
+
+    /* decoder */
+    assign movlw = (ir_q[13:8] == 6'h30);
+    assign addlw = (ir_q[13:8] == 6'h3E);
+    assign sublw = (ir_q[13:8] == 6'h3C);
+    assign andlw = (ir_q[13:8] == 6'h39);
+    assign iorlw = (ir_q[13:8] == 6'h38);
+    assign xorlw = (ir_q[13:8] == 6'h3A);
+ 
+    /* state */
+    always_ff @(posedge clk) begin
+        if (reset)
+            ps <= #1 0;
+        else
+            ps <= #1 ns;
+    end
+    
+
+    /* controller */
+    parameter T0 = 0;
+    parameter T1 = 1;
+    parameter T2 = 2;
+    parameter T3 = 3;
+    parameter T4 = 4;
+    parameter T5 = 5;
+    parameter T6 = 6;
+
+    always_comb begin
+        load_mar = 0;
+        load_pc = 0;
+        reset_IR = 0;
+        load_IR = 0;
+        ns = T0;
+        load_w = 0;
+
+        case (ps)
+            T0: 
+            begin
+                load_mar = 0;
+                load_pc = 0;
+                reset_IR = 1;
+                ns = T1;
+            end
+            T1:
+            begin
+                load_mar = 1;
+                ns = T2;
+            end 
+            T2:
+            begin
+                load_pc = 1;
+                ns = T3;
+            end
+            T3:
+            begin
+                load_IR = 1;
+                ns = T4;
+            end
+            T4:
+            begin
+                load_w = 1;
+                if (movlw) op = 5;
+                else if (addlw) op = 0;
+                else if (sublw) op = 1;
+                else if (andlw) op = 2;
+                else if (iorlw) op = 3;
+                else if (xorlw) op = 4;
+                ns = T5;
+            end
+            T5:
+            begin
+                ns = T6;
+            end
+            T6:
+            begin
+                ns = T1;
+            end
+        endcase
+    end
+
+endmodule

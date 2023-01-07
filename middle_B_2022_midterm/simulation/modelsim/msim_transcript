@@ -1,0 +1,667 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do mcu_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/user/Desktop/new/Program_sv/middle_B/design {C:/Users/user/Desktop/new/Program_sv/middle_B/design/mcu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mcu
+# 
+# Top level modules:
+# 	mcu
+# 
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# ** Error: (vsim-3033) ../../design/top.sv(63): Instantiation of 'Program_ROM' failed. The design unit was not found.
+# 
+#         Region: /testbench/top1
+#         Searched libraries:
+#             C:/Users/user/Desktop/new/Program_sv/middle_B/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./sim.do PAUSED at line 1
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.Program_Rom
+# ** Warning: (vsim-3015) ../../design/top.sv(63): [PCDPC] - Port size (4 or 4) does not match connection size (11) for port 'Rom_addr_in'. The port definition is at: ../../design/Program_Rom.sv(3).
+# 
+#         Region: /testbench/top1/ROM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/top1/Rom_out'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/top1/a_q'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/testbench/top1/b_q'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/testbench/top1/c_q'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/testbench/top1/d_q'.
+# Executing ONERROR command at macro ./wave.do line 11
+# ** Error: (vish-4014) No objects found matching '/testbench/top1/cnt'.
+# Executing ONERROR command at macro ./wave.do line 15
+# Break in Module testbench at ../tb/testbench.sv line 17
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 17
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.Program_Rom
+# ** Warning: (vsim-3015) ../../design/top.sv(64): [PCDPC] - Port size (4 or 4) does not match connection size (11) for port 'Rom_addr_in'. The port definition is at: ../../design/Program_Rom.sv(3).
+# 
+#         Region: /testbench/top1/ROM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/top1/Rom_out'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/top1/a_q'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/testbench/top1/b_q'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/testbench/top1/c_q'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/testbench/top1/d_q'.
+# Executing ONERROR command at macro ./wave.do line 11
+# ** Error: (vish-4014) No objects found matching '/testbench/top1/cnt'.
+# Executing ONERROR command at macro ./wave.do line 15
+# Break in Module testbench at ../tb/testbench.sv line 17
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 17
+# MACRO ./sim.do PAUSED at line 7
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.Program_Rom
+# ** Warning: (vsim-3015) ../../design/top.sv(64): [PCDPC] - Port size (4 or 4) does not match connection size (11) for port 'Rom_addr_in'. The port definition is at: ../../design/Program_Rom.sv(3).
+# 
+#         Region: /testbench/top1/ROM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/top1/Rom_out'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/top1/a_q'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/testbench/top1/b_q'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/testbench/top1/c_q'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/testbench/top1/d_q'.
+# Executing ONERROR command at macro ./wave.do line 11
+# ** Error: (vish-4014) No objects found matching '/testbench/top1/cnt'.
+# Executing ONERROR command at macro ./wave.do line 15
+# Break in Module testbench at ../tb/testbench.sv line 17
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 17
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.Program_Rom
+# ** Warning: (vsim-3015) ../../design/top.sv(69): [PCDPC] - Port size (4 or 4) does not match connection size (11) for port 'Rom_addr_in'. The port definition is at: ../../design/Program_Rom.sv(3).
+# 
+#         Region: /testbench/top1/ROM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/top1/Rom_out'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/top1/cnt'.
+# Executing ONERROR command at macro ./wave.do line 15
+# Break in Module testbench at ../tb/testbench.sv line 17
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 17
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.Program_Rom
+# ** Warning: (vsim-3015) ../../design/top.sv(70): [PCDPC] - Port size (4 or 4) does not match connection size (11) for port 'Rom_addr_in'. The port definition is at: ../../design/Program_Rom.sv(3).
+# 
+#         Region: /testbench/top1/ROM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/top1/cnt'.
+# Executing ONERROR command at macro ./wave.do line 15
+# Break in Module testbench at ../tb/testbench.sv line 17
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 17
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.Program_Rom
+# ** Warning: (vsim-3015) ../../design/top.sv(71): [PCDPC] - Port size (4 or 4) does not match connection size (11) for port 'Rom_addr_in'. The port definition is at: ../../design/Program_Rom.sv(3).
+# 
+#         Region: /testbench/top1/ROM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 17
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 17
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.Program_Rom
+# ** Warning: (vsim-3015) ../../design/top.sv(71): [PCDPC] - Port size (4 or 4) does not match connection size (11) for port 'Rom_addr_in'. The port definition is at: ../../design/Program_Rom.sv(3).
+# 
+#         Region: /testbench/top1/ROM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 17
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 17
+# MACRO ./sim.do PAUSED at line 7
+do compile.dom
+# Cannot open macro file: compile.dom
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.Program_Rom
+# ** Warning: (vsim-3015) ../../design/top.sv(71): [PCDPC] - Port size (4 or 4) does not match connection size (11) for port 'Rom_addr_in'. The port definition is at: ../../design/Program_Rom.sv(3).
+# 
+#         Region: /testbench/top1/ROM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 17
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 17
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.Program_Rom
+# ** Warning: (vsim-3015) ../../design/top.sv(71): [PCDPC] - Port size (4 or 4) does not match connection size (11) for port 'Rom_addr_in'. The port definition is at: ../../design/Program_Rom.sv(3).
+# 
+#         Region: /testbench/top1/ROM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 17
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 17
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.Program_Rom
+# ** Warning: (vsim-3015) ../../design/top.sv(71): [PCDPC] - Port size (4 or 4) does not match connection size (11) for port 'Rom_addr_in'. The port definition is at: ../../design/Program_Rom.sv(3).
+# 
+#         Region: /testbench/top1/ROM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 17
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 17
+# MACRO ./sim.do PAUSED at line 7
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.Program_Rom
+# ** Warning: (vsim-3015) ../../design/top.sv(71): [PCDPC] - Port size (4 or 4) does not match connection size (11) for port 'Rom_addr_in'. The port definition is at: ../../design/Program_Rom.sv(3).
+# 
+#         Region: /testbench/top1/ROM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 17
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 17
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.Program_Rom
+# ** Warning: (vsim-3015) ../../design/top.sv(71): [PCDPC] - Port size (4 or 4) does not match connection size (11) for port 'Rom_addr_in'. The port definition is at: ../../design/Program_Rom.sv(3).
+# 
+#         Region: /testbench/top1/ROM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 17
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 17
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.Program_Rom
+# ** Warning: (vsim-3015) ../../design/top.sv(71): [PCDPC] - Port size (4 or 4) does not match connection size (11) for port 'Rom_addr_in'. The port definition is at: ../../design/Program_Rom.sv(3).
+# 
+#         Region: /testbench/top1/ROM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 17
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 17
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.Program_Rom
+# ** Warning: (vsim-3015) ../../design/top.sv(71): [PCDPC] - Port size (4 or 4) does not match connection size (11) for port 'Rom_addr_in'. The port definition is at: ../../design/Program_Rom.sv(3).
+# 
+#         Region: /testbench/top1/ROM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 17
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 17
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.Program_Rom
+# ** Warning: (vsim-3015) ../../design/top.sv(71): [PCDPC] - Port size (4 or 4) does not match connection size (11) for port 'Rom_addr_in'. The port definition is at: ../../design/Program_Rom.sv(3).
+# 
+#         Region: /testbench/top1/ROM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 17
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 17
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.Program_Rom
+# ** Warning: (vsim-3015) ../../design/top.sv(71): [PCDPC] - Port size (4 or 4) does not match connection size (11) for port 'Rom_addr_in'. The port definition is at: ../../design/Program_Rom.sv(3).
+# 
+#         Region: /testbench/top1/ROM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 17
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 17
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.Program_Rom
+# ** Warning: (vsim-3015) ../../design/top.sv(71): [PCDPC] - Port size (4 or 4) does not match connection size (11) for port 'Rom_addr_in'. The port definition is at: ../../design/Program_Rom.sv(3).
+# 
+#         Region: /testbench/top1/ROM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 17
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 17
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.Program_Rom
+# ** Warning: (vsim-3015) ../../design/top.sv(72): [PCDPC] - Port size (4 or 4) does not match connection size (11) for port 'Rom_addr_in'. The port definition is at: ../../design/Program_Rom.sv(3).
+# 
+#         Region: /testbench/top1/ROM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 17
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 17
+# MACRO ./sim.do PAUSED at line 7
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.Program_Rom
+# ** Warning: (vsim-3015) ../../design/top.sv(72): [PCDPC] - Port size (4 or 4) does not match connection size (11) for port 'Rom_addr_in'. The port definition is at: ../../design/Program_Rom.sv(3).
+# 
+#         Region: /testbench/top1/ROM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 17
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 17
+# MACRO ./sim.do PAUSED at line 7
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.Program_Rom
+# ** Warning: (vsim-3015) ../../design/top.sv(72): [PCDPC] - Port size (4 or 4) does not match connection size (11) for port 'Rom_addr_in'. The port definition is at: ../../design/Program_Rom.sv(3).
+# 
+#         Region: /testbench/top1/ROM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 17
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 17
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.Program_Rom
+# ** Warning: (vsim-3015) ../../design/top.sv(72): [PCDPC] - Port size (4 or 4) does not match connection size (11) for port 'Rom_addr_in'. The port definition is at: ../../design/Program_Rom.sv(3).
+# 
+#         Region: /testbench/top1/ROM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 17
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 17
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.Program_Rom
+# ** Warning: (vsim-3015) ../../design/top.sv(79): [PCDPC] - Port size (4 or 4) does not match connection size (11) for port 'Rom_addr_in'. The port definition is at: ../../design/Program_Rom.sv(3).
+# 
+#         Region: /testbench/top1/ROM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 17
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 17
+# MACRO ./sim.do PAUSED at line 7

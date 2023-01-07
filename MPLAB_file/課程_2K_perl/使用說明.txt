@@ -1,0 +1,9 @@
+
+1.安裝ActivePerl-5.24.3.2404.exe
+
+2.將MPLAB產生的.hex跟hex2v_2k.Perl放置同資料夾。
+
+3.雙擊hex2v_2k.Perl即可產生Program_Rom.sv
+
+
+//---------------- .hex檔名必須為Program_Rom.hex -------------------

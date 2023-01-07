@@ -1,0 +1,7 @@
+
+State Machine - |mcu|cpu_seven_seg:cpu_seven_seg_unit|cpu:cpu_test|ps
+Name ps.T3 ps.T2 ps.T1 ps.0000 
+ps.0000 0 0 0 0 
+ps.T1 0 0 1 1 
+ps.T2 0 1 0 1 
+ps.T3 1 0 0 1 

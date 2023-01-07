@@ -1,0 +1,41 @@
+`timescale 1ns/10ps
+
+module cpu_seven_seg (
+    input clk,
+    input reset,
+    output [6:0] seg_0;
+    output [6:0] seg_1;
+    output [6:0] seg_2;
+    output [6:0] seg_3;
+);
+
+logic [15:0] IR;
+
+
+cpu cpu_test (
+    .clk(clk),
+    .reset(reset),
+    .IR(IR)
+);
+
+seven_seg_decoder seven_seg_decoder_unit0(
+    .a(IR[3:0]),
+    .y(seg_0)
+);
+
+seven_seg_decoder seven_seg_decoder_unit1(
+    .a(IR[7:4]),
+    .y(seg_1)
+);
+
+seven_seg_decoder seven_seg_decoder_unit2(
+    .a(IR[11:8]),
+    .y(seg_2)
+);
+
+seven_seg_decoder seven_seg_decoder_unit3(
+    .a(IR[15:12]),
+    .y(seg_3)
+);
+
+endmodule

@@ -1,0 +1,478 @@
+# Reading D:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do mcu_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+D:/code/Program_sv/HW5/design {D:/code/Program_sv/HW5/design/mcu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mcu
+# 
+# Top level modules:
+# 	mcu
+# 
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder_8bit
+# 
+# Top level modules:
+# 	adder_8bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2A
+# 
+# Top level modules:
+# 	controller2A
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2B
+# 
+# Top level modules:
+# 	controller2B
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2C
+# 
+# Top level modules:
+# 	controller2C
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_portAB
+# 
+# Top level modules:
+# 	counter_portAB
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_ALU
+# 
+# Top level modules:
+# 	counter_ALU
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.counter_portAB
+# ** Warning: (vsim-3017) ../tb/testbench.sv(31): [TFMPC] - Too few port connections. Expected 13, found 10.
+# 
+#         Region: /testbench/counter_portAB
+# ** Warning: (vsim-3015) ../tb/testbench.sv(31): [PCDPC] - Port size (8 or 8) does not match connection size (4) for port 'w_out'. The port definition is at: ../../design/counter_portAB.sv(12).
+# 
+#         Region: /testbench/counter_portAB
+# ** Warning: (vsim-3015) ../tb/testbench.sv(31): [PCDPC] - Port size (5 or 5) does not match connection size (4) for port 'b_out'. The port definition is at: ../../design/counter_portAB.sv(18).
+# 
+#         Region: /testbench/counter_portAB
+# ** Warning: (vsim-3015) ../tb/testbench.sv(31): [PCDPC] - Port size (8 or 8) does not match connection size (4) for port 's_out'. The port definition is at: ../../design/counter_portAB.sv(19).
+# 
+#         Region: /testbench/counter_portAB
+# ** Warning: (vsim-3015) ../tb/testbench.sv(31): [PCDPC] - Port size (5 or 5) does not match connection size (4) for port 'ps_out'. The port definition is at: ../../design/counter_portAB.sv(20).
+# 
+#         Region: /testbench/counter_portAB
+# ** Warning: (vsim-3015) ../tb/testbench.sv(31): [PCDPC] - Port size (5 or 5) does not match connection size (4) for port 'ns_out'. The port definition is at: ../../design/counter_portAB.sv(21).
+# 
+#         Region: /testbench/counter_portAB
+# ** Error: (vsim-3063) ../tb/testbench.sv(31): Port 'op_out' not found in the connected module (10th connection).
+# 
+#         Region: /testbench/counter_portAB
+# ** Warning: (vsim-3722) ../tb/testbench.sv(31): [TFMPC] - Missing connection for port 'load_A_out'.
+# 
+# ** Warning: (vsim-3722) ../tb/testbench.sv(31): [TFMPC] - Missing connection for port 'load_B_out'.
+# 
+# ** Warning: (vsim-3722) ../tb/testbench.sv(31): [TFMPC] - Missing connection for port 'port_A_out'.
+# 
+# ** Warning: (vsim-3722) ../tb/testbench.sv(31): [TFMPC] - Missing connection for port 'port_B_out'.
+# 
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./sim.do PAUSED at line 1
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder_8bit
+# 
+# Top level modules:
+# 	adder_8bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2A
+# 
+# Top level modules:
+# 	controller2A
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2B
+# 
+# Top level modules:
+# 	controller2B
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2C
+# 
+# Top level modules:
+# 	controller2C
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_portAB
+# 
+# Top level modules:
+# 	counter_portAB
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_ALU
+# 
+# Top level modules:
+# 	counter_ALU
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.counter_ALU
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/counter_ALU/load_A_out'.
+# Executing ONERROR command at macro ./wave.do line 23
+# ** Error: (vish-4014) No objects found matching '/testbench/counter_ALU/load_B_out'.
+# Executing ONERROR command at macro ./wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/testbench/counter_ALU/port_A_out'.
+# Executing ONERROR command at macro ./wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/testbench/counter_ALU/port_B_out'.
+# Executing ONERROR command at macro ./wave.do line 26
+# Break in Module testbench at ../tb/testbench.sv line 38
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 38
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder_8bit
+# 
+# Top level modules:
+# 	adder_8bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2A
+# 
+# Top level modules:
+# 	controller2A
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2B
+# 
+# Top level modules:
+# 	controller2B
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2C
+# 
+# Top level modules:
+# 	controller2C
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_portAB
+# 
+# Top level modules:
+# 	counter_portAB
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_ALU
+# 
+# Top level modules:
+# 	counter_ALU
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.counter_ALU
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 38
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 38
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder_8bit
+# 
+# Top level modules:
+# 	adder_8bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2A
+# 
+# Top level modules:
+# 	controller2A
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2B
+# 
+# Top level modules:
+# 	controller2B
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2C
+# 
+# Top level modules:
+# 	controller2C
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_portAB
+# 
+# Top level modules:
+# 	counter_portAB
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_ALU
+# 
+# Top level modules:
+# 	counter_ALU
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.counter_ALU
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 38
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 38
+# MACRO ./sim.do PAUSED at line 7
+do compile.dom
+# Cannot open macro file: compile.dom
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder_8bit
+# 
+# Top level modules:
+# 	adder_8bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2A
+# 
+# Top level modules:
+# 	controller2A
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2B
+# 
+# Top level modules:
+# 	controller2B
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2C
+# 
+# Top level modules:
+# 	controller2C
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_portAB
+# 
+# Top level modules:
+# 	counter_portAB
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_ALU
+# ** Error: (vlog-7033) ../../design/counter_ALU.sv(96): Variable 'op' driven in a combinational block, may not be driven by any other process. See ../../design/counter_ALU.sv(52).
+# 
+# ** Error: (vlog-7033) ../../design/counter_ALU.sv(102): Variable 'op' driven in a combinational block, may not be driven by any other process. See ../../design/counter_ALU.sv(52).
+# 
+# ** Error: (vlog-7033) ../../design/counter_ALU.sv(109): Variable 'op' driven in a combinational block, may not be driven by any other process. See ../../design/counter_ALU.sv(52).
+# 
+# ** Error: (vlog-7033) ../../design/counter_ALU.sv(116): Variable 'op' driven in a combinational block, may not be driven by any other process. See ../../design/counter_ALU.sv(52).
+# 
+# ** Error: (vlog-7033) ../../design/counter_ALU.sv(123): Variable 'op' driven in a combinational block, may not be driven by any other process. See ../../design/counter_ALU.sv(52).
+# 
+# ** Error: (vlog-7033) ../../design/counter_ALU.sv(130): Variable 'op' driven in a combinational block, may not be driven by any other process. See ../../design/counter_ALU.sv(52).
+# 
+# ** Error: (vlog-7033) ../../design/counter_ALU.sv(137): Variable 'op' driven in a combinational block, may not be driven by any other process. See ../../design/counter_ALU.sv(52).
+# 
+# ** Error: (vlog-7033) ../../design/counter_ALU.sv(144): Variable 'op' driven in a combinational block, may not be driven by any other process. See ../../design/counter_ALU.sv(52).
+# 
+# ** Error: (vlog-7033) ../../design/counter_ALU.sv(151): Variable 'op' driven in a combinational block, may not be driven by any other process. See ../../design/counter_ALU.sv(52).
+# 
+# ** Error: (vlog-7033) ../../design/counter_ALU.sv(158): Variable 'op' driven in a combinational block, may not be driven by any other process. See ../../design/counter_ALU.sv(52).
+# 
+# ** Error: (vlog-7033) ../../design/counter_ALU.sv(165): Variable 'op' driven in a combinational block, may not be driven by any other process. See ../../design/counter_ALU.sv(52).
+# 
+# ** Error: D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./compile.do line 12
+# D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog ../../design/counter_ALU.sv"
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder_8bit
+# 
+# Top level modules:
+# 	adder_8bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2A
+# 
+# Top level modules:
+# 	controller2A
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2B
+# 
+# Top level modules:
+# 	controller2B
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2C
+# 
+# Top level modules:
+# 	controller2C
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_portAB
+# 
+# Top level modules:
+# 	counter_portAB
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_ALU
+# 
+# Top level modules:
+# 	counter_ALU
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.counter_ALU
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 38
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 38
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder_8bit
+# 
+# Top level modules:
+# 	adder_8bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2A
+# 
+# Top level modules:
+# 	controller2A
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2B
+# 
+# Top level modules:
+# 	controller2B
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2C
+# 
+# Top level modules:
+# 	controller2C
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_portAB
+# 
+# Top level modules:
+# 	counter_portAB
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_ALU
+# 
+# Top level modules:
+# 	counter_ALU
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.counter_ALU
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 38
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 38
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder_8bit
+# 
+# Top level modules:
+# 	adder_8bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2A
+# 
+# Top level modules:
+# 	controller2A
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2B
+# 
+# Top level modules:
+# 	controller2B
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2C
+# 
+# Top level modules:
+# 	controller2C
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_portAB
+# 
+# Top level modules:
+# 	counter_portAB
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_ALU
+# 
+# Top level modules:
+# 	counter_ALU
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.counter_ALU
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 38
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 38
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder_8bit
+# 
+# Top level modules:
+# 	adder_8bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2A
+# 
+# Top level modules:
+# 	controller2A
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2B
+# 
+# Top level modules:
+# 	controller2B
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controller2C
+# 
+# Top level modules:
+# 	controller2C
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_portAB
+# 
+# Top level modules:
+# 	counter_portAB
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_ALU
+# 
+# Top level modules:
+# 	counter_ALU
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.counter_ALU
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 38
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 38
+# MACRO ./sim.do PAUSED at line 7

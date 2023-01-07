@@ -1,0 +1,366 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do mcu_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/User/Desktop/Program_sv/final_exam/design {C:/Users/User/Desktop/Program_sv/final_exam/design/mcu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mcu
+# 
+# Top level modules:
+# 	mcu
+# 
+do compile.do
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module single_port_ram_128x8
+# 
+# Top level modules:
+# 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
+do sim.dom
+# Cannot open macro file: sim.dom
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.cpu
+# ** Error: (vsim-3009) [TSCALE] - Module 'testbench' does not have a timeunit/timeprecision specification in effect, but other modules do.
+# 
+#         Region: /testbench/c1
+# Loading work.Stack
+# Loading work.Program_Rom
+# Loading work.single_port_ram_128x8
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./sim.do PAUSED at line 1
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module single_port_ram_128x8
+# 
+# Top level modules:
+# 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.cpu
+# Loading work.Stack
+# Loading work.Program_Rom
+# Loading work.single_port_ram_128x8
+# ** Warning: (vsim-3017) ../tb/testbench.sv(6): [TFMPC] - Too few port connections. Expected 4, found 3.
+# 
+#         Region: /testbench/c1
+# ** Warning: (vsim-3722) ../tb/testbench.sv(6): [TFMPC] - Missing connection for port 'my_led'.
+# 
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 13
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 13
+# MACRO ./sim.do PAUSED at line 7
+add wave -position end  sim:/testbench/c1/port_c_out
+add wave -position end  sim:/testbench/c1/RAM_unit/ram37
+add wave -position end  sim:/testbench/c1/w_q
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/User/Desktop/Program_sv/final_exam/simulation/modelsim/wave.do
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.cpu
+# Loading work.Stack
+# Loading work.Program_Rom
+# Loading work.single_port_ram_128x8
+# ** Warning: (vsim-3017) ../tb/testbench.sv(6): [TFMPC] - Too few port connections. Expected 4, found 3.
+# 
+#         Region: /testbench/c1
+# ** Warning: (vsim-3722) ../tb/testbench.sv(6): [TFMPC] - Missing connection for port 'my_led'.
+# 
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 13
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 13
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module single_port_ram_128x8
+# 
+# Top level modules:
+# 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.cpu
+# Loading work.Stack
+# Loading work.Program_Rom
+# Loading work.single_port_ram_128x8
+# ** Warning: (vsim-3017) ../tb/testbench.sv(6): [TFMPC] - Too few port connections. Expected 4, found 3.
+# 
+#         Region: /testbench/c1
+# ** Warning: (vsim-3722) ../tb/testbench.sv(6): [TFMPC] - Missing connection for port 'my_led'.
+# 
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 13
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 13
+# MACRO ./sim.do PAUSED at line 7
+add wave -position end  sim:/testbench/c1/portbcsz
+add wave -position end  sim:/testbench/c1/incfeqcsz
+add wave -position end  sim:/testbench/c1/mux1_out
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/User/Desktop/Program_sv/final_exam/simulation/modelsim/wave.do
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module single_port_ram_128x8
+# 
+# Top level modules:
+# 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.cpu
+# Loading work.Stack
+# Loading work.Program_Rom
+# Loading work.single_port_ram_128x8
+# ** Warning: (vsim-3017) ../tb/testbench.sv(6): [TFMPC] - Too few port connections. Expected 4, found 3.
+# 
+#         Region: /testbench/c1
+# ** Warning: (vsim-3722) ../tb/testbench.sv(6): [TFMPC] - Missing connection for port 'my_led'.
+# 
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 13
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 13
+# MACRO ./sim.do PAUSED at line 7
+add wave -position 1  sim:/testbench/c1/pc_q
+add wave -position end  sim:/testbench/c1/ans2
+add wave -position end  sim:/testbench/c1/RAM_mux
+add wave -position end  sim:/testbench/c1/RAM_mux
+add wave -position end  sim:/testbench/c1/sel_RAM_mux
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module single_port_ram_128x8
+# 
+# Top level modules:
+# 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.cpu
+# Loading work.Stack
+# Loading work.Program_Rom
+# Loading work.single_port_ram_128x8
+# ** Warning: (vsim-3017) ../tb/testbench.sv(6): [TFMPC] - Too few port connections. Expected 4, found 3.
+# 
+#         Region: /testbench/c1
+# ** Warning: (vsim-3722) ../tb/testbench.sv(6): [TFMPC] - Missing connection for port 'my_led'.
+# 
+# ** Warning: (vsim-3015) ../../design/cpu.sv(106): [PCDPC] - Port size (7 or 7) does not match connection size (8) for port 'addr'. The port definition is at: ../../design/single_port_ram_128x8.sv(3).
+# 
+#         Region: /testbench/c1/RAM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 13
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 13
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module single_port_ram_128x8
+# 
+# Top level modules:
+# 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.cpu
+# Loading work.Stack
+# Loading work.Program_Rom
+# Loading work.single_port_ram_128x8
+# ** Warning: (vsim-3017) ../tb/testbench.sv(6): [TFMPC] - Too few port connections. Expected 4, found 3.
+# 
+#         Region: /testbench/c1
+# ** Warning: (vsim-3722) ../tb/testbench.sv(6): [TFMPC] - Missing connection for port 'my_led'.
+# 
+# ** Warning: (vsim-3015) ../../design/cpu.sv(106): [PCDPC] - Port size (7 or 7) does not match connection size (8) for port 'addr'. The port definition is at: ../../design/single_port_ram_128x8.sv(3).
+# 
+#         Region: /testbench/c1/RAM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 13
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 13
+# MACRO ./sim.do PAUSED at line 7
+# WARNING: No extended dataflow license exists
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module single_port_ram_128x8
+# 
+# Top level modules:
+# 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.cpu
+# Loading work.Stack
+# Loading work.Program_Rom
+# Loading work.single_port_ram_128x8
+# ** Warning: (vsim-3017) ../tb/testbench.sv(6): [TFMPC] - Too few port connections. Expected 4, found 3.
+# 
+#         Region: /testbench/c1
+# ** Warning: (vsim-3722) ../tb/testbench.sv(6): [TFMPC] - Missing connection for port 'my_led'.
+# 
+# ** Warning: (vsim-3015) ../../design/cpu.sv(106): [PCDPC] - Port size (7 or 7) does not match connection size (8) for port 'addr'. The port definition is at: ../../design/single_port_ram_128x8.sv(3).
+# 
+#         Region: /testbench/c1/RAM_unit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 13
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 13
+# MACRO ./sim.do PAUSED at line 7
+add wave -position 0  sim:/testbench/c1/port_b_out
+add wave -position end  sim:/testbench/c1/portbcsz
+add wave -position 0  sim:/testbench/c1/ps
+add wave -position 1  sim:/testbench/c1/ns
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/User/Desktop/Program_sv/final_exam/simulation/modelsim/wave.do
