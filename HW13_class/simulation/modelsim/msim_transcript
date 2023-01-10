@@ -10,37 +10,37 @@
 # ** Warning: Copied D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -sv -work work +incdir+D:/code/Program_sv/HW13_class/design {D:/code/Program_sv/HW13_class/design/Stack.sv}
+# vlog -sv -work work +incdir+D:/code/sv_project/HW13_class/design {D:/code/sv_project/HW13_class/design/Stack.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Stack
 # 
 # Top level modules:
 # 	Stack
-# vlog -sv -work work +incdir+D:/code/Program_sv/HW13_class/design {D:/code/Program_sv/HW13_class/design/single_port_ram_128x8.sv}
+# vlog -sv -work work +incdir+D:/code/sv_project/HW13_class/design {D:/code/sv_project/HW13_class/design/single_port_ram_128x8.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module single_port_ram_128x8
 # 
 # Top level modules:
 # 	single_port_ram_128x8
-# vlog -sv -work work +incdir+D:/code/Program_sv/HW13_class/design {D:/code/Program_sv/HW13_class/design/seven_seg_decoder.sv}
+# vlog -sv -work work +incdir+D:/code/sv_project/HW13_class/design {D:/code/sv_project/HW13_class/design/seven_seg_decoder.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module seven_seg_decoder
 # 
 # Top level modules:
 # 	seven_seg_decoder
-# vlog -sv -work work +incdir+D:/code/Program_sv/HW13_class/design {D:/code/Program_sv/HW13_class/design/Program_Rom.sv}
+# vlog -sv -work work +incdir+D:/code/sv_project/HW13_class/design {D:/code/sv_project/HW13_class/design/Program_Rom.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Program_Rom
 # 
 # Top level modules:
 # 	Program_Rom
-# vlog -sv -work work +incdir+D:/code/Program_sv/HW13_class/design {D:/code/Program_sv/HW13_class/design/cpu.sv}
+# vlog -sv -work work +incdir+D:/code/sv_project/HW13_class/design {D:/code/sv_project/HW13_class/design/cpu.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module cpu
 # 
 # Top level modules:
 # 	cpu
-# vlog -sv -work work +incdir+D:/code/Program_sv/HW13_class/design {D:/code/Program_sv/HW13_class/design/mcu.sv}
+# vlog -sv -work work +incdir+D:/code/sv_project/HW13_class/design {D:/code/sv_project/HW13_class/design/mcu.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mcu
 # 
@@ -105,11 +105,482 @@ do sim.do
 # Break in Module testbench at ../tb/testbench.sv line 21
 # Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 21
 # MACRO ./sim.do PAUSED at line 7
+run
+do com
+# Cannot open macro file: com
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_seg_decoder
+# 
+# Top level modules:
+# 	seven_seg_decoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_4bit
+# 
+# Top level modules:
+# 	ALU_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_seven_seg_decoder
+# 
+# Top level modules:
+# 	ALU_seven_seg_decoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module single_port_ram_128x8
+# 
+# Top level modules:
+# 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.cpu
+# Loading work.Stack
+# Loading work.Program_Rom
+# Loading work.single_port_ram_128x8
+# ** Warning: (vsim-3017) ../tb/testbench.sv(14): [TFMPC] - Too few port connections. Expected 4, found 3.
+# 
+#         Region: /testbench/cpu_test
+# ** Warning: (vsim-3722) ../tb/testbench.sv(14): [TFMPC] - Missing connection for port 'my_led'.
+# 
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 21
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 21
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_seg_decoder
+# 
+# Top level modules:
+# 	seven_seg_decoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_4bit
+# 
+# Top level modules:
+# 	ALU_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_seven_seg_decoder
+# 
+# Top level modules:
+# 	ALU_seven_seg_decoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module single_port_ram_128x8
+# 
+# Top level modules:
+# 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.cpu
+# Loading work.Stack
+# Loading work.Program_Rom
+# Loading work.single_port_ram_128x8
+# ** Warning: (vsim-3017) ../tb/testbench.sv(14): [TFMPC] - Too few port connections. Expected 4, found 3.
+# 
+#         Region: /testbench/cpu_test
+# ** Warning: (vsim-3722) ../tb/testbench.sv(14): [TFMPC] - Missing connection for port 'my_led'.
+# 
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 21
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 21
+# MACRO ./sim.do PAUSED at line 7
 add wave -position end  sim:/testbench/cpu_test/RAM_unit/ram37
-add wave -position end  sim:/testbench/cpu_test/rom_out
-add wave -position end  sim:/testbench/cpu_test/goto
-add wave -position end  sim:/testbench/cpu_test/decf
-add wave -position end  sim:/testbench/cpu_test/decfsz
-add wave -position end  sim:/testbench/cpu_test/goto
-add wave -position end  sim:/testbench/cpu_test/reset_IR
-add wave -position end  sim:/testbench/cpu_test/ir_q
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_seg_decoder
+# 
+# Top level modules:
+# 	seven_seg_decoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_4bit
+# 
+# Top level modules:
+# 	ALU_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_seven_seg_decoder
+# 
+# Top level modules:
+# 	ALU_seven_seg_decoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module single_port_ram_128x8
+# 
+# Top level modules:
+# 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
+do sim.dom
+# Cannot open macro file: sim.dom
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.cpu
+# Loading work.Stack
+# Loading work.Program_Rom
+# Loading work.single_port_ram_128x8
+# ** Warning: (vsim-3017) ../tb/testbench.sv(14): [TFMPC] - Too few port connections. Expected 4, found 3.
+# 
+#         Region: /testbench/cpu_test
+# ** Warning: (vsim-3722) ../tb/testbench.sv(14): [TFMPC] - Missing connection for port 'my_led'.
+# 
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 21
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 21
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_seg_decoder
+# 
+# Top level modules:
+# 	seven_seg_decoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_4bit
+# 
+# Top level modules:
+# 	ALU_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_seven_seg_decoder
+# 
+# Top level modules:
+# 	ALU_seven_seg_decoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module single_port_ram_128x8
+# 
+# Top level modules:
+# 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
+do sim.dom
+# Cannot open macro file: sim.dom
+do sim.doim
+# Cannot open macro file: sim.doim
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.cpu
+# Loading work.Stack
+# Loading work.Program_Rom
+# Loading work.single_port_ram_128x8
+# ** Warning: (vsim-3017) ../tb/testbench.sv(14): [TFMPC] - Too few port connections. Expected 4, found 3.
+# 
+#         Region: /testbench/cpu_test
+# ** Warning: (vsim-3722) ../tb/testbench.sv(14): [TFMPC] - Missing connection for port 'my_led'.
+# 
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 21
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 21
+# MACRO ./sim.do PAUSED at line 7
+add wave -position end  sim:/testbench/cpu_test/port_b_out
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_seg_decoder
+# 
+# Top level modules:
+# 	seven_seg_decoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_4bit
+# 
+# Top level modules:
+# 	ALU_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_seven_seg_decoder
+# 
+# Top level modules:
+# 	ALU_seven_seg_decoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module single_port_ram_128x8
+# 
+# Top level modules:
+# 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.cpu
+# Loading work.Stack
+# Loading work.Program_Rom
+# Loading work.single_port_ram_128x8
+# ** Warning: (vsim-3017) ../tb/testbench.sv(14): [TFMPC] - Too few port connections. Expected 4, found 3.
+# 
+#         Region: /testbench/cpu_test
+# ** Warning: (vsim-3722) ../tb/testbench.sv(14): [TFMPC] - Missing connection for port 'my_led'.
+# 
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 21
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 21
+# MACRO ./sim.do PAUSED at line 7
+add wave -position 12  sim:/testbench/cpu_test/RAM_unit/ram22
+add wave -position 13  sim:/testbench/cpu_test/RAM_unit/ram36
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/code/sv_project/HW13_class/simulation/modelsim/wave.do
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_seg_decoder
+# 
+# Top level modules:
+# 	seven_seg_decoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_4bit
+# 
+# Top level modules:
+# 	ALU_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_seven_seg_decoder
+# 
+# Top level modules:
+# 	ALU_seven_seg_decoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module single_port_ram_128x8
+# 
+# Top level modules:
+# 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.cpu
+# Loading work.Stack
+# Loading work.Program_Rom
+# Loading work.single_port_ram_128x8
+# ** Warning: (vsim-3017) ../tb/testbench.sv(14): [TFMPC] - Too few port connections. Expected 4, found 3.
+# 
+#         Region: /testbench/cpu_test
+# ** Warning: (vsim-3722) ../tb/testbench.sv(14): [TFMPC] - Missing connection for port 'my_led'.
+# 
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 21
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 21
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_seg_decoder
+# 
+# Top level modules:
+# 	seven_seg_decoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_4bit
+# 
+# Top level modules:
+# 	ALU_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_seven_seg_decoder
+# 
+# Top level modules:
+# 	ALU_seven_seg_decoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module single_port_ram_128x8
+# 
+# Top level modules:
+# 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.cpu
+# Loading work.Stack
+# Loading work.Program_Rom
+# Loading work.single_port_ram_128x8
+# ** Warning: (vsim-3017) ../tb/testbench.sv(14): [TFMPC] - Too few port connections. Expected 4, found 3.
+# 
+#         Region: /testbench/cpu_test
+# ** Warning: (vsim-3722) ../tb/testbench.sv(14): [TFMPC] - Missing connection for port 'my_led'.
+# 
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 21
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 21
+# MACRO ./sim.do PAUSED at line 7
+ 
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_seg_decoder
+# 
+# Top level modules:
+# 	seven_seg_decoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_4bit
+# 
+# Top level modules:
+# 	ALU_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_seven_seg_decoder
+# 
+# Top level modules:
+# 	ALU_seven_seg_decoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module single_port_ram_128x8
+# 
+# Top level modules:
+# 	single_port_ram_128x8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Rom
+# 
+# Top level modules:
+# 	Program_Rom
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Stack
+# 
+# Top level modules:
+# 	Stack
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.cpu
+# Loading work.Stack
+# Loading work.Program_Rom
+# Loading work.single_port_ram_128x8
+# ** Warning: (vsim-3017) ../tb/testbench.sv(14): [TFMPC] - Too few port connections. Expected 4, found 3.
+# 
+#         Region: /testbench/cpu_test
+# ** Warning: (vsim-3722) ../tb/testbench.sv(14): [TFMPC] - Missing connection for port 'my_led'.
+# 
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 21
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 21
+# MACRO ./sim.do PAUSED at line 7

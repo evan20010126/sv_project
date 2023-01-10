@@ -1,10 +1,10 @@
-MPASM  5.51                   PROGRAM_ROM.ASM   12-19-2022  10:56:56         PAGE  1
+MPASM  5.51                   PROGRAM_ROM.ASM   1-9-2023  22:53:52         PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                      00001 #include        <p16Lf1826.inc>         ; Include file locate at defult directory
+                      00001 #include  <p16Lf1826.inc>  ; Include file locate at defult directory
                       00001         LIST
                       00002 
                       00003 ;==========================================================================
@@ -16,26 +16,46 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 Message[301]: MESSAGE: (Processor-header file mismatch.  Verify selected processor.)
                       01072         LIST
                       00002 ;
-                      00003 
-  00000025            00004 temp            equ     0x25
-                      00005 ;***************************************
-                      00006 ;           Program start              *
-                      00007 ;***************************************
-                      00008             org 0x00
-                      00009 
-0000   0103           00010             clrw
-0001   01A5           00011             clrf temp
-0002   3003           00012             movlw .3
-0003   00A5           00013             movwf temp
-0004   3000           00014             movlw 0
-                      00015             
-0005   3E01           00016 loop        addlw .1
-Message[305]: Using default destination of 1 (file).
-0006   0BA5           00017             decfsz temp
-0007   2???           00018             goto loop
-0008   2???           00019             goto $
-                      00020                         end
-MPASM  5.51                   PROGRAM_ROM.ASM   12-19-2022  10:56:56         PAGE  2
+  00000021            00003 temp        equ 0x21;ram33
+  00000022            00004 count       equ 0x22;ram34
+  00000023            00005 answer      equ 0x23;ram35
+  00000024            00006 c           equ 0x24;ram36
+  00000025            00007 a           equ 0x25;ram37
+                      00008 ;***************************************
+                      00009 ;           Program start              *
+                      00010 ;***************************************
+                      00011             org 0x00
+                      00012 
+0000   3015           00013 start       movlw .21
+0001   00A5           00014             movwf  a;a=21
+0002   3003           00015             movlw .3
+0003   00A4           00016             movwf  c;c=3
+0004   3000           00017             movlw .0
+0005   00A2           00018             movwf  count;count=0
+0006   00A3           00019             movwf  answer;answer=0
+                      00020 
+0007   0824           00021 loop1       movf   c, 0;w<=c
+0008   02A5           00022             subwf  a, 1;a<=a-w(c)
+0009   0AA2           00023             incf   count, 1;count++
+000A   1FA5           00024             btfss  a, 7
+000B   3???           00025             bra    loop1 
+000C   3???           00026             bra    cout
+                      00027 
+000D   03A2           00028 cout        decf   count, 1
+000E   0822           00029             movf   count, 0
+000F   008D           00030             movwf  PORTB  ;cout<<count
+0010   3000           00031             movlw  .0
+0011   00A1           00032             movwf  temp;temp=0
+0012   0825           00033             movf   a, 0;w<=a
+0013   02A1           00034             subwf  temp, 1;temp=0(temp)-w(a)
+0014   0821           00035             movf   temp, 0;w<=temp
+0015   0224           00036             subwf  c,  0;c=c-w(temp)
+0016   0824           00037             movf   c,  0;w<=c
+0017   008D           00038             movwf  PORTB
+                      00039 
+                      00040 
+                      00041             end
+MPASM  5.51                   PROGRAM_ROM.ASM   1-9-2023  22:53:52         PAGE  2
 
 
 SYMBOL TABLE
@@ -94,7 +114,7 @@ BRG16                             00000003
 BRGH                              00000002
 BSR                               00000008
 BSR0                              00000000
-MPASM  5.51                   PROGRAM_ROM.ASM   12-19-2022  10:56:56         PAGE  3
+MPASM  5.51                   PROGRAM_ROM.ASM   1-9-2023  22:53:52         PAGE  3
 
 
 SYMBOL TABLE
@@ -153,7 +173,7 @@ CCPR1H                            00000292
 CCPR1L                            00000291
 CDAFVR0                           00000002
 CDAFVR1                           00000003
-MPASM  5.51                   PROGRAM_ROM.ASM   12-19-2022  10:56:56         PAGE  4
+MPASM  5.51                   PROGRAM_ROM.ASM   1-9-2023  22:53:52         PAGE  4
 
 
 SYMBOL TABLE
@@ -212,7 +232,7 @@ DC1B0                             00000004
 DC1B1                             00000005
 DC_SHAD                           00000001
 DHEN                              00000000
-MPASM  5.51                   PROGRAM_ROM.ASM   12-19-2022  10:56:56         PAGE  5
+MPASM  5.51                   PROGRAM_ROM.ASM   1-9-2023  22:53:52         PAGE  5
 
 
 SYMBOL TABLE
@@ -271,7 +291,7 @@ IOCBF6                            00000006
 IOCBF7                            00000007
 IOCBN                             00000395
 IOCBN0                            00000000
-MPASM  5.51                   PROGRAM_ROM.ASM   12-19-2022  10:56:56         PAGE  6
+MPASM  5.51                   PROGRAM_ROM.ASM   1-9-2023  22:53:52         PAGE  6
 
 
 SYMBOL TABLE
@@ -330,7 +350,7 @@ MDCH3                             00000003
 MDCHODIS                          00000007
 MDCHPOL                           00000006
 MDCHSYNC                          00000005
-MPASM  5.51                   PROGRAM_ROM.ASM   12-19-2022  10:56:56         PAGE  7
+MPASM  5.51                   PROGRAM_ROM.ASM   1-9-2023  22:53:52         PAGE  7
 
 
 SYMBOL TABLE
@@ -389,7 +409,7 @@ PCIE                              00000006
 PCL                               00000002
 PCLATH                            0000000A
 PCLATH_SHAD                       00000FE7
-MPASM  5.51                   PROGRAM_ROM.ASM   12-19-2022  10:56:56         PAGE  8
+MPASM  5.51                   PROGRAM_ROM.ASM   1-9-2023  22:53:52         PAGE  8
 
 
 SYMBOL TABLE
@@ -448,7 +468,7 @@ S                                 00000003
 SBCDE                             00000002
 SBOREN                            00000007
 SCIE                              00000005
-MPASM  5.51                   PROGRAM_ROM.ASM   12-19-2022  10:56:56         PAGE  9
+MPASM  5.51                   PROGRAM_ROM.ASM   1-9-2023  22:53:52         PAGE  9
 
 
 SYMBOL TABLE
@@ -507,7 +527,7 @@ SSPM0                             00000000
 SSPM1                             00000001
 SSPM2                             00000002
 SSPM3                             00000003
-MPASM  5.51                   PROGRAM_ROM.ASM   12-19-2022  10:56:56         PAGE 10
+MPASM  5.51                   PROGRAM_ROM.ASM   1-9-2023  22:53:52         PAGE 10
 
 
 SYMBOL TABLE
@@ -566,7 +586,7 @@ TMR1GIE                           00000007
 TMR1GIF                           00000007
 TMR1H                             00000017
 TMR1IE                            00000000
-MPASM  5.51                   PROGRAM_ROM.ASM   12-19-2022  10:56:56         PAGE 11
+MPASM  5.51                   PROGRAM_ROM.ASM   1-9-2023  22:53:52         PAGE 11
 
 
 SYMBOL TABLE
@@ -625,7 +645,7 @@ WDTPS1                            00000002
 WDTPS2                            00000003
 WDTPS3                            00000004
 WDTPS4                            00000005
-MPASM  5.51                   PROGRAM_ROM.ASM   12-19-2022  10:56:56         PAGE 12
+MPASM  5.51                   PROGRAM_ROM.ASM   1-9-2023  22:53:52         PAGE 12
 
 
 SYMBOL TABLE
@@ -650,7 +670,6 @@ WRERR                             00000003
 WUE                               00000001
 Z                                 00000002
 Z_SHAD                            00000002
-_.org_0_0008                      00000008
 _BOREN_NSLEEP                     0000FDFF
 _BOREN_OFF                        0000F9FF
 _BOREN_ON                         0000FFFF
@@ -684,13 +703,13 @@ _IDLOC3                           00008003
 _IESO_OFF                         0000EFFF
 _IESO_ON                          0000FFFF
 _LVP_OFF                          0000DFFF
-MPASM  5.51                   PROGRAM_ROM.ASM   12-19-2022  10:56:56         PAGE 13
+_LVP_ON                           0000FFFF
+MPASM  5.51                   PROGRAM_ROM.ASM   1-9-2023  22:53:52         PAGE 13
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
-_LVP_ON                           0000FFFF
 _MCLRE_OFF                        0000FFBF
 _MCLRE_ON                         0000FFFF
 _PLLEN_OFF                        0000FEFF
@@ -709,11 +728,17 @@ _WRT_HALF                         0000FFFD
 _WRT_OFF                          0000FFFF
 __16F1826                         00000001
 __DEBUG                           1
-loop                              00000005
-temp                              00000025
+a                                 00000025
+answer                            00000023
+c                                 00000024
+count                             00000022
+cout                              0000000D
+loop1                             00000007
+start                             00000000
+temp                              00000021
 
 Errors   :     0
 Warnings :     0 reported,     0 suppressed
-Messages :     2 reported,     0 suppressed
+Messages :     1 reported,     0 suppressed
 
 

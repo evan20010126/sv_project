@@ -1,34 +1,36 @@
 MPLINK 4.49, Linker
-Linker Map File - Created Mon Dec 19 10:56:57 2022
+Linker Map File - Created Mon Jan 09 22:53:53 2023
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
                 ---------  ---------  ---------  ---------  ---------
-                   .org_0       code   0x000000    program   0x000012
-                   .cinit    romdata   0x000009    program   0x000004
+                   .org_0       code   0x000000    program   0x000030
+                   .cinit    romdata   0x000018    program   0x000004
 
 
 
                               Program Memory Usage 
                                Start         End      
                            ---------   ---------      
-                            0x000000    0x00000a      
-            11 out of 2311 program addresses used, program memory utilization is 0%
+                            0x000000    0x000019      
+            26 out of 2311 program addresses used, program memory utilization is 1%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-             _.org_0_0008   0x000008    program     static D:\code\Program_sv\MPLAB_file\Program_Rom.asm
-                     loop   0x000005    program     static D:\code\Program_sv\MPLAB_file\Program_Rom.asm
+                     cout   0x00000d    program     static D:\code\sv_project\MPLAB_file\Program_Rom.asm
+                    loop1   0x000007    program     static D:\code\sv_project\MPLAB_file\Program_Rom.asm
+                    start   0x000000    program     static D:\code\sv_project\MPLAB_file\Program_Rom.asm
 
 
 
                               Symbols - Sorted by Address
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                     loop   0x000005    program     static D:\code\Program_sv\MPLAB_file\Program_Rom.asm
-             _.org_0_0008   0x000008    program     static D:\code\Program_sv\MPLAB_file\Program_Rom.asm
+                    start   0x000000    program     static D:\code\sv_project\MPLAB_file\Program_Rom.asm
+                    loop1   0x000007    program     static D:\code\sv_project\MPLAB_file\Program_Rom.asm
+                     cout   0x00000d    program     static D:\code\sv_project\MPLAB_file\Program_Rom.asm
 
 

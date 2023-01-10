@@ -18,6 +18,6 @@ module testbench;
 	initial begin
 		reset = 1; clk = 0;
 		#15 reset = 0;
-		#90000 $stop;
+		#9000000 $stop;
 	end
 endmodule

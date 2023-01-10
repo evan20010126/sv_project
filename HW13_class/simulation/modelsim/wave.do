@@ -12,10 +12,12 @@ add wave -noupdate /testbench/cpu_test/load_mar
 add wave -noupdate -radix unsigned /testbench/cpu_test/mar_q
 add wave -noupdate /testbench/cpu_test/load_IR
 add wave -noupdate -radix unsigned /testbench/w_q
-add wave -noupdate -radix hexadecimal /testbench/cpu_test/RAM_unit/ram21
-add wave -noupdate -radix hexadecimal /testbench/cpu_test/RAM_unit/ram22
+add wave -noupdate -radix unsigned /testbench/cpu_test/RAM_unit/ram22
+add wave -noupdate -radix unsigned /testbench/cpu_test/RAM_unit/ram36
+add wave -noupdate -radix unsigned /testbench/cpu_test/RAM_unit/ram37
+add wave -noupdate -radix unsigned /testbench/cpu_test/port_b_out
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {351000 ps} 0}
+WaveRestoreCursors {{Cursor 1} {750000 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 229
 configure wave -valuecolwidth 100
@@ -31,4 +33,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {0 ps} {5984480 ps}
+WaveRestoreZoom {0 ps} {3219120 ps}
