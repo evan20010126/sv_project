@@ -1,0 +1,64 @@
+# Reading D:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do mcu_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+D:/code/sv_project/Lab1/design {D:/code/sv_project/Lab1/design/mcu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mcu
+# 
+# Top level modules:
+# 	mcu
+# 
+do compile.dom
+# Cannot open macro file: compile.dom
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_student_id
+# 
+# Top level modules:
+# 	test_student_id
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module student_id
+# 
+# Top level modules:
+# 	student_id
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_segment
+# 
+# Top level modules:
+# 	seven_segment
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ROM
+# 
+# Top level modules:
+# 	ROM
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module frequency_divider
+# 
+# Top level modules:
+# 	frequency_divider
+do sim.do
+# vsim -voptargs=+acc work.test_student_id 
+# Loading sv_std.std
+# Loading work.test_student_id
+# Loading work.student_id
+# Loading work.frequency_divider
+# Loading work.ROM
+# Loading work.seven_segment
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module test_student_id at ../tb/test_student_id.sv line 18
+# Simulation Breakpoint: Break in Module test_student_id at ../tb/test_student_id.sv line 18
+# MACRO ./sim.do PAUSED at line 7
+run -continue
+# Break key hit 
+# Break in Module test_student_id at ../tb/test_student_id.sv line 13
+# Simulation Breakpoint: Break in Module test_student_id at ../tb/test_student_id.sv line 13
+# MACRO ./sim.do PAUSED at line 7

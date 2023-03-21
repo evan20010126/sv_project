@@ -1,0 +1,236 @@
+# Reading D:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do DE0_CV_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB3/LAB3_2/design {D:/code/sv_project/LAB3/LAB3_2/design/DE0_CV.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB3/LAB3_2/design {D:/code/sv_project/LAB3/LAB3_2/design/sub_4bit.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# 
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module handshaking
+# ** Error: ../../design/handshaking.sv(66): (vlog-2730) Undefined variable: 'trigger1'.
+# 
+# ** Error: D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./compile.do line 7
+# D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog ../../design/handshaking.sv"
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module handshaking
+# 
+# Top level modules:
+# 	handshaking
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.handshaking
+# ** Error: (vsim-3839) ../../design/handshaking.sv(13): Variable '/testbench/c1', driven via a port connection, is multiply driven. See ../tb/testbench.sv(19).
+# 
+#         Region: /testbench/u1
+# ** Error: (vsim-3839) ../../design/handshaking.sv(13): Variable '/testbench/c2', driven via a port connection, is multiply driven. See ../tb/testbench.sv(19).
+# 
+#         Region: /testbench/u1
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./sim.do PAUSED at line 1
+# Error opening D:/code/sv_project/LAB3/LAB3_2/simulation/modelsim/design/handshaking.sv
+# Path name 'D:/code/sv_project/LAB3/LAB3_2/simulation/modelsim/design/handshaking.sv' doesn't exist.
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# Error opening D:/code/sv_project/LAB3/LAB3_2/simulation/modelsim/design/handshaking.sv
+# Path name 'D:/code/sv_project/LAB3/LAB3_2/simulation/modelsim/design/handshaking.sv' doesn't exist.
+# A time value could not be extracted from the current line
+# Error opening D:/code/sv_project/LAB3/LAB3_2/simulation/modelsim/design/handshaking.sv
+# Path name 'D:/code/sv_project/LAB3/LAB3_2/simulation/modelsim/design/handshaking.sv' doesn't exist.
+# A time value could not be extracted from the current line
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.handshaking
+# ** Error: (vsim-3839) ../../design/handshaking.sv(13): Variable '/testbench/c1', driven via a port connection, is multiply driven. See ../tb/testbench.sv(19).
+# 
+#         Region: /testbench/u1
+# ** Error: (vsim-3839) ../../design/handshaking.sv(13): Variable '/testbench/c2', driven via a port connection, is multiply driven. See ../tb/testbench.sv(19).
+# 
+#         Region: /testbench/u1
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./sim.do PAUSED at line 1
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module handshaking
+# 
+# Top level modules:
+# 	handshaking
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.handshaking
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 20
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 20
+# MACRO ./sim.do PAUSED at line 7
+add wave -position end  sim:/testbench/rst
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/c1
+add wave -position end  sim:/testbench/c2
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module handshaking
+# 
+# Top level modules:
+# 	handshaking
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.handshaking
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 20
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 20
+# MACRO ./sim.do PAUSED at line 7
+add wave -position end  sim:/testbench/rst
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/c1
+add wave -position end  sim:/testbench/c2
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module handshaking
+# 
+# Top level modules:
+# 	handshaking
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.handshaking
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 20
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 20
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module handshaking
+# 
+# Top level modules:
+# 	handshaking
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+do sim
+# Cannot open macro file: sim
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.handshaking
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 20
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 20
+# MACRO ./sim.do PAUSED at line 7
+add wave -position end  sim:/testbench/rst
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/c1
+add wave -position end  sim:/testbench/c2
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/code/sv_project/LAB3/LAB3_2/simulation/modelsim/wave.do

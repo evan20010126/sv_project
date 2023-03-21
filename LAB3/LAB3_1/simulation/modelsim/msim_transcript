@@ -1,0 +1,388 @@
+# Reading D:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do DE0_CV_run_msim_rtl_systemverilog.do 
+# if ![file isdirectory DE0_CV_iputf_libs] {
+# 	file mkdir DE0_CV_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vlog "D:/code/sv_project/LAB3/LAB3_1/pll_sim/pll.vo"
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# 
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB3/LAB3_1/design {D:/code/sv_project/LAB3/LAB3_1/design/handshaking.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module handshaking
+# 
+# Top level modules:
+# 	handshaking
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB3/LAB3_1/design {D:/code/sv_project/LAB3/LAB3_1/design/DE0_CV.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB3/LAB3_1/design {D:/code/sv_project/LAB3/LAB3_1/design/sub_4bit.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# 
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_0002
+# 
+# Top level modules:
+# 	pll_0002
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module handshaking
+# 
+# Top level modules:
+# 	handshaking
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.pll
+# Loading work.pll_0002
+# Loading altera_lnsim_ver.altera_lnsim_functions
+# Loading altera_lnsim_ver.altera_pll
+# Loading altera_lnsim_ver.dps_extra_kick
+# Loading altera_lnsim_ver.dprio_init
+# Loading altera_lnsim_ver.altera_generic_pll_functions
+# Loading altera_lnsim_ver.generic_pll
+# ** Warning: (vsim-3017) ../../pll/pll_0002.v(88): [TFMPC] - Too few port connections. Expected 25, found 6.
+# 
+#         Region: /testbench/pl_test/pll_inst/altera_pll_i
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'refclk1'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'phase_en'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'updn'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'num_phase_shifts'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'scanclk'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'cntsel'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'reconfig_to_pll'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'extswitch'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'adjpllin'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'cclk'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'phase_done'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'reconfig_from_pll'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'activeclk'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'clkbad'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'phout'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'lvds_clk'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'loaden'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'cascade_out'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'zdbfbclk'.
+# 
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/a'.
+# Executing ONERROR command at macro ./wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/testbench/b'.
+# Executing ONERROR command at macro ./wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/testbench/s'.
+# Executing ONERROR command at macro ./wave.do line 6
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (testbench.pl_test.pll_inst.altera_pll_i.new_model.gpll.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = testbench.pl_test.pll_inst.altera_pll_i.new_model.gpll.no_need_to_gen
+# Info: reference_clock_frequency = 50.0 MHz
+# Info: output_clock_frequency = 100 MHZ
+# Info: phase_shift = 0 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 5000.000000
+# Info: output_clock_low_period = 5000.000000
+# Info: hierarchical_name = testbench.pl_test.pll_inst.altera_pll_i.new_model.gpll.UI
+# Warning: The frequency of the reference clock signal differs from the specified frequency (50.0 MHz).
+# Break in Module testbench at ../tb/testbench.sv line 22
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 22
+# MACRO ./sim.do PAUSED at line 11
+# Error opening D:/code/sv_project/LAB3/LAB3_1/simulation/modelsim/pll/pll_0002.v
+# Path name 'D:/code/sv_project/LAB3/LAB3_1/simulation/modelsim/pll/pll_0002.v' doesn't exist.
+# A time value could not be extracted from the current line
+add wave -position end  sim:/testbench/outclk_1
+add wave -position end  sim:/testbench/outclk_0
+add wave -position 3  sim:/testbench/rst
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/locked
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_0002
+# 
+# Top level modules:
+# 	pll_0002
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module handshaking
+# 
+# Top level modules:
+# 	handshaking
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.pll
+# Loading work.pll_0002
+# Loading altera_lnsim_ver.altera_lnsim_functions
+# Loading altera_lnsim_ver.altera_pll
+# Loading altera_lnsim_ver.dps_extra_kick
+# Loading altera_lnsim_ver.dprio_init
+# Loading altera_lnsim_ver.altera_generic_pll_functions
+# Loading altera_lnsim_ver.generic_pll
+# ** Warning: (vsim-3017) ../../pll/pll_0002.v(88): [TFMPC] - Too few port connections. Expected 25, found 6.
+# 
+#         Region: /testbench/pl_test/pll_inst/altera_pll_i
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'refclk1'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'phase_en'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'updn'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'num_phase_shifts'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'scanclk'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'cntsel'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'reconfig_to_pll'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'extswitch'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'adjpllin'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'cclk'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'phase_done'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'reconfig_from_pll'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'activeclk'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'clkbad'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'phout'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'lvds_clk'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'loaden'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'cascade_out'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'zdbfbclk'.
+# 
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/a'.
+# Executing ONERROR command at macro ./wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/testbench/b'.
+# Executing ONERROR command at macro ./wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/testbench/s'.
+# Executing ONERROR command at macro ./wave.do line 6
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (testbench.pl_test.pll_inst.altera_pll_i.new_model.gpll.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = testbench.pl_test.pll_inst.altera_pll_i.new_model.gpll.no_need_to_gen
+# Info: reference_clock_frequency = 50.0 MHz
+# Info: output_clock_frequency = 100 MHZ
+# Info: phase_shift = 0 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 5000.000000
+# Info: output_clock_low_period = 5000.000000
+# Break in Module testbench at ../tb/testbench.sv line 22
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 22
+# MACRO ./sim.do PAUSED at line 11
+add wave -position end  sim:/testbench/outclk_0
+add wave -position end  sim:/testbench/outclk_1
+# Error opening D:/code/sv_project/LAB3/LAB3_1/simulation/modelsim/pll/pll_0002.v
+# Path name 'D:/code/sv_project/LAB3/LAB3_1/simulation/modelsim/pll/pll_0002.v' doesn't exist.
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_0002
+# 
+# Top level modules:
+# 	pll_0002
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module handshaking
+# 
+# Top level modules:
+# 	handshaking
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.pll
+# Loading work.pll_0002
+# Loading altera_lnsim_ver.altera_lnsim_functions
+# Loading altera_lnsim_ver.altera_pll
+# Loading altera_lnsim_ver.dps_extra_kick
+# Loading altera_lnsim_ver.dprio_init
+# Loading altera_lnsim_ver.altera_generic_pll_functions
+# Loading altera_lnsim_ver.generic_pll
+# ** Warning: (vsim-3017) ../../pll/pll_0002.v(88): [TFMPC] - Too few port connections. Expected 25, found 6.
+# 
+#         Region: /testbench/pl_test/pll_inst/altera_pll_i
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'refclk1'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'phase_en'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'updn'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'num_phase_shifts'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'scanclk'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'cntsel'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'reconfig_to_pll'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'extswitch'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'adjpllin'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'cclk'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'phase_done'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'reconfig_from_pll'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'activeclk'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'clkbad'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'phout'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'lvds_clk'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'loaden'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'cascade_out'.
+# 
+# ** Warning: (vsim-3722) ../../pll/pll_0002.v(88): [TFMPC] - Missing connection for port 'zdbfbclk'.
+# 
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/a'.
+# Executing ONERROR command at macro ./wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/testbench/b'.
+# Executing ONERROR command at macro ./wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/testbench/s'.
+# Executing ONERROR command at macro ./wave.do line 6
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (testbench.pl_test.pll_inst.altera_pll_i.new_model.gpll.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = testbench.pl_test.pll_inst.altera_pll_i.new_model.gpll.no_need_to_gen
+# Info: reference_clock_frequency = 50.0 MHz
+# Info: output_clock_frequency = 100 MHZ
+# Info: phase_shift = 0 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 5000.000000
+# Info: output_clock_low_period = 5000.000000
+# Break in Module testbench at ../tb/testbench.sv line 22
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 22
+# MACRO ./sim.do PAUSED at line 11
+add wave -position end  sim:/testbench/outclk_0
+add wave -position end  sim:/testbench/outclk_1
+add wave -position 2  sim:/testbench/rst
+add wave -position 2  sim:/testbench/clk
+add wave -position end  sim:/testbench/locked

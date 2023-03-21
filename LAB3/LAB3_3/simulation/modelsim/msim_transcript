@@ -1,0 +1,425 @@
+# Reading D:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do DE0_CV_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB3/LAB3_2/design {D:/code/sv_project/LAB3/LAB3_2/design/DE0_CV.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB3/LAB3_2/design {D:/code/sv_project/LAB3/LAB3_2/design/sub_4bit.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# 
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lab3_3
+# ** Error: ../../design/lab3_3.sv(31): near "=": syntax error, unexpected '=', expecting ++ or --
+# ** Error: ../../design/lab3_3.sv(32): near "=": syntax error, unexpected '=', expecting ++ or --
+# ** Error: ../../design/lab3_3.sv(72): near "endcase": syntax error, unexpected endcase
+# ** Error: ../../design/lab3_3.sv(33): 'T0' already exists; must not be redefined as a named block
+# ** Error: ../../design/lab3_3.sv(46): 'T1' already exists; must not be redefined as a named block
+# ** Error: ../../design/lab3_3.sv(58): 'T2' already exists; must not be redefined as a named block
+# ** Error: D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./compile.do line 7
+# D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog ../../design/lab3_3.sv"
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lab3_3
+# ** Error: ../../design/lab3_3.sv(25): near "begin": syntax error, unexpected begin
+# ** Error: ../../design/lab3_3.sv(33): near "=": syntax error, unexpected '=', expecting ++ or --
+# ** Error: ../../design/lab3_3.sv(34): 'T0' already exists; must not be redefined as a named block
+# ** Error: ../../design/lab3_3.sv(47): 'T1' already exists; must not be redefined as a named block
+# ** Error: ../../design/lab3_3.sv(59): 'T2' already exists; must not be redefined as a named block
+# ** Error: ../../design/lab3_3.sv(73): near "endcase": syntax error, unexpected endcase
+# ** Error: D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./compile.do line 7
+# D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog ../../design/lab3_3.sv"
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lab3_3
+# ** Error: ../../design/lab3_3.sv(25): near "=": syntax error, unexpected '=', expecting ++ or --
+# ** Error: D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./compile.do line 7
+# D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog ../../design/lab3_3.sv"
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lab3_3
+# ** Error: ../../design/lab3_3.sv(25): (vlog-2110) Illegal reference to net "A_out".
+# 
+# ** Error: ../../design/lab3_3.sv(26): (vlog-2110) Illegal reference to net "B_out".
+# 
+# ** Error: ../../design/lab3_3.sv(27): (vlog-2110) Illegal reference to net "C_out".
+# 
+# ** Error: ../../design/lab3_3.sv(37): (vlog-2110) Illegal reference to net "A_out".
+# 
+# ** Error: ../../design/lab3_3.sv(40): (vlog-2110) Illegal reference to net "B_out".
+# 
+# ** Error: ../../design/lab3_3.sv(43): (vlog-2110) Illegal reference to net "C_out".
+# 
+# ** Error: ../../design/lab3_3.sv(50): (vlog-2110) Illegal reference to net "B_out".
+# 
+# ** Error: ../../design/lab3_3.sv(53): (vlog-2110) Illegal reference to net "C_out".
+# 
+# ** Error: ../../design/lab3_3.sv(56): (vlog-2110) Illegal reference to net "A_out".
+# 
+# ** Error: ../../design/lab3_3.sv(62): (vlog-2110) Illegal reference to net "C_out".
+# 
+# ** Error: ../../design/lab3_3.sv(65): (vlog-2110) Illegal reference to net "A_out".
+# 
+# ** Error: ../../design/lab3_3.sv(68): (vlog-2110) Illegal reference to net "B_out".
+# 
+# ** Error: D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./compile.do line 7
+# D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog ../../design/lab3_3.sv"
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lab3_3
+# 
+# Top level modules:
+# 	lab3_3
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.lab3_3
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/a'.
+# Executing ONERROR command at macro ./wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/testbench/b'.
+# Executing ONERROR command at macro ./wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/testbench/s'.
+# Executing ONERROR command at macro ./wave.do line 6
+# Break in Module testbench at ../tb/testbench.sv line 33
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 33
+# MACRO ./sim.do PAUSED at line 7
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/rst
+add wave -position end  sim:/testbench/A
+add wave -position end  sim:/testbench/B
+add wave -position end  sim:/testbench/C
+add wave -position end  sim:/testbench/A_out
+add wave -position end  sim:/testbench/B_out
+add wave -position end  sim:/testbench/C_out
+add wave -position 4  sim:/testbench/u1/fsm1_ns
+add wave -position 5  sim:/testbench/u1/fsm1_ps
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lab3_3
+# 
+# Top level modules:
+# 	lab3_3
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.lab3_3
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/a'.
+# Executing ONERROR command at macro ./wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/testbench/b'.
+# Executing ONERROR command at macro ./wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/testbench/s'.
+# Executing ONERROR command at macro ./wave.do line 6
+# Break in Module testbench at ../tb/testbench.sv line 33
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 33
+# MACRO ./sim.do PAUSED at line 7
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/rst
+add wave -position end  sim:/testbench/A
+add wave -position end  sim:/testbench/B
+add wave -position end  sim:/testbench/C
+add wave -position end  sim:/testbench/A_out
+add wave -position end  sim:/testbench/B_out
+add wave -position end  sim:/testbench/C_out
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lab3_3
+# 
+# Top level modules:
+# 	lab3_3
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.lab3_3
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/a'.
+# Executing ONERROR command at macro ./wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/testbench/b'.
+# Executing ONERROR command at macro ./wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/testbench/s'.
+# Executing ONERROR command at macro ./wave.do line 6
+# Break in Module testbench at ../tb/testbench.sv line 33
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 33
+# MACRO ./sim.do PAUSED at line 7
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/rst
+add wave -position end  sim:/testbench/A
+add wave -position end  sim:/testbench/B
+add wave -position end  sim:/testbench/C
+add wave -position end  sim:/testbench/A_out
+add wave -position end  sim:/testbench/B_out
+add wave -position end  sim:/testbench/C_out
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lab3_3
+# 
+# Top level modules:
+# 	lab3_3
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.lab3_3
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/a'.
+# Executing ONERROR command at macro ./wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/testbench/b'.
+# Executing ONERROR command at macro ./wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/testbench/s'.
+# Executing ONERROR command at macro ./wave.do line 6
+# Break in Module testbench at ../tb/testbench.sv line 33
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 33
+# MACRO ./sim.do PAUSED at line 7
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/rst
+add wave -position end  sim:/testbench/A
+add wave -position end  sim:/testbench/B
+add wave -position end  sim:/testbench/C
+add wave -position end  sim:/testbench/A_out
+add wave -position end  sim:/testbench/B_out
+add wave -position end  sim:/testbench/C_out
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lab3_3
+# 
+# Top level modules:
+# 	lab3_3
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.lab3_3
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/a'.
+# Executing ONERROR command at macro ./wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/testbench/b'.
+# Executing ONERROR command at macro ./wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/testbench/s'.
+# Executing ONERROR command at macro ./wave.do line 6
+# Break in Module testbench at ../tb/testbench.sv line 34
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 34
+# MACRO ./sim.do PAUSED at line 7
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/rst
+add wave -position end  sim:/testbench/A
+add wave -position end  sim:/testbench/B
+add wave -position end  sim:/testbench/C
+add wave -position end  sim:/testbench/A_out
+add wave -position end  sim:/testbench/B_out
+add wave -position end  sim:/testbench/C_out
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lab3_3
+# 
+# Top level modules:
+# 	lab3_3
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.lab3_3
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/a'.
+# Executing ONERROR command at macro ./wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/testbench/b'.
+# Executing ONERROR command at macro ./wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/testbench/s'.
+# Executing ONERROR command at macro ./wave.do line 6
+# Break in Module testbench at ../tb/testbench.sv line 35
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 35
+# MACRO ./sim.do PAUSED at line 7
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/rst
+add wave -position end  sim:/testbench/A
+add wave -position end  sim:/testbench/B
+add wave -position end  sim:/testbench/C
+add wave -position end  sim:/testbench/A_out
+add wave -position end  sim:/testbench/B_out
+add wave -position end  sim:/testbench/C_out
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lab3_3
+# 
+# Top level modules:
+# 	lab3_3
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.lab3_3
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/a'.
+# Executing ONERROR command at macro ./wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/testbench/b'.
+# Executing ONERROR command at macro ./wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/testbench/s'.
+# Executing ONERROR command at macro ./wave.do line 6
+# Break in Module testbench at ../tb/testbench.sv line 38
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 38
+# MACRO ./sim.do PAUSED at line 7
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/rst
+add wave -position end  sim:/testbench/A
+add wave -position end  sim:/testbench/B
+add wave -position end  sim:/testbench/C
+add wave -position end  sim:/testbench/A_out
+add wave -position end  sim:/testbench/B_out
+add wave -position end  sim:/testbench/C_out
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/code/sv_project/LAB3/LAB3_2/simulation/modelsim/wave.do

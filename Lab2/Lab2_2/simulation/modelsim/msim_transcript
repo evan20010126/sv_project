@@ -1,0 +1,245 @@
+# Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# do DE0_CV_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/User/Desktop/DE0_CV/design {C:/Users/User/Desktop/DE0_CV/design/DE0_CV.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:30:51 on Mar 08,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/User/Desktop/DE0_CV/design" C:/Users/User/Desktop/DE0_CV/design/DE0_CV.sv 
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# End time: 11:30:51 on Mar 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/User/Desktop/DE0_CV/design {C:/Users/User/Desktop/DE0_CV/design/sub_4bit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:30:51 on Mar 08,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/User/Desktop/DE0_CV/design" C:/Users/User/Desktop/DE0_CV/design/sub_4bit.sv 
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# End time: 11:30:51 on Mar 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+do compile.dom
+# Cannot open macro file: compile.dom
+do compile.dom
+# Cannot open macro file: compile.dom
+do compile.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:10 on Mar 08,2023
+# vlog -reportprogress 300 ../tb/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 11:31:10 on Mar 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:10 on Mar 08,2023
+# vlog -reportprogress 300 ../../design/sub_4bit.sv 
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# End time: 11:31:10 on Mar 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:10 on Mar 08,2023
+# vlog -reportprogress 300 ../../design/DE0_CV.sv 
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# End time: 11:31:10 on Mar 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:10 on Mar 08,2023
+# vlog -reportprogress 300 ../../design/traffic.sv 
+# -- Compiling module traffic
+# ** Error: (vlog-13069) ../../design/traffic.sv(61): near "endcase": syntax error, unexpected endcase.
+# End time: 11:31:10 on Mar 08,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./compile.do line 9
+# C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog ../../design/traffic.sv"
+do sim.dom
+# Cannot open macro file: sim.dom
+do compile.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:43 on Mar 08,2023
+# vlog -reportprogress 300 ../tb/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 11:31:43 on Mar 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:43 on Mar 08,2023
+# vlog -reportprogress 300 ../../design/sub_4bit.sv 
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# End time: 11:31:43 on Mar 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:43 on Mar 08,2023
+# vlog -reportprogress 300 ../../design/DE0_CV.sv 
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# End time: 11:31:43 on Mar 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:43 on Mar 08,2023
+# vlog -reportprogress 300 ../../design/traffic.sv 
+# -- Compiling module traffic
+# 
+# Top level modules:
+# 	traffic
+# End time: 11:31:43 on Mar 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do sim.do
+# vsim -voptargs="+acc" work.testbench 
+# Start time: 11:31:48 on Mar 08,2023
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.sub_4bit
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../tb/testbench.sv(20)
+#    Time: 1040 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at ../tb/testbench.sv line 20
+do compile.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:47 on Mar 08,2023
+# vlog -reportprogress 300 ../tb/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 11:38:47 on Mar 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:47 on Mar 08,2023
+# vlog -reportprogress 300 ../../design/sub_4bit.sv 
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# End time: 11:38:47 on Mar 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:47 on Mar 08,2023
+# vlog -reportprogress 300 ../../design/DE0_CV.sv 
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# End time: 11:38:47 on Mar 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:38:48 on Mar 08,2023
+# vlog -reportprogress 300 ../../design/traffic.sv 
+# -- Compiling module traffic
+# 
+# Top level modules:
+# 	traffic
+# End time: 11:38:48 on Mar 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do sim.do
+# End time: 11:38:49 on Mar 08,2023, Elapsed time: 0:07:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.testbench 
+# Start time: 11:38:49 on Mar 08,2023
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.traffic
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/a'.
+# Executing ONERROR command at macro ./wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/testbench/b'.
+# Executing ONERROR command at macro ./wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/testbench/s'.
+# Executing ONERROR command at macro ./wave.do line 6
+# ** Note: $stop    : ../tb/testbench.sv(21)
+#    Time: 1015 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at ../tb/testbench.sv line 21
+add wave -position end  sim:/testbench/r
+add wave -position end  sim:/testbench/y
+add wave -position end  sim:/testbench/g
+add wave -position 1  sim:/testbench/clk
+add wave -position 2  sim:/testbench/rst
+add wave -position end  sim:/testbench/y[1]
+add wave -position end  sim:/testbench/r[1]
+add wave -position end  sim:/testbench/y[1]
+add wave -position end  sim:/testbench/g[1]
+add wave -position end  sim:/testbench/r[0]
+add wave -position end  sim:/testbench/y[0]
+add wave -position end  sim:/testbench/g[0]
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/User/Desktop/wave.do
+do compile.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:50:01 on Mar 08,2023
+# vlog -reportprogress 300 ../tb/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 11:50:01 on Mar 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:50:01 on Mar 08,2023
+# vlog -reportprogress 300 ../../design/sub_4bit.sv 
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# End time: 11:50:01 on Mar 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:50:01 on Mar 08,2023
+# vlog -reportprogress 300 ../../design/DE0_CV.sv 
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# End time: 11:50:01 on Mar 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:50:01 on Mar 08,2023
+# vlog -reportprogress 300 ../../design/traffic.sv 
+# -- Compiling module traffic
+# 
+# Top level modules:
+# 	traffic
+# End time: 11:50:01 on Mar 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do sim.do
+# End time: 11:50:03 on Mar 08,2023, Elapsed time: 0:11:14
+# Errors: 9, Warnings: 0
+# vsim -voptargs="+acc" work.testbench 
+# Start time: 11:50:03 on Mar 08,2023
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.traffic
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../tb/testbench.sv(21)
+#    Time: 1015 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at ../tb/testbench.sv line 21
+# End time: 11:56:16 on Mar 08,2023, Elapsed time: 0:06:13
+# Errors: 0, Warnings: 0
