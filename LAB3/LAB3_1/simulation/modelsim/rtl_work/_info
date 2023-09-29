@@ -1,0 +1,132 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\code\sv_project\LAB3\LAB3_1\simulation\modelsim
+vDE0_CV
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z2 I>=Ke9GzhhLV9Nn4STEc>j2
+Z3 V7H5796_0G4Q[4EaU;Z?Iz2
+Z4 !s105 DE0_CV_sv_unit
+S1
+Z5 dD:\code\sv_project\LAB3\LAB3_1\simulation\modelsim
+Z6 w1679134778
+Z7 8../../design/DE0_CV.sv
+Z8 F../../design/DE0_CV.sv
+L0 6
+Z9 OV;L;10.1d;51
+r1
+31
+o-O0
+Z10 n@d@e0_@c@v
+!i10b 1
+Z11 !s100 4Ece6jQ@D^Lo@Vg3gB@E11
+!s85 0
+Z12 !s108 1679452954.230000
+Z13 !s107 ../../design/DE0_CV.sv|
+Z14 !s90 -reportprogress|300|../../design/DE0_CV.sv|
+!s101 -O0
+vhandshaking
+R1
+!i10b 1
+!s100 Tb@?3G3XhYz>gd_z>5GLH0
+I@B9^L1?4AT=8PWEJzOP^V0
+Z15 VTEGf844IcI]ZKMhhnZkXQ3
+Z16 !s105 handshaking_sv_unit
+S1
+R5
+Z17 w1679134784
+8../../design/handshaking.sv
+F../../design/handshaking.sv
+L0 3
+R9
+r1
+!s85 0
+31
+!s108 1679452954.405000
+!s107 ../../design/handshaking.sv|
+!s90 -reportprogress|300|../../design/handshaking.sv|
+!s101 -O0
+o-O0
+vpll
+Z18 IfZ4C[2in]a8`R8lA`NQ613
+Z19 VVl0YLC5VbO;R^PWC@ZOBj3
+R5
+Z20 w1679134765
+Z21 8../../pll.v
+Z22 F../../pll.v
+L0 8
+R9
+r1
+31
+o-O0
+Z23 !s100 55_3nh7_OfG^L`J>I8XQF0
+Z24 !s108 1679452952.756000
+Z25 !s107 ../../pll.v|
+Z26 !s90 -reportprogress|300|../../pll.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vpll_0002
+Z27 In[iJE7?CK:OYlQCmQ=FBS3
+Z28 V^=gU[kUdXj5[AX7YDGKRH2
+R5
+Z29 w1678851451
+Z30 8../../pll/pll_0002.v
+Z31 F../../pll/pll_0002.v
+L0 2
+R9
+r1
+31
+o-O0
+Z32 !s100 WQzM_70XS6b3H0Yk1VcGh2
+Z33 !s108 1679452953.336000
+Z34 !s107 ../../pll/pll_0002.v|
+Z35 !s90 -reportprogress|300|../../pll/pll_0002.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsub_4bit
+R1
+Z36 I:Z_1eJUU`zA8J^b?0gNea3
+Z37 VFZ^Po[bfOnae;FdeY27@=1
+Z38 !s105 sub_4bit_sv_unit
+S1
+R5
+Z39 w1679134788
+Z40 8../../design/sub_4bit.sv
+Z41 F../../design/sub_4bit.sv
+L0 3
+R9
+r1
+31
+o-O0
+Z42 !s100 nTold>0Bg=Lf7FN=_=lKg3
+Z43 !s108 1679452953.739000
+Z44 !s107 ../../design/sub_4bit.sv|
+Z45 !s90 -reportprogress|300|../../design/sub_4bit.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vtestbench
+R1
+Z46 IVXk_VzL0me>9mS7d:z:Ze3
+Z47 VhGfW:390DM[oDMzegDH9`2
+S1
+R5
+Z48 w1679309118
+Z49 8../tb/testbench.sv
+Z50 F../tb/testbench.sv
+L0 2
+R9
+r1
+31
+o-O0
+Z51 !s100 <1QfKWKSmGa]Q?O[9>2e;2
+Z52 !s105 testbench_sv_unit
+Z53 !s108 1679452952.314000
+Z54 !s107 ../tb/testbench.sv|
+Z55 !s90 -reportprogress|300|../tb/testbench.sv|
+!i10b 1
+!s85 0
+!s101 -O0

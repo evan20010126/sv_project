@@ -1,0 +1,96 @@
+//SPI slave
+//mode: 0 (閒置時sclk為0，在第一個edge取值)
+
+module SPI(
+	//------output--------------------------------
+	output logic 		miso,
+	output logic [15:0] data_debug,
+	
+	//------input---------------------------------	
+	input 		 		mosi,
+	input 		 		sclk,			//傳輸速度: 10MHz
+	input 		 		ssn,		
+	input 		 		clk,			//系統 clk: 100MHz
+	input 		 		reset			//系統 reset
+
+	);
+
+
+	//=======================================================
+	//  REG/WIRE declarations
+	//=======================================================
+
+
+	logic [15:0] 		reg_file [255:0];
+	logic [6:0]			address;
+	logic [15:0]		write_data;
+	logic 				read_en;
+	logic 				write_en;
+	logic 				tx_req;
+	logic [15:0]		read_data;
+
+
+	//=======================================================
+	//  Structural coding
+	//=======================================================
+
+
+	//////////////////////////////////////////////////////
+	////////////           receiver     	  ////////////
+	//////////////////////////////////////////////////////
+
+
+	SPI_rx SPI_rx1(
+		//------output-------------------------------
+		.address		(address),		//前8bits裡面的address資料
+		.data			(write_data),
+		.read_en		(read_en),
+		.write_en		(write_en),		//將資料寫進reg file
+		.tx_req			(tx_req),		//從reg file讀值出來
+
+		//------input---------------------------------	
+		.mosi			(mosi),	
+		.sclk			(sclk),			//10NHz
+		.ssn			(ssn),			
+		.clk			(clk),			//100MHz
+		.reset			(reset)			//系統 reset	
+
+	);
+	assign data_debug = write_data;	//顯示到LED
+
+
+	//////////////////////////////////////////////////////
+	////////////         Register File    	  ////////////
+	//////////////////////////////////////////////////////
+
+	logic [15:0] 		reg_file [255:0];
+	always_ff @(posedge clk)
+	begin
+		if(write_en)
+			reg_file[address] <= write_data;
+		else if(read_en)
+			read_data = reg_file[address];
+	end
+
+
+	//////////////////////////////////////////////////////
+	////////////           transmitter     	  ////////////
+	//////////////////////////////////////////////////////
+
+	
+	SPI_tx SPI_tx1(
+	//------output--------------------------------
+	.miso				(miso),
+
+	//------input---------------------------------	
+	.data				(read_data),	//要送的data (還沒寫儲存，先隨便丟一個值)
+	.sclk				(sclk),
+	.tx_req				(tx_req),
+	.clk				(clk),			//200MHZ
+	.reset				(reset)			//系統 reset	
+
+	);
+endmodule
+
+
+

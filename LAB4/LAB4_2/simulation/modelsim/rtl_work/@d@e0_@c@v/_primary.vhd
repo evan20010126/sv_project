@@ -1,0 +1,45 @@
+library verilog;
+use verilog.vl_types.all;
+entity DE0_CV is
+    port(
+        CLOCK_50        : in     vl_logic;
+        CLOCK2_50       : in     vl_logic;
+        CLOCK3_50       : in     vl_logic;
+        CLOCK4_50       : inout  vl_logic;
+        DRAM_ADDR       : out    vl_logic_vector(12 downto 0);
+        DRAM_BA         : out    vl_logic_vector(1 downto 0);
+        DRAM_CAS_N      : out    vl_logic;
+        DRAM_CKE        : out    vl_logic;
+        DRAM_CLK        : out    vl_logic;
+        DRAM_CS_N       : out    vl_logic;
+        DRAM_DQ         : inout  vl_logic_vector(15 downto 0);
+        DRAM_LDQM       : out    vl_logic;
+        DRAM_RAS_N      : out    vl_logic;
+        DRAM_UDQM       : out    vl_logic;
+        DRAM_WE_N       : out    vl_logic;
+        HEX0            : out    vl_logic_vector(6 downto 0);
+        HEX1            : out    vl_logic_vector(6 downto 0);
+        HEX2            : out    vl_logic_vector(6 downto 0);
+        HEX3            : out    vl_logic_vector(6 downto 0);
+        HEX4            : out    vl_logic_vector(6 downto 0);
+        HEX5            : out    vl_logic_vector(6 downto 0);
+        KEY             : in     vl_logic_vector(3 downto 0);
+        RESET_N         : in     vl_logic;
+        LEDR            : out    vl_logic_vector(9 downto 0);
+        PS2_CLK         : inout  vl_logic;
+        PS2_CLK2        : inout  vl_logic;
+        PS2_DAT         : inout  vl_logic;
+        PS2_DAT2        : inout  vl_logic;
+        SD_CLK          : out    vl_logic;
+        SD_CMD          : inout  vl_logic;
+        SD_DATA         : inout  vl_logic_vector(3 downto 0);
+        SW              : in     vl_logic_vector(9 downto 0);
+        VGA_B           : out    vl_logic_vector(3 downto 0);
+        VGA_G           : out    vl_logic_vector(3 downto 0);
+        VGA_HS          : out    vl_logic;
+        VGA_R           : out    vl_logic_vector(3 downto 0);
+        VGA_VS          : out    vl_logic;
+        GPIO_0          : inout  vl_logic_vector(35 downto 0);
+        GPIO_1          : inout  vl_logic_vector(35 downto 0)
+    );
+end DE0_CV;

@@ -1,0 +1,206 @@
+# Reading D:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do DE0_CV_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB5/LAB5_1/design {D:/code/sv_project/LAB5/LAB5_1/design/Low_Pass_Filter_4ENC.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Low_Pass_Filter_4ENC
+# 
+# Top level modules:
+# 	Low_Pass_Filter_4ENC
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB5/LAB5_1/design {D:/code/sv_project/LAB5/LAB5_1/design/gen_step_col.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module gen_step_col
+# 
+# Top level modules:
+# 	gen_step_col
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB5/LAB5_1/design {D:/code/sv_project/LAB5/LAB5_1/design/Encoder.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Encoder
+# 
+# Top level modules:
+# 	Encoder
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB5/LAB5_1/design {D:/code/sv_project/LAB5/LAB5_1/design/edge_detector.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB5/LAB5_1/design {D:/code/sv_project/LAB5/LAB5_1/design/DE0_CV.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# 
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Encoder
+# 
+# Top level modules:
+# 	Encoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Low_Pass_Filter_4ENC
+# 
+# Top level modules:
+# 	Low_Pass_Filter_4ENC
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module gen_step_col
+# 
+# Top level modules:
+# 	gen_step_col
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.DE0_CV
+# Loading work.Encoder
+# Loading work.Low_Pass_Filter_4ENC
+# Loading work.edge_detector
+# Loading work.gen_step_col
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 154
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 154
+# MACRO ./sim.do PAUSED at line 7
+add wave -position end  sim:/testbench/de0_cv1/ens_sys/gen_step_col_1/cnt_meas
+add wave -position end  sim:/testbench/de0_cv1/ens_sys/u2/enc_filter
+add wave -position end  sim:/testbench/de0_cv1/ens_sys/cnt
+add wave -position end  sim:/testbench/de0_cv1/ens_sys/rst
+add wave -position end  sim:/testbench/de0_cv1/ens_sys/enable
+add wave -position end  sim:/testbench/de0_cv1/ens_sys/cnt
+add wave -position end  sim:/testbench/de0_cv1/ens_sys/rst
+add wave -position end  sim:/testbench/de0_cv1/ens_sys/rst_cnt
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Encoder
+# 
+# Top level modules:
+# 	Encoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Low_Pass_Filter_4ENC
+# 
+# Top level modules:
+# 	Low_Pass_Filter_4ENC
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module gen_step_col
+# 
+# Top level modules:
+# 	gen_step_col
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.DE0_CV
+# Loading work.Encoder
+# Loading work.Low_Pass_Filter_4ENC
+# Loading work.edge_detector
+# Loading work.gen_step_col
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 154
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 154
+# MACRO ./sim.do PAUSED at line 7
+add wave -position end  sim:/testbench/de0_cv1/ens_sys/gen_step_col_1/cnt_meas
+add wave -position end  sim:/testbench/de0_cv1/ens_sys/gen_step_col_1/r_distance
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Encoder
+# 
+# Top level modules:
+# 	Encoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Low_Pass_Filter_4ENC
+# 
+# Top level modules:
+# 	Low_Pass_Filter_4ENC
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module gen_step_col
+# 
+# Top level modules:
+# 	gen_step_col
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.DE0_CV
+# Loading work.Encoder
+# Loading work.Low_Pass_Filter_4ENC
+# Loading work.edge_detector
+# Loading work.gen_step_col
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# Break in Module testbench at ../tb/testbench.sv line 154
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 154
+# MACRO ./sim.do PAUSED at line 7
+add wave -position end  sim:/testbench/de0_cv1/ens_sys/gen_step_col_1/r_distance
+add wave -position 0  sim:/testbench/de0_cv1/ens_sys/gen_step_col_1/cnt_meas
+add wave -position end  sim:/testbench/de0_cv1/ens_sys/gen_step_col_1/step_col
+add wave -position 2  sim:/testbench/de0_cv1/ens_sys/gen_step_col_1/cnt
+add wave -position 3  sim:/testbench/de0_cv1/ens_sys/gen_step_col_1/mul_result
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/code/sv_project/LAB5/LAB5_1/simulation/modelsim/wave.do

@@ -1,0 +1,229 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\code\sv_project\LAB10\DE0_CV_SPI\simulation\modelsim
+vDE0_CV
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z2 !s100 VD[NY3Yd<jWYRA:?m;mj^0
+Z3 IZ;]OXNL`SFL7nDmz3B?1P2
+Z4 V_FB=BbUiGKAcbT:1SE[Sn3
+Z5 !s105 DE0_CV_sv_unit
+S1
+Z6 dD:\code\sv_project\LAB10\DE0_CV_SPI\simulation\modelsim
+Z7 w1684290033
+Z8 8../../design/DE0_CV.sv
+Z9 F../../design/DE0_CV.sv
+L0 6
+Z10 OV;L;10.1d;51
+r1
+31
+Z11 !s90 -reportprogress|300|-sv|../../design/DE0_CV.sv|
+Z12 o-sv -O0
+Z13 n@d@e0_@c@v
+Z14 !s108 1684889226.248000
+Z15 !s107 ../../design/DE0_CV.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vedge_detector
+R1
+Z16 !s100 W6ga[WbX>HYBOh5^laalO0
+Z17 IYd5G:BQLHBAaSi;gNcg`d3
+Z18 V7B@]RzI4E@I8<do;dmMH:0
+Z19 !s105 edge_detector_sv_unit
+S1
+R6
+Z20 w1683674321
+Z21 8../../design/edge_detector.sv
+Z22 F../../design/edge_detector.sv
+L0 1
+R10
+r1
+31
+Z23 !s90 -reportprogress|300|-sv|../../design/edge_detector.sv|
+R12
+!i10b 1
+!s85 0
+Z24 !s108 1684889226.884000
+Z25 !s107 ../../design/edge_detector.sv|
+!s101 -O0
+vedge_detector_pos
+R1
+!i10b 1
+Z26 !s100 lfL2h1JFehdYPiKX9Bdfi0
+Z27 Ie5RXQSbGn[6P_^RnTZ7CZ3
+Z28 VL]0>=EAX85DnkQ0YTGn7h3
+Z29 !s105 edge_detector_pos_sv_unit
+S1
+R6
+Z30 w1683674316
+Z31 8../../design/edge_detector_pos.sv
+Z32 F../../design/edge_detector_pos.sv
+L0 2
+R10
+r1
+!s85 0
+31
+!s108 1684889227.259000
+!s107 ../../design/edge_detector_pos.sv|
+Z33 !s90 -reportprogress|300|-sv|../../design/edge_detector_pos.sv|
+!s101 -O0
+R12
+vfifo
+R1
+Z34 !s100 Z8lORfBAdni4V`cIiMib;2
+Z35 IoJ0bJjTkQYTIg6C]?j7WY3
+Z36 Vz<Q?FfXSDnbZ5GYol:7RC0
+Z37 !s105 fifo_v_unit
+S1
+R6
+Z38 w1684295816
+Z39 8../../fifo.v
+Z40 F../../fifo.v
+L0 40
+R10
+r1
+31
+Z41 !s90 -reportprogress|300|-sv|../../fifo.v|
+R12
+Z42 !s108 1684889225.891000
+Z43 !s107 ../../fifo.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vpll
+R1
+Z44 !s100 d@]RKP4VMFnS[MclECF[_0
+Z45 IVWVAbjoR60=`XkH`SOW=M1
+Z46 VEAj1PL?[eCH7A<jZ<JYdz0
+Z47 !s105 pll_v_unit
+S1
+R6
+Z48 w1682520971
+Z49 8../../pll.v
+Z50 F../../pll.v
+L0 8
+R10
+r1
+31
+Z51 !s90 -reportprogress|300|-sv|../../pll.v|
+R12
+Z52 !s108 1684889225.534000
+Z53 !s107 ../../pll.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vpll_0002
+R1
+Z54 !s100 ;I86VM9R;08fCk9hjo>9h2
+Z55 I6Il84^5:9fIdCFEZY5oeX0
+Z56 VFf[1We>dB4O=`ZlFm^X0d0
+Z57 !s105 pll_0002_v_unit
+S1
+R6
+Z58 w1682520953
+Z59 8../../pll/pll_0002.v
+Z60 F../../pll/pll_0002.v
+L0 2
+R10
+r1
+31
+Z61 !s90 -reportprogress|300|-sv|../../pll/pll_0002.v|
+R12
+Z62 !s108 1684889226.012000
+Z63 !s107 ../../pll/pll_0002.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSPI
+R1
+Z64 InShHcnGe9<9[SgHIF>8NK1
+Z65 VUORXSDf?n;=79<kh4M[o50
+Z66 !s105 SPI_sv_unit
+S1
+R6
+Z67 w1684889219
+Z68 8../../design/SPI.sv
+Z69 F../../design/SPI.sv
+L0 4
+R10
+r1
+31
+Z70 !s90 -reportprogress|300|-sv|../../design/SPI.sv|
+R12
+Z71 n@s@p@i
+Z72 !s100 l3oG]26>YHWI?PoK6i^Y`1
+Z73 !s108 1684889226.340000
+Z74 !s107 ../../design/SPI.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vSPI_rx
+R1
+Z75 !s100 7AF8P9BnV6>D0Q]`_CmF;1
+Z76 IBmORhPTUBO7U:RU6=@XVo3
+Z77 V2MjV=I:QJecU=W`NKDm6T3
+Z78 !s105 SPI_rx_sv_unit
+S1
+R6
+Z79 w1682789174
+Z80 8../../design/SPI_rx.sv
+Z81 F../../design/SPI_rx.sv
+L0 1
+R10
+r1
+31
+Z82 !s90 -reportprogress|300|-sv|../../design/SPI_rx.sv|
+R12
+Z83 n@s@p@i_rx
+Z84 !s108 1684889226.434000
+Z85 !s107 ../../design/SPI_rx.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vSPI_tx
+R1
+Z86 !s100 OSA9ci^L3TZaOCb?W75@D1
+Z87 InC@V8PgZJ4S2XgcK_D@M:2
+Z88 VUT3HgMA6f`39SgS66lRkV0
+Z89 !s105 SPI_tx_sv_unit
+S1
+R6
+Z90 w1684283089
+Z91 8../../design/SPI_tx.sv
+Z92 F../../design/SPI_tx.sv
+L0 1
+R10
+r1
+31
+Z93 !s90 -reportprogress|300|-sv|../../design/SPI_tx.sv|
+R12
+Z94 n@s@p@i_tx
+Z95 !s108 1684889226.764000
+Z96 !s107 ../../design/SPI_tx.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vtb_spi
+R1
+Z97 !s100 :mD2@Hzdf=7]dCR_NLd^k2
+Z98 Ib__K3Z`TYoADK8>M3<6fC1
+Z99 V5gFWZzA<^g_AConzEQZe62
+Z100 !s105 tb_spi_sv_unit
+S1
+R6
+Z101 w1684887436
+Z102 8../tb/tb_spi.sv
+Z103 F../tb/tb_spi.sv
+L0 3
+R10
+r1
+31
+Z104 !s90 -reportprogress|300|-sv|../tb/tb_spi.sv|
+R12
+Z105 !s108 1684889225.309000
+Z106 !s107 ../tb/tb_spi.sv|
+!i10b 1
+!s85 0
+!s101 -O0

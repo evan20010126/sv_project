@@ -1,0 +1,115 @@
+# Reading D:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do DE0_CV_run_msim_rtl_systemverilog.do 
+# if ![file isdirectory DE0_CV_iputf_libs] {
+# 	file mkdir DE0_CV_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vlog "D:/code/sv_project/LAB8/DE0_CV_SPI/pll_sim/pll.vo"
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# 
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB8/DE0_CV_SPI/design {D:/code/sv_project/LAB8/DE0_CV_SPI/design/edge_detector_pos.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector_pos
+# 
+# Top level modules:
+# 	edge_detector_pos
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB8/DE0_CV_SPI/design {D:/code/sv_project/LAB8/DE0_CV_SPI/design/edge_detector.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB8/DE0_CV_SPI/design {D:/code/sv_project/LAB8/DE0_CV_SPI/design/SPI.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI
+# 
+# Top level modules:
+# 	SPI
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB8/DE0_CV_SPI/design {D:/code/sv_project/LAB8/DE0_CV_SPI/design/DE0_CV.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# 
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_0002
+# 
+# Top level modules:
+# 	pll_0002
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI
+# 
+# Top level modules:
+# 	SPI
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_rx
+# 
+# Top level modules:
+# 	SPI_rx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector_pos
+# 
+# Top level modules:
+# 	edge_detector_pos
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_spi 
+# Loading sv_std.std
+# Loading work.tb_spi
+# Loading work.DE0_CV
+# Loading work.SPI
+# Loading work.edge_detector_pos
+# Loading work.edge_detector
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MARCEL-PC  ProcessID: 3100
+# 
+#           Attempting to use alternate WLF file "./wlftrzkf7n".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftrzkf7n
+# 
+# Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# Simulation Breakpoint: Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# MACRO ./sim.do PAUSED at line 8

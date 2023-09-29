@@ -1,0 +1,1056 @@
+# Reading D:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do DE0_CV_run_msim_rtl_systemverilog.do 
+# if ![file isdirectory DE0_CV_iputf_libs] {
+# 	file mkdir DE0_CV_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vlog "D:/code/sv_project/LAB9/DE0_CV_SPI/pll_sim/pll.vo"
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# 
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB9/DE0_CV_SPI/design {D:/code/sv_project/LAB9/DE0_CV_SPI/design/edge_detector_pos.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector_pos
+# 
+# Top level modules:
+# 	edge_detector_pos
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB9/DE0_CV_SPI/design {D:/code/sv_project/LAB9/DE0_CV_SPI/design/edge_detector.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB9/DE0_CV_SPI/design {D:/code/sv_project/LAB9/DE0_CV_SPI/design/SPI_tx.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_tx
+# 
+# Top level modules:
+# 	SPI_tx
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB9/DE0_CV_SPI/design {D:/code/sv_project/LAB9/DE0_CV_SPI/design/SPI.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI
+# 
+# Top level modules:
+# 	SPI
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB9/DE0_CV_SPI/design {D:/code/sv_project/LAB9/DE0_CV_SPI/design/DE0_CV.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# 
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_0002
+# 
+# Top level modules:
+# 	pll_0002
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI
+# 
+# Top level modules:
+# 	SPI
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_rx
+# 
+# Top level modules:
+# 	SPI_rx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_tx
+# 
+# Top level modules:
+# 	SPI_tx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector_pos
+# 
+# Top level modules:
+# 	edge_detector_pos
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_spi 
+# Loading sv_std.std
+# Loading work.tb_spi
+# Loading work.DE0_CV
+# Loading work.SPI
+# Loading work.edge_detector_pos
+# Loading work.edge_detector
+# Loading work.SPI_tx
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MARCEL-PC  ProcessID: 3100
+# 
+#           Attempting to use alternate WLF file "./wlfta5j1wt".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfta5j1wt
+# 
+# Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# Simulation Breakpoint: Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# MACRO ./sim.do PAUSED at line 8
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_0002
+# 
+# Top level modules:
+# 	pll_0002
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI
+# 
+# Top level modules:
+# 	SPI
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_rx
+# 
+# Top level modules:
+# 	SPI_rx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_tx
+# 
+# Top level modules:
+# 	SPI_tx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector_pos
+# 
+# Top level modules:
+# 	edge_detector_pos
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_spi 
+# Loading sv_std.std
+# Loading work.tb_spi
+# Loading work.DE0_CV
+# Loading work.SPI
+# Loading work.edge_detector_pos
+# Loading work.edge_detector
+# Loading work.SPI_tx
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MARCEL-PC  ProcessID: 3100
+# 
+#           Attempting to use alternate WLF file "./wlftak5qjd".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftak5qjd
+# 
+# Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# Simulation Breakpoint: Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# MACRO ./sim.do PAUSED at line 8
+add wave -position 3  sim:/tb_spi/DE0_CV1/SPI/ns
+add wave -position 3  sim:/tb_spi/DE0_CV1/SPI/ps
+add wave -position 18  sim:/tb_spi/DE0_CV1/SPI/write_en
+add wave -position end  sim:/tb_spi/DE0_CV1/SPI/req
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_0002
+# 
+# Top level modules:
+# 	pll_0002
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI
+# 
+# Top level modules:
+# 	SPI
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_rx
+# 
+# Top level modules:
+# 	SPI_rx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_tx
+# 
+# Top level modules:
+# 	SPI_tx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector_pos
+# 
+# Top level modules:
+# 	edge_detector_pos
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_spi 
+# Loading sv_std.std
+# Loading work.tb_spi
+# Loading work.DE0_CV
+# Loading work.SPI
+# Loading work.edge_detector_pos
+# Loading work.edge_detector
+# Loading work.SPI_tx
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MARCEL-PC  ProcessID: 3100
+# 
+#           Attempting to use alternate WLF file "./wlftjfensg".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftjfensg
+# 
+# ** Error: (vish-4014) No objects found matching '/tb_spi/data_debug'.
+# Executing ONERROR command at macro ./wave.do line 10
+# Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# Simulation Breakpoint: Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# MACRO ./sim.do PAUSED at line 8
+add wave -position end  sim:/tb_spi/DE0_CV1/SPI/addr
+add wave -position end  sim:/tb_spi/DE0_CV1/SPI/r_w
+add wave -position end  sim:/tb_spi/DE0_CV1/SPI/dontcare
+add wave -position end  sim:/tb_spi/DE0_CV1/SPI/data
+add wave -position end  sim:/tb_spi/DE0_CV1/SPI/data_rdy2
+add wave -position end  sim:/tb_spi/DE0_CV1/SPI/rst_cnt
+add wave -position 21  sim:/tb_spi/DE0_CV1/SPI/data_rdy
+add wave -position 3  sim:/tb_spi/DE0_CV1/SPI/ps
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_0002
+# 
+# Top level modules:
+# 	pll_0002
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI
+# 
+# Top level modules:
+# 	SPI
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_rx
+# 
+# Top level modules:
+# 	SPI_rx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_tx
+# 
+# Top level modules:
+# 	SPI_tx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector_pos
+# 
+# Top level modules:
+# 	edge_detector_pos
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_spi 
+# Loading sv_std.std
+# Loading work.tb_spi
+# Loading work.DE0_CV
+# Loading work.SPI
+# Loading work.edge_detector_pos
+# Loading work.edge_detector
+# Loading work.SPI_tx
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MARCEL-PC  ProcessID: 3100
+# 
+#           Attempting to use alternate WLF file "./wlft7rkj4g".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft7rkj4g
+# 
+# ** Error: (vish-4014) No objects found matching '/tb_spi/data_debug'.
+# Executing ONERROR command at macro ./wave.do line 10
+# Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# Simulation Breakpoint: Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# MACRO ./sim.do PAUSED at line 8
+add wave -position end  sim:/tb_spi/DE0_CV1/SPI/addr
+add wave -position end  sim:/tb_spi/DE0_CV1/SPI/r_w
+add wave -position end  sim:/tb_spi/DE0_CV1/SPI/dontcare
+add wave -position end  sim:/tb_spi/DE0_CV1/SPI/data
+add wave -position 2  sim:/tb_spi/DE0_CV1/SPI/ps
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_0002
+# 
+# Top level modules:
+# 	pll_0002
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI
+# 
+# Top level modules:
+# 	SPI
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_rx
+# 
+# Top level modules:
+# 	SPI_rx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_tx
+# 
+# Top level modules:
+# 	SPI_tx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector_pos
+# 
+# Top level modules:
+# 	edge_detector_pos
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_spi 
+# Loading sv_std.std
+# Loading work.tb_spi
+# Loading work.DE0_CV
+# Loading work.SPI
+# Loading work.edge_detector_pos
+# Loading work.edge_detector
+# Loading work.SPI_tx
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MARCEL-PC  ProcessID: 3100
+# 
+#           Attempting to use alternate WLF file "./wlftdvvaiw".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftdvvaiw
+# 
+# ** Error: (vish-4014) No objects found matching '/tb_spi/data_debug'.
+# Executing ONERROR command at macro ./wave.do line 10
+# Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# Simulation Breakpoint: Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# MACRO ./sim.do PAUSED at line 8
+add wave -position end  sim:/tb_spi/DE0_CV1/SPI/addr
+add wave -position end  sim:/tb_spi/DE0_CV1/SPI/r_w
+add wave -position end  sim:/tb_spi/DE0_CV1/SPI/dontcare
+add wave -position end  sim:/tb_spi/DE0_CV1/SPI/data
+add wave -position end  sim:/tb_spi/DE0_CV1/SPI/req
+add wave -position 3  sim:/tb_spi/DE0_CV1/SPI/SPI_tx_test/ps
+add wave -position end  sim:/tb_spi/DE0_CV1/SPI/SPI_tx_test/tmp_prepare_data
+add wave -position end  sim:/tb_spi/DE0_CV1/SPI/SPI_tx_test/load_prepare_data
+add wave -position end  sim:/tb_spi/DE0_CV1/SPI/SPI_tx_test/tmp_prepare_data
+add wave -position 24  sim:/tb_spi/DE0_CV1/SPI/prepare_data
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/code/sv_project/LAB9/DE0_CV_SPI/simulation/modelsim/wave.do
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_0002
+# 
+# Top level modules:
+# 	pll_0002
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI
+# 
+# Top level modules:
+# 	SPI
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_rx
+# 
+# Top level modules:
+# 	SPI_rx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_tx
+# 
+# Top level modules:
+# 	SPI_tx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector_pos
+# 
+# Top level modules:
+# 	edge_detector_pos
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_spi 
+# Loading sv_std.std
+# Loading work.tb_spi
+# Loading work.DE0_CV
+# Loading work.SPI
+# Loading work.edge_detector_pos
+# Loading work.edge_detector
+# Loading work.SPI_tx
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MARCEL-PC  ProcessID: 3100
+# 
+#           Attempting to use alternate WLF file "./wlftciazi7".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftciazi7
+# 
+# Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# Simulation Breakpoint: Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# MACRO ./sim.do PAUSED at line 8
+add wave -position 25  sim:/tb_spi/DE0_CV1/SPI/SPI_tx_test/req
+add wave -position 26  sim:/tb_spi/DE0_CV1/SPI/SPI_tx_test/load_prepare_data
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_0002
+# 
+# Top level modules:
+# 	pll_0002
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI
+# 
+# Top level modules:
+# 	SPI
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_rx
+# 
+# Top level modules:
+# 	SPI_rx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_tx
+# 
+# Top level modules:
+# 	SPI_tx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector_pos
+# 
+# Top level modules:
+# 	edge_detector_pos
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_spi 
+# Loading sv_std.std
+# Loading work.tb_spi
+# Loading work.DE0_CV
+# Loading work.SPI
+# Loading work.edge_detector_pos
+# Loading work.edge_detector
+# Loading work.SPI_tx
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MARCEL-PC  ProcessID: 3100
+# 
+#           Attempting to use alternate WLF file "./wlfty42xms".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfty42xms
+# 
+# Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# Simulation Breakpoint: Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# MACRO ./sim.do PAUSED at line 8
+add wave -position 3  sim:/tb_spi/DE0_CV1/SPI/ps
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_0002
+# 
+# Top level modules:
+# 	pll_0002
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI
+# 
+# Top level modules:
+# 	SPI
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_rx
+# 
+# Top level modules:
+# 	SPI_rx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_tx
+# 
+# Top level modules:
+# 	SPI_tx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector_pos
+# 
+# Top level modules:
+# 	edge_detector_pos
+do sim
+# Cannot open macro file: sim
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_spi 
+# Loading sv_std.std
+# Loading work.tb_spi
+# Loading work.DE0_CV
+# Loading work.SPI
+# Loading work.edge_detector_pos
+# Loading work.edge_detector
+# Loading work.SPI_tx
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MARCEL-PC  ProcessID: 3100
+# 
+#           Attempting to use alternate WLF file "./wlft6e1whc".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft6e1whc
+# 
+# Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# Simulation Breakpoint: Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# MACRO ./sim.do PAUSED at line 8
+add wave -position 4  sim:/tb_spi/DE0_CV1/SPI/ps
+add wave -position 4  sim:/tb_spi/DE0_CV1/SPI/ns
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_0002
+# 
+# Top level modules:
+# 	pll_0002
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI
+# 
+# Top level modules:
+# 	SPI
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_rx
+# 
+# Top level modules:
+# 	SPI_rx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_tx
+# 
+# Top level modules:
+# 	SPI_tx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector_pos
+# 
+# Top level modules:
+# 	edge_detector_pos
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_spi 
+# Loading sv_std.std
+# Loading work.tb_spi
+# Loading work.DE0_CV
+# Loading work.SPI
+# Loading work.edge_detector_pos
+# Loading work.edge_detector
+# Loading work.SPI_tx
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MARCEL-PC  ProcessID: 3100
+# 
+#           Attempting to use alternate WLF file "./wlftk2n4i0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftk2n4i0
+# 
+# Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# Simulation Breakpoint: Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# MACRO ./sim.do PAUSED at line 8
+add wave -position end  sim:/tb_spi/DE0_CV1/SPI/SPI_tx_test/shift_en
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_0002
+# 
+# Top level modules:
+# 	pll_0002
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI
+# 
+# Top level modules:
+# 	SPI
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_rx
+# 
+# Top level modules:
+# 	SPI_rx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_tx
+# 
+# Top level modules:
+# 	SPI_tx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector_pos
+# 
+# Top level modules:
+# 	edge_detector_pos
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_spi 
+# Loading sv_std.std
+# Loading work.tb_spi
+# Loading work.DE0_CV
+# Loading work.SPI
+# Loading work.edge_detector_pos
+# Loading work.edge_detector
+# Loading work.SPI_tx
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MARCEL-PC  ProcessID: 3100
+# 
+#           Attempting to use alternate WLF file "./wlft01mxf0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft01mxf0
+# 
+# Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# Simulation Breakpoint: Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# MACRO ./sim.do PAUSED at line 8
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_0002
+# 
+# Top level modules:
+# 	pll_0002
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI
+# 
+# Top level modules:
+# 	SPI
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_rx
+# 
+# Top level modules:
+# 	SPI_rx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_tx
+# 
+# Top level modules:
+# 	SPI_tx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector_pos
+# 
+# Top level modules:
+# 	edge_detector_pos
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_spi 
+# Loading sv_std.std
+# Loading work.tb_spi
+# Loading work.DE0_CV
+# Loading work.SPI
+# Loading work.edge_detector_pos
+# Loading work.edge_detector
+# Loading work.SPI_tx
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MARCEL-PC  ProcessID: 3100
+# 
+#           Attempting to use alternate WLF file "./wlft93j69j".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft93j69j
+# 
+# Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# Simulation Breakpoint: Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# MACRO ./sim.do PAUSED at line 8
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_0002
+# 
+# Top level modules:
+# 	pll_0002
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI
+# 
+# Top level modules:
+# 	SPI
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_rx
+# 
+# Top level modules:
+# 	SPI_rx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_tx
+# 
+# Top level modules:
+# 	SPI_tx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector_pos
+# 
+# Top level modules:
+# 	edge_detector_pos
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_spi 
+# Loading sv_std.std
+# Loading work.tb_spi
+# Loading work.DE0_CV
+# Loading work.SPI
+# Loading work.edge_detector_pos
+# Loading work.edge_detector
+# Loading work.SPI_tx
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MARCEL-PC  ProcessID: 3100
+# 
+#           Attempting to use alternate WLF file "./wlftx9i3f6".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftx9i3f6
+# 
+# Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# Simulation Breakpoint: Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# MACRO ./sim.do PAUSED at line 8
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_0002
+# 
+# Top level modules:
+# 	pll_0002
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI
+# 
+# Top level modules:
+# 	SPI
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_rx
+# 
+# Top level modules:
+# 	SPI_rx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_tx
+# 
+# Top level modules:
+# 	SPI_tx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector_pos
+# 
+# Top level modules:
+# 	edge_detector_pos
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_spi 
+# Loading sv_std.std
+# Loading work.tb_spi
+# Loading work.DE0_CV
+# Loading work.SPI
+# Loading work.edge_detector_pos
+# Loading work.edge_detector
+# Loading work.SPI_tx
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MARCEL-PC  ProcessID: 3100
+# 
+#           Attempting to use alternate WLF file "./wlfty3ajmb".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfty3ajmb
+# 
+# Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# Simulation Breakpoint: Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# MACRO ./sim.do PAUSED at line 8
+add wave -position end  sim:/tb_spi/DE0_CV1/SPI/SPI_tx_test/miso
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_0002
+# 
+# Top level modules:
+# 	pll_0002
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI
+# 
+# Top level modules:
+# 	SPI
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_rx
+# 
+# Top level modules:
+# 	SPI_rx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_tx
+# 
+# Top level modules:
+# 	SPI_tx
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector_pos
+# 
+# Top level modules:
+# 	edge_detector_pos
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_spi 
+# Loading sv_std.std
+# Loading work.tb_spi
+# Loading work.DE0_CV
+# Loading work.SPI
+# Loading work.edge_detector_pos
+# Loading work.edge_detector
+# Loading work.SPI_tx
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MARCEL-PC  ProcessID: 3100
+# 
+#           Attempting to use alternate WLF file "./wlftg6f02z".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftg6f02z
+# 
+# Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# Simulation Breakpoint: Break in Module tb_spi at ../tb/tb_spi.sv line 181
+# MACRO ./sim.do PAUSED at line 8
+add wave -position end  sim:/tb_spi/DE0_CV1/SPI/SPI_tx_test/miso
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/code/sv_project/LAB9/DE0_CV_SPI/simulation/modelsim/wave.do

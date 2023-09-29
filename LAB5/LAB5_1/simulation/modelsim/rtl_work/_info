@@ -1,0 +1,162 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\code\sv_project\LAB5\LAB5_1\simulation\modelsim
+vDE0_CV
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z2 IeFO?=TbX9U:DkSZB9NzS<1
+Z3 V87O7mTMO]`OD`Za2LCe@d2
+Z4 !s105 DE0_CV_sv_unit
+S1
+Z5 dD:\code\sv_project\LAB5\LAB5_1\simulation\modelsim
+Z6 w1681222377
+Z7 8../../design/DE0_CV.sv
+Z8 F../../design/DE0_CV.sv
+L0 7
+Z9 OV;L;10.1d;51
+r1
+31
+Z10 !s90 -reportprogress|300|../../design/DE0_CV.sv|
+o-O0
+Z11 n@d@e0_@c@v
+Z12 !s100 J41V2af73HWVKNSg8@UZN0
+Z13 !s108 1681222383.681000
+Z14 !s107 ../../design/DE0_CV.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vedge_detector
+R1
+Z15 !s100 z`e3GN3]f?0GU8_MoeLTe2
+Z16 Ig44FfcaXiVYjJi1QAWC0^3
+Z17 V7B@]RzI4E@I8<do;dmMH:0
+Z18 !s105 edge_detector_sv_unit
+S1
+R5
+Z19 w1681221108
+Z20 8../../design/edge_detector.sv
+Z21 F../../design/edge_detector.sv
+L0 3
+R9
+r1
+31
+Z22 !s90 -reportprogress|300|../../design/edge_detector.sv|
+o-O0
+Z23 !s108 1681222383.895000
+Z24 !s107 ../../design/edge_detector.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vEncoder
+R1
+Z25 !s100 =C>GczAFLg[Rdz;;MS?`V3
+Z26 IiDTAhC::M:b1122O0_h=:0
+Z27 V?6[QJ6Kfi;;_:dFOoK[722
+Z28 !s105 Encoder_sv_unit
+S1
+R5
+Z29 w1681222281
+Z30 8../../design/Encoder.sv
+Z31 F../../design/Encoder.sv
+L0 3
+R9
+r1
+31
+Z32 !s90 -reportprogress|300|../../design/Encoder.sv|
+o-O0
+Z33 n@encoder
+Z34 !s108 1681222383.797000
+Z35 !s107 ../../design/Encoder.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vgen_step_col
+R1
+!i10b 1
+Z36 !s100 ROf@b^HGcYSnNPgB`RP1o2
+Z37 IG0Sa>JWPNV4<I3JO0zo420
+Z38 VmgkzTQ520<F:18j:]1A?m2
+Z39 !s105 gen_step_col_sv_unit
+S1
+R5
+Z40 w1681221914
+Z41 8../../design/gen_step_col.sv
+Z42 F../../design/gen_step_col.sv
+L0 3
+R9
+r1
+!s85 0
+31
+!s108 1681222384.555000
+!s107 ../../design/gen_step_col.sv|
+Z43 !s90 -reportprogress|300|../../design/gen_step_col.sv|
+!s101 -O0
+o-O0
+vLow_Pass_Filter_4ENC
+R1
+Z44 !s100 `NjF?S6[:6dI=0=9Z14MF2
+Z45 ITIUn4_PF5l8FnnaSAZ3M52
+Z46 V9B[WD_ERLbfC8G1<V^7E40
+Z47 !s105 Low_Pass_Filter_4ENC_sv_unit
+S1
+R5
+Z48 w1681221122
+Z49 8../../design/Low_Pass_Filter_4ENC.sv
+Z50 F../../design/Low_Pass_Filter_4ENC.sv
+L0 47
+R9
+r1
+31
+Z51 !s90 -reportprogress|300|../../design/Low_Pass_Filter_4ENC.sv|
+o-O0
+Z52 n@low_@pass_@filter_4@e@n@c
+!i10b 1
+!s85 0
+Z53 !s108 1681222384.260000
+Z54 !s107 ../../design/Low_Pass_Filter_4ENC.sv|
+!s101 -O0
+vsub_4bit
+R1
+Z55 !s100 o_^ZUcQ`_@ZFhFgmgYHNX1
+Z56 IWNF@6nj;=F2Z1X7om?iAh3
+Z57 VFZ^Po[bfOnae;FdeY27@=1
+Z58 !s105 sub_4bit_sv_unit
+S1
+R5
+Z59 w1676964998
+Z60 8../../design/sub_4bit.sv
+Z61 F../../design/sub_4bit.sv
+L0 1
+R9
+r1
+31
+Z62 !s90 -reportprogress|300|../../design/sub_4bit.sv|
+o-O0
+Z63 !s108 1681222383.347000
+Z64 !s107 ../../design/sub_4bit.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vtestbench
+R1
+Z65 !s100 @TnC?`2EBKBKlkWWA7TH>1
+Z66 I<zZHNId:7HzLUb9L]hm6i3
+Z67 VhGfW:390DM[oDMzegDH9`2
+Z68 !s105 testbench_sv_unit
+S1
+R5
+Z69 w1681221472
+Z70 8../tb/testbench.sv
+Z71 F../tb/testbench.sv
+L0 2
+R9
+r1
+31
+Z72 !s90 -reportprogress|300|../tb/testbench.sv|
+o-O0
+Z73 !s108 1681222383.150000
+Z74 !s107 ../tb/testbench.sv|
+!i10b 1
+!s85 0
+!s101 -O0

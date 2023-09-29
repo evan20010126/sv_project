@@ -1,0 +1,68 @@
+module SPI_tx(
+	//------output--------------------------------
+	output logic 		miso,
+    output logic        ack,
+	
+	//------input---------------------------------	
+	input [15:0] prepare_data,
+    input 		 		sclk_palse,			//傳輸速度: 10MHz
+    input 		 		clk,			//系統 clk: 100MHz
+	input 		 		reset,			//系統 reset
+    input               req
+
+	);
+
+logic [5:0] cnt;
+logic rst_cnt;
+logic cnt_en;
+always_ff @(posedge clk) begin
+	if (rst_cnt || reset) cnt <= 0;
+	else if (cnt_en) cnt <= cnt + 1;
+	else cnt <= cnt;
+end
+
+/*FSM*/
+typedef enum { T0, T1, T2, T3, T4, T5 } fsm_state_enum;
+fsm_state_enum ps, ns;
+
+always_ff @(posedge clk) begin
+	if (reset) ps <= T0;
+	else ps <= ns;
+end
+
+logic send;
+always_ff @(posedge clk) begin
+    if (send) miso <= prepare_data[0];
+end
+
+logic shift_en;
+always_ff @(posedge clk) begin
+    if (shift_en) prepare_data <= {1'b0, prepare_data[14:0]}
+end
+
+always_comb
+begin
+    unique case(ps)
+        T0: ns = T1;
+
+        T1: begin
+            if (req) begin
+                ns = T2;
+                rst_cnt = 1;
+            end
+        end
+
+        T2: begin
+            if (cnt >= 16) begin
+				rst_cnt = 1;
+                ack = 1;
+                ns = T1;
+			end
+			else if (sclk_palse) begin
+				send = 1;
+                shift_en = 1;
+				cnt_en = 1;
+			end
+        end
+    endcase
+end

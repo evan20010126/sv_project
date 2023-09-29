@@ -1,0 +1,140 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\code\sv_project\LAB4_2\simulation\modelsim
+vDE0_CV
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z2 !s100 ?6iJUEFl`mlDODFL5dN[j3
+Z3 Ik`F`N?KT[CHfN_?@@KncW0
+Z4 V7H5796_0G4Q[4EaU;Z?Iz2
+Z5 !s105 DE0_CV_sv_unit
+S1
+Z6 dD:\code\sv_project\LAB4_2\simulation\modelsim
+Z7 w1677740707
+Z8 8../../design/DE0_CV.sv
+Z9 F../../design/DE0_CV.sv
+L0 6
+Z10 OV;L;10.1d;51
+r1
+31
+Z11 !s90 -reportprogress|300|../../design/DE0_CV.sv|
+o-O0
+Z12 n@d@e0_@c@v
+Z13 !s108 1680049893.125000
+Z14 !s107 ../../design/DE0_CV.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vedge_detector
+R1
+Z15 !s100 OQoJkn2oI5T;[Bm=:KFMK0
+Z16 I>8P6ejD2o3CgS374ZWok02
+Z17 V7B@]RzI4E@I8<do;dmMH:0
+Z18 !s105 edge_detector_sv_unit
+S1
+R6
+Z19 w1680048922
+Z20 8../../design/edge_detector.sv
+Z21 F../../design/edge_detector.sv
+L0 1
+R10
+r1
+31
+Z22 !s90 -reportprogress|300|../../design/edge_detector.sv|
+o-O0
+!i10b 1
+!s85 0
+Z23 !s108 1680049893.348000
+Z24 !s107 ../../design/edge_detector.sv|
+!s101 -O0
+vEncoder
+R1
+Z25 ISZDMl1>;D^XbkN1>OTTcd2
+Z26 VUG<KZM3l[D3oebO>z9hF>3
+Z27 !s105 Encoder_sv_unit
+S1
+R6
+Z28 w1680049883
+Z29 8../../design/Encoder.sv
+Z30 F../../design/Encoder.sv
+L0 1
+R10
+r1
+31
+Z31 !s90 -reportprogress|300|../../design/Encoder.sv|
+o-O0
+Z32 n@encoder
+Z33 !s100 _4[7<dE=5Ve@ASPBi91J92
+Z34 !s108 1680049893.248000
+Z35 !s107 ../../design/Encoder.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vLow_Pass_Filter_4ENC
+R1
+!i10b 1
+Z36 !s100 eCa;?TH;hFoBPKzbToE`U1
+Z37 IF=[cQUnl9cgVQF0VY@We10
+Z38 V9B[WD_ERLbfC8G1<V^7E40
+Z39 !s105 Low_Pass_Filter_4ENC_sv_unit
+S1
+R6
+Z40 w1680045271
+Z41 8../../design/Low_Pass_Filter_4ENC.sv
+Z42 F../../design/Low_Pass_Filter_4ENC.sv
+L0 45
+R10
+r1
+!s85 0
+31
+!s108 1680049893.776000
+!s107 ../../design/Low_Pass_Filter_4ENC.sv|
+Z43 !s90 -reportprogress|300|../../design/Low_Pass_Filter_4ENC.sv|
+!s101 -O0
+o-O0
+Z44 n@low_@pass_@filter_4@e@n@c
+vsub_4bit
+R1
+Z45 !s100 o_^ZUcQ`_@ZFhFgmgYHNX1
+Z46 IWNF@6nj;=F2Z1X7om?iAh3
+Z47 VFZ^Po[bfOnae;FdeY27@=1
+Z48 !s105 sub_4bit_sv_unit
+S1
+R6
+Z49 w1676964998
+Z50 8../../design/sub_4bit.sv
+Z51 F../../design/sub_4bit.sv
+L0 1
+R10
+r1
+31
+Z52 !s90 -reportprogress|300|../../design/sub_4bit.sv|
+o-O0
+Z53 !s108 1680049892.772000
+Z54 !s107 ../../design/sub_4bit.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vtestbench
+R1
+Z55 !s100 i:1z01:]>Ri>O8ImchbOU1
+Z56 I809_DQ5bkB`a:a64aY9972
+Z57 VhGfW:390DM[oDMzegDH9`2
+Z58 !s105 testbench_sv_unit
+S1
+R6
+Z59 w1680049478
+Z60 8../tb/testbench.sv
+Z61 F../tb/testbench.sv
+L0 1
+R10
+r1
+31
+Z62 !s90 -reportprogress|300|../tb/testbench.sv|
+o-O0
+Z63 !s108 1680049892.563000
+Z64 !s107 ../tb/testbench.sv|
+!i10b 1
+!s85 0
+!s101 -O0

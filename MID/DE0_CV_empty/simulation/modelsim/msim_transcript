@@ -1,0 +1,1215 @@
+# Reading D:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do DE0_CV_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+D:/code/sv_project/MID/DE0_CV_empty/design {D:/code/sv_project/MID/DE0_CV_empty/design/mod_c.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# ** Error: D:/code/sv_project/MID/DE0_CV_empty/design/mod_c.sv(4): near ";": syntax error, unexpected ';', expecting ')'
+# ** Error: D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./DE0_CV_run_msim_rtl_verilog.do line 8
+# D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -work work +incdir+D:/code/sv_project/MID/DE0_CV_empty/design {D:/code/sv_project/MID/DE0_CV_empty/design/mod_c.sv}"
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# ** Error: ../../design/top.sv(25): near ")": syntax error, unexpected ')', expecting .* or '.'
+# ** Error: ../../design/top.sv(55): near ".": syntax error, unexpected '.', expecting ')'
+# ** Error: ../../design/top.sv(69): near ".": syntax error, unexpected '.', expecting ')'
+# ** Error: D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./compile.do line 9
+# D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog ../../design/top.sv"
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# ** Error: ../../design/top.sv(35): (vlog-2730) Undefined variable: 'mod_a_ok'.
+# 
+# ** Error: ../../design/top.sv(41): (vlog-2730) Undefined variable: 'mod_c_ok'.
+# 
+# ** Error: D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./compile.do line 9
+# D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog ../../design/top.sv"
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# ** Error: ../../design/top.sv(45): 'mod_a_ok' already declared in this scope (top).
+# ** Error: ../../design/top.sv(45): 'mod_c_ok' already declared in this scope (top).
+# ** Error: D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./compile.do line 9
+# D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog ../../design/top.sv"
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arbiter
+# 
+# Top level modules:
+# 	arbiter
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arbiter
+# Loading work.mod_a
+# Loading work.mod_c
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MISKA  ProcessID: 23444
+# 
+#           Attempting to use alternate WLF file "./wlftayyc4z".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftayyc4z
+# 
+# ** Warning: (vsim-8315) ../../design/mod_a.sv(37): No condition is true in the unique/priority if/case statement.
+# 
+# Break in Module testbench at ../tb/testbench.sv line 32
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 32
+# MACRO ./sim.do PAUSED at line 8
+add wave -position end  sim:/testbench/top1/mod_a_ok
+add wave -position end  sim:/testbench/top1/mod_c_ok
+add wave -position end  sim:/testbench/top1/trg_c
+add wave -position end  sim:/testbench/top1/dff_a
+add wave -position end  sim:/testbench/top1/dff_b
+add wave -position end  sim:/testbench/top1/dff_c
+add wave -position 12  sim:/testbench/top1/mod_a_u1/cp1
+add wave -position 12  sim:/testbench/top1/mod_a_u1/a_ps
+add wave -position 12  sim:/testbench/top1/mod_a_u1/trg_a
+add wave -position 13  sim:/testbench/top1/mod_a_u1/a_ns
+add wave -position 13  sim:/testbench/top1/mod_a_u1/a_ps
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arbiter
+# 
+# Top level modules:
+# 	arbiter
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arbiter
+# Loading work.mod_a
+# Loading work.mod_c
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MISKA  ProcessID: 23444
+# 
+#           Attempting to use alternate WLF file "./wlftga05ak".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftga05ak
+# 
+# ** Warning: (vsim-8315) ../../design/mod_a.sv(37): No condition is true in the unique/priority if/case statement.
+# 
+# Break in Module testbench at ../tb/testbench.sv line 32
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 32
+# MACRO ./sim.do PAUSED at line 8
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arbiter
+# 
+# Top level modules:
+# 	arbiter
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arbiter
+# Loading work.mod_a
+# Loading work.mod_c
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MISKA  ProcessID: 23444
+# 
+#           Attempting to use alternate WLF file "./wlftdsibwf".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftdsibwf
+# 
+# ** Warning: (vsim-8315) ../../design/mod_a.sv(37): No condition is true in the unique/priority if/case statement.
+# 
+# Break in Module testbench at ../tb/testbench.sv line 32
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 32
+# MACRO ./sim.do PAUSED at line 8
+add wave -position 12  sim:/testbench/top1/mod_a_u1/rst
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arbiter
+# 
+# Top level modules:
+# 	arbiter
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arbiter
+# Loading work.mod_a
+# Loading work.mod_c
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MISKA  ProcessID: 23444
+# 
+#           Attempting to use alternate WLF file "./wlft8cnc95".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft8cnc95
+# 
+# ** Warning: (vsim-8315) ../../design/mod_a.sv(37): No condition is true in the unique/priority if/case statement.
+# 
+# Break in Module testbench at ../tb/testbench.sv line 32
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 32
+# MACRO ./sim.do PAUSED at line 8
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arbiter
+# 
+# Top level modules:
+# 	arbiter
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arbiter
+# Loading work.mod_a
+# Loading work.mod_c
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MISKA  ProcessID: 23444
+# 
+#           Attempting to use alternate WLF file "./wlfti5n6ff".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfti5n6ff
+# 
+# ** Warning: (vsim-8315) ../../design/mod_a.sv(37): No condition is true in the unique/priority if/case statement.
+# 
+# Break in Module testbench at ../tb/testbench.sv line 32
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 32
+# MACRO ./sim.do PAUSED at line 8
+add wave -position 11  sim:/testbench/rst
+add wave -position 12  sim:/testbench/top1/mod_a_u1/rst
+add wave -position 12  sim:/testbench/top1/mod_a_u1/a_ps
+add wave -position 13  sim:/testbench/top1/mod_a_u1/a_ns
+add wave -position 12  sim:/testbench/top1/mod_a_u1/trg_a
+add wave -position 12  sim:/testbench/top1/dff_a
+add wave -position 12  sim:/testbench/top1/trg_a
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arbiter
+# 
+# Top level modules:
+# 	arbiter
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arbiter
+# Loading work.mod_a
+# Loading work.mod_c
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MISKA  ProcessID: 23444
+# 
+#           Attempting to use alternate WLF file "./wlftyyws0v".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftyyws0v
+# 
+# ** Warning: (vsim-8315) ../../design/mod_a.sv(37): No condition is true in the unique/priority if/case statement.
+# 
+# Break in Module testbench at ../tb/testbench.sv line 32
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 32
+# MACRO ./sim.do PAUSED at line 8
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arbiter
+# 
+# Top level modules:
+# 	arbiter
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arbiter
+# Loading work.mod_a
+# Loading work.mod_c
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MISKA  ProcessID: 23444
+# 
+#           Attempting to use alternate WLF file "./wlft3ene9y".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft3ene9y
+# 
+# ** Warning: (vsim-8315) ../../design/mod_a.sv(37): No condition is true in the unique/priority if/case statement.
+# 
+# Break in Module testbench at ../tb/testbench.sv line 32
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 32
+# MACRO ./sim.do PAUSED at line 8
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arbiter
+# 
+# Top level modules:
+# 	arbiter
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arbiter
+# Loading work.mod_a
+# Loading work.mod_c
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MISKA  ProcessID: 23444
+# 
+#           Attempting to use alternate WLF file "./wlfti6vmt9".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfti6vmt9
+# 
+# ** Warning: (vsim-8315) ../../design/mod_a.sv(37): No condition is true in the unique/priority if/case statement.
+# 
+# Break in Module testbench at ../tb/testbench.sv line 32
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 32
+# MACRO ./sim.do PAUSED at line 8
+add wave -position 7  sim:/testbench/top1/trg_b
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arbiter
+# ** Error: ../../design/arbiter.sv(44): (vlog-2730) Undefined variable: 'STATE_STLL'.
+# 
+# ** Error: ../../design/arbiter.sv(49): near "STATE_B": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ../../design/arbiter.sv(55): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# 
+# ** Error: ../../design/arbiter.sv(55): 'STATE_C' already exists; must not be redefined as a generate block
+# ** Error: ../../design/arbiter.sv(55): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./compile.do line 10
+# D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog ../../design/arbiter.sv"
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arbiter
+# ** Error: ../../design/arbiter.sv(49): near "STATE_B": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ../../design/arbiter.sv(55): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# 
+# ** Error: ../../design/arbiter.sv(55): 'STATE_C' already exists; must not be redefined as a generate block
+# ** Error: ../../design/arbiter.sv(55): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./compile.do line 10
+# D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog ../../design/arbiter.sv"
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arbiter
+# Loading work.mod_a
+# Loading work.mod_c
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MISKA  ProcessID: 23444
+# 
+#           Attempting to use alternate WLF file "./wlftdb30gm".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftdb30gm
+# 
+# ** Warning: (vsim-8315) ../../design/mod_a.sv(37): No condition is true in the unique/priority if/case statement.
+# 
+# Break in Module testbench at ../tb/testbench.sv line 32
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 32
+# MACRO ./sim.do PAUSED at line 8
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arbiter
+# 
+# Top level modules:
+# 	arbiter
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arbiter
+# Loading work.mod_a
+# Loading work.mod_c
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MISKA  ProcessID: 23444
+# 
+#           Attempting to use alternate WLF file "./wlftnxkt8t".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftnxkt8t
+# 
+# ** Warning: (vsim-8315) ../../design/mod_a.sv(37): No condition is true in the unique/priority if/case statement.
+# 
+# Break in Module testbench at ../tb/testbench.sv line 32
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 32
+# MACRO ./sim.do PAUSED at line 8
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arbiter
+# 
+# Top level modules:
+# 	arbiter
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arbiter
+# Loading work.mod_a
+# Loading work.mod_c
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MISKA  ProcessID: 23444
+# 
+#           Attempting to use alternate WLF file "./wlft2wc2jr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft2wc2jr
+# 
+# ** Warning: (vsim-8315) ../../design/mod_a.sv(37): No condition is true in the unique/priority if/case statement.
+# 
+# Break in Module testbench at ../tb/testbench.sv line 33
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 33
+# MACRO ./sim.do PAUSED at line 8
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arbiter
+# 
+# Top level modules:
+# 	arbiter
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arbiter
+# Loading work.mod_a
+# Loading work.mod_c
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MISKA  ProcessID: 23444
+# 
+#           Attempting to use alternate WLF file "./wlftzxcr9b".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftzxcr9b
+# 
+# ** Warning: (vsim-8315) ../../design/mod_a.sv(37): No condition is true in the unique/priority if/case statement.
+# 
+# Break in Module testbench at ../tb/testbench.sv line 32
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 32
+# MACRO ./sim.do PAUSED at line 8
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arbiter
+# 
+# Top level modules:
+# 	arbiter
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arbiter
+# Loading work.mod_a
+# Loading work.mod_c
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MISKA  ProcessID: 23444
+# 
+#           Attempting to use alternate WLF file "./wlft33k2d7".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft33k2d7
+# 
+# ** Warning: (vsim-8315) ../../design/mod_a.sv(37): No condition is true in the unique/priority if/case statement.
+# 
+# Break in Module testbench at ../tb/testbench.sv line 32
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 32
+# MACRO ./sim.do PAUSED at line 8
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arbiter
+# 
+# Top level modules:
+# 	arbiter
+do sim.dom
+# Cannot open macro file: sim.dom
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arbiter
+# Loading work.mod_a
+# Loading work.mod_c
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MISKA  ProcessID: 23444
+# 
+#           Attempting to use alternate WLF file "./wlfthb1a6m".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfthb1a6m
+# 
+# ** Warning: (vsim-8315) ../../design/mod_a.sv(37): No condition is true in the unique/priority if/case statement.
+# 
+# Break in Module testbench at ../tb/testbench.sv line 32
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 32
+# MACRO ./sim.do PAUSED at line 8
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arbiter
+# 
+# Top level modules:
+# 	arbiter
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arbiter
+# Loading work.mod_a
+# Loading work.mod_c
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MISKA  ProcessID: 23444
+# 
+#           Attempting to use alternate WLF file "./wlftkwv53k".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftkwv53k
+# 
+# ** Warning: (vsim-8315) ../../design/mod_a.sv(37): No condition is true in the unique/priority if/case statement.
+# 
+# Break in Module testbench at ../tb/testbench.sv line 32
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 32
+# MACRO ./sim.do PAUSED at line 8
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arbiter
+# 
+# Top level modules:
+# 	arbiter
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arbiter
+# Loading work.mod_a
+# Loading work.mod_c
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MISKA  ProcessID: 23444
+# 
+#           Attempting to use alternate WLF file "./wlftfq2mb4".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftfq2mb4
+# 
+# ** Warning: (vsim-8315) ../../design/mod_a.sv(37): No condition is true in the unique/priority if/case statement.
+# 
+# Break in Module testbench at ../tb/testbench.sv line 32
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 32
+# MACRO ./sim.do PAUSED at line 8
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arbiter
+# 
+# Top level modules:
+# 	arbiter
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arbiter
+# Loading work.mod_a
+# Loading work.mod_c
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MISKA  ProcessID: 23444
+# 
+#           Attempting to use alternate WLF file "./wlft6m41aa".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft6m41aa
+# 
+# ** Warning: (vsim-8315) ../../design/mod_a.sv(37): No condition is true in the unique/priority if/case statement.
+# 
+# Break in Module testbench at ../tb/testbench.sv line 32
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 32
+# MACRO ./sim.do PAUSED at line 8
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arbiter
+# 
+# Top level modules:
+# 	arbiter
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arbiter
+# Loading work.mod_a
+# Loading work.mod_c
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MISKA  ProcessID: 23444
+# 
+#           Attempting to use alternate WLF file "./wlft946102".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft946102
+# 
+# ** Warning: (vsim-8315) ../../design/mod_a.sv(37): No condition is true in the unique/priority if/case statement.
+# 
+# Break in Module testbench at ../tb/testbench.sv line 32
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 32
+# MACRO ./sim.do PAUSED at line 8
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arbiter
+# 
+# Top level modules:
+# 	arbiter
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arbiter
+# Loading work.mod_a
+# Loading work.mod_c
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MISKA  ProcessID: 23444
+# 
+#           Attempting to use alternate WLF file "./wlftjenzsn".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftjenzsn
+# 
+# ** Warning: (vsim-8315) ../../design/mod_a.sv(37): No condition is true in the unique/priority if/case statement.
+# 
+# Break in Module testbench at ../tb/testbench.sv line 32
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 32
+# MACRO ./sim.do PAUSED at line 8
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arbiter
+# Loading work.mod_a
+# Loading work.mod_c
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MISKA  ProcessID: 23444
+# 
+#           Attempting to use alternate WLF file "./wlft3ycisy".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft3ycisy
+# 
+# ** Warning: (vsim-8315) ../../design/mod_a.sv(37): No condition is true in the unique/priority if/case statement.
+# 
+# Break in Module testbench at ../tb/testbench.sv line 32
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 32
+# MACRO ./sim.do PAUSED at line 8
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arbiter
+# 
+# Top level modules:
+# 	arbiter
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arbiter
+# Loading work.mod_a
+# Loading work.mod_c
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MISKA  ProcessID: 23444
+# 
+#           Attempting to use alternate WLF file "./wlftd2xnbt".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftd2xnbt
+# 
+# ** Warning: (vsim-8315) ../../design/mod_a.sv(37): No condition is true in the unique/priority if/case statement.
+# 
+# Break in Module testbench at ../tb/testbench.sv line 32
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 32
+# MACRO ./sim.do PAUSED at line 8
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_a
+# 
+# Top level modules:
+# 	mod_a
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mod_c
+# 
+# Top level modules:
+# 	mod_c
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arbiter
+# 
+# Top level modules:
+# 	arbiter
+do sim.do
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arbiter
+# Loading work.mod_a
+# Loading work.mod_c
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: user  Hostname: MISKA  ProcessID: 23444
+# 
+#           Attempting to use alternate WLF file "./wlft76ivr5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft76ivr5
+# 
+# ** Warning: (vsim-8315) ../../design/mod_a.sv(37): No condition is true in the unique/priority if/case statement.
+# 
+# Break in Module testbench at ../tb/testbench.sv line 32
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 32
+# MACRO ./sim.do PAUSED at line 8

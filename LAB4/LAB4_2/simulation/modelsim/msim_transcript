@@ -1,0 +1,371 @@
+# Reading D:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do DE0_CV_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB4_2/design {D:/code/sv_project/LAB4_2/design/DE0_CV.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB4_2/design {D:/code/sv_project/LAB4_2/design/sub_4bit.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# 
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Encoder
+# 
+# Top level modules:
+# 	Encoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Low_Pass_Filter_4ENC
+# 
+# Top level modules:
+# 	Low_Pass_Filter_4ENC
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.Encoder
+# Loading work.Low_Pass_Filter_4ENC
+# Loading work.edge_detector
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/a'.
+# Executing ONERROR command at macro ./wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/testbench/b'.
+# Executing ONERROR command at macro ./wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/testbench/s'.
+# Executing ONERROR command at macro ./wave.do line 6
+# Break in Module testbench at ../tb/testbench.sv line 67
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 67
+# MACRO ./sim.do PAUSED at line 7
+add wave -position end  sim:/testbench/test/rst
+add wave -position end  sim:/testbench/test/clk
+add wave -position end  sim:/testbench/test/enc
+add wave -position end  sim:/testbench/test/enc_filter
+add wave -position end  sim:/testbench/test/enc_pos
+add wave -position end  sim:/testbench/test/cnt
+add wave -position end  sim:/testbench/test/cnt_meas
+add wave -position end  sim:/testbench/test/enable
+add wave -position end  sim:/testbench/test/load
+add wave -position end  sim:/testbench/test/ns
+add wave -position end  sim:/testbench/test/ps
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Encoder
+# 
+# Top level modules:
+# 	Encoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Low_Pass_Filter_4ENC
+# 
+# Top level modules:
+# 	Low_Pass_Filter_4ENC
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.Encoder
+# Loading work.Low_Pass_Filter_4ENC
+# Loading work.edge_detector
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/a'.
+# Executing ONERROR command at macro ./wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/testbench/b'.
+# Executing ONERROR command at macro ./wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/testbench/s'.
+# Executing ONERROR command at macro ./wave.do line 6
+# Break in Module testbench at ../tb/testbench.sv line 67
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 67
+# MACRO ./sim.do PAUSED at line 7
+add wave -position end  sim:/testbench/test/rst
+add wave -position end  sim:/testbench/test/clk
+add wave -position end  sim:/testbench/test/enc
+add wave -position end  sim:/testbench/test/enc_filter
+add wave -position end  sim:/testbench/test/enc_pos
+add wave -position end  sim:/testbench/test/cnt
+add wave -position end  sim:/testbench/test/cnt_meas
+add wave -position end  sim:/testbench/test/enable
+add wave -position end  sim:/testbench/test/load
+add wave -position end  sim:/testbench/test/ns
+add wave -position end  sim:/testbench/test/ps
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Encoder
+# 
+# Top level modules:
+# 	Encoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Low_Pass_Filter_4ENC
+# 
+# Top level modules:
+# 	Low_Pass_Filter_4ENC
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.Encoder
+# Loading work.Low_Pass_Filter_4ENC
+# Loading work.edge_detector
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/a'.
+# Executing ONERROR command at macro ./wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/testbench/b'.
+# Executing ONERROR command at macro ./wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/testbench/s'.
+# Executing ONERROR command at macro ./wave.do line 6
+# Break in Module testbench at ../tb/testbench.sv line 65
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 65
+# MACRO ./sim.do PAUSED at line 7
+add wave -position end  sim:/testbench/test/rst
+add wave -position end  sim:/testbench/test/clk
+add wave -position end  sim:/testbench/test/enc
+add wave -position end  sim:/testbench/test/enc_filter
+add wave -position end  sim:/testbench/test/enc_pos
+add wave -position end  sim:/testbench/test/cnt
+add wave -position end  sim:/testbench/test/cnt_meas
+add wave -position end  sim:/testbench/test/enable
+add wave -position end  sim:/testbench/test/load
+add wave -position end  sim:/testbench/test/ns
+add wave -position end  sim:/testbench/test/ps
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Encoder
+# 
+# Top level modules:
+# 	Encoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Low_Pass_Filter_4ENC
+# 
+# Top level modules:
+# 	Low_Pass_Filter_4ENC
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.Encoder
+# Loading work.Low_Pass_Filter_4ENC
+# Loading work.edge_detector
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/a'.
+# Executing ONERROR command at macro ./wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/testbench/b'.
+# Executing ONERROR command at macro ./wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/testbench/s'.
+# Executing ONERROR command at macro ./wave.do line 6
+# Break in Module testbench at ../tb/testbench.sv line 64
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 64
+# MACRO ./sim.do PAUSED at line 7
+add wave -position end  sim:/testbench/test/rst
+add wave -position end  sim:/testbench/test/clk
+add wave -position end  sim:/testbench/test/enc
+add wave -position end  sim:/testbench/test/enc_filter
+add wave -position end  sim:/testbench/test/enc_pos
+add wave -position end  sim:/testbench/test/cnt
+add wave -position end  sim:/testbench/test/cnt_meas
+add wave -position end  sim:/testbench/test/enable
+add wave -position end  sim:/testbench/test/load
+add wave -position end  sim:/testbench/test/ns
+add wave -position end  sim:/testbench/test/ps
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Encoder
+# ** Error: ../../design/Encoder.sv(76): near "end": syntax error, unexpected end
+# ** Error: D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./compile.do line 9
+# D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog ../../design/Encoder.sv"
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.Encoder
+# Loading work.Low_Pass_Filter_4ENC
+# Loading work.edge_detector
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/a'.
+# Executing ONERROR command at macro ./wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/testbench/b'.
+# Executing ONERROR command at macro ./wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/testbench/s'.
+# Executing ONERROR command at macro ./wave.do line 6
+# Break in Module testbench at ../tb/testbench.sv line 64
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 64
+# MACRO ./sim.do PAUSED at line 7
+add wave -position end  sim:/testbench/test/rst
+add wave -position end  sim:/testbench/test/clk
+add wave -position end  sim:/testbench/test/enc
+add wave -position end  sim:/testbench/test/enc_filter
+add wave -position end  sim:/testbench/test/enc_pos
+add wave -position end  sim:/testbench/test/cnt
+add wave -position end  sim:/testbench/test/cnt_meas
+add wave -position end  sim:/testbench/test/enable
+add wave -position end  sim:/testbench/test/load
+add wave -position end  sim:/testbench/test/ns
+add wave -position end  sim:/testbench/test/ps
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sub_4bit
+# 
+# Top level modules:
+# 	sub_4bit
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Encoder
+# 
+# Top level modules:
+# 	Encoder
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Low_Pass_Filter_4ENC
+# 
+# Top level modules:
+# 	Low_Pass_Filter_4ENC
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.Encoder
+# Loading work.Low_Pass_Filter_4ENC
+# Loading work.edge_detector
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/a'.
+# Executing ONERROR command at macro ./wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/testbench/b'.
+# Executing ONERROR command at macro ./wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/testbench/s'.
+# Executing ONERROR command at macro ./wave.do line 6
+# Break in Module testbench at ../tb/testbench.sv line 64
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 64
+# MACRO ./sim.do PAUSED at line 7
+add wave -position end  sim:/testbench/test/rst
+add wave -position end  sim:/testbench/test/clk
+add wave -position end  sim:/testbench/test/enc
+add wave -position end  sim:/testbench/test/enc_filter
+add wave -position end  sim:/testbench/test/enc_pos
+add wave -position end  sim:/testbench/test/cnt
+add wave -position end  sim:/testbench/test/cnt_meas
+add wave -position end  sim:/testbench/test/enable
+add wave -position end  sim:/testbench/test/load
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/code/sv_project/LAB4_2/simulation/modelsim/wave.do

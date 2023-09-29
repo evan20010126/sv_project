@@ -1,0 +1,94 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\code\sv_project\LAB6\LAB6_2\simulation\modelsim
+vbit_trans
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z2 Iz?f6=Pk;BFRhlU7GhOKP;0
+Z3 VF2_cCS`mRTUL3mEDzoZW10
+Z4 !s105 bit_trans_sv_unit
+S1
+Z5 dD:\code\sv_project\LAB6\LAB6_2\simulation\modelsim
+Z6 w1683069792
+Z7 8../../design/bit_trans.sv
+Z8 F../../design/bit_trans.sv
+L0 3
+Z9 OV;L;10.1d;51
+r1
+31
+Z10 !s90 -reportprogress|300|-sv|../../design/bit_trans.sv|
+Z11 o-sv -O0
+!i10b 1
+Z12 !s100 N3M7alMe[_e37;5844?g62
+!s85 0
+Z13 !s108 1683069795.924000
+Z14 !s107 ../../design/bit_trans.sv|
+!s101 -O0
+vDE0_CV
+R1
+Z15 !s100 Gk6HK<1^]jY]:kSRP23Rn3
+Z16 IRz77Gdo@^g_7?Y<<2M4@`1
+Z17 V_FB=BbUiGKAcbT:1SE[Sn3
+Z18 !s105 DE0_CV_sv_unit
+S1
+R5
+Z19 w1681874896
+Z20 8../../design/DE0_CV.sv
+Z21 F../../design/DE0_CV.sv
+L0 6
+R9
+r1
+31
+Z22 !s90 -reportprogress|300|-sv|../../design/DE0_CV.sv|
+R11
+Z23 n@d@e0_@c@v
+Z24 !s108 1683069795.817000
+Z25 !s107 ../../design/DE0_CV.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vedge_detector
+R1
+!i10b 1
+Z26 !s100 E_hLX]=E3DESi>bTYdH1B1
+Z27 IX=9m2TUHjk<1aXMWHOBXS1
+Z28 V7B@]RzI4E@I8<do;dmMH:0
+Z29 !s105 edge_detector_sv_unit
+S1
+R5
+Z30 w1683042128
+Z31 8../../design/edge_detector.sv
+Z32 F../../design/edge_detector.sv
+L0 3
+R9
+r1
+!s85 0
+31
+!s108 1683069796.028000
+!s107 ../../design/edge_detector.sv|
+Z33 !s90 -reportprogress|300|-sv|../../design/edge_detector.sv|
+!s101 -O0
+R11
+vtestbench
+R1
+Z34 !s100 be?Cbi`Z]l4cjzbeS7`Y^1
+Z35 IcD5U[HCNfJ`<GWzER:bQ40
+Z36 V:4GRd_]XzVI]1YT[9cPVZ1
+Z37 !s105 testbench_sv_unit
+S1
+R5
+Z38 w1683041982
+Z39 8../tb/testbench.sv
+Z40 F../tb/testbench.sv
+L0 2
+R9
+r1
+31
+Z41 !s90 -reportprogress|300|-sv|../tb/testbench.sv|
+R11
+Z42 !s108 1683069795.636000
+Z43 !s107 ../tb/testbench.sv|
+!i10b 1
+!s85 0
+!s101 -O0

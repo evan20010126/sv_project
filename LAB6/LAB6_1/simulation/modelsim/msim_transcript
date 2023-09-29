@@ -1,0 +1,1908 @@
+# Reading D:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do DE0_CV_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB6/LAB6_1/design {D:/code/sv_project/LAB6/LAB6_1/design/bit_trans.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bit_trans
+# 
+# Top level modules:
+# 	bit_trans
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB6/LAB6_1/design {D:/code/sv_project/LAB6/LAB6_1/design/edge_detector.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# vlog -sv -work work +incdir+D:/code/sv_project/LAB6/LAB6_1/design {D:/code/sv_project/LAB6/LAB6_1/design/DE0_CV.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# 
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bit_trans
+# 
+# Top level modules:
+# 	bit_trans
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.bit_trans
+# Loading work.edge_detector
+# ** Warning: (vsim-3015) ../tb/testbench.sv(43): [PCDPC] - Port size (1 or 1) does not match connection size (14) for port 'r_LPF_threshold'. The port definition is at: ../../design/bit_trans.sv(6).
+# 
+#         Region: /testbench/bit_trans_1
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx_filter'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/reset_counter'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/counter'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/LPF_threshold'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/rx_finish'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ok'.
+# Executing ONERROR command at macro ./wave.do line 17
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ready'.
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/head'.
+# Executing ONERROR command at macro ./wave.do line 19
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/addr'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data_r'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/r_w'.
+# Executing ONERROR command at macro ./wave.do line 23
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/chk_sum'.
+# Executing ONERROR command at macro ./wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tail'.
+# Executing ONERROR command at macro ./wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_req'.
+# Executing ONERROR command at macro ./wave.do line 27
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_data'.
+# Executing ONERROR command at macro ./wave.do line 28
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_ack'.
+# Executing ONERROR command at macro ./wave.do line 29
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 31
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/send_tx_data'.
+# Executing ONERROR command at macro ./wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/tx'.
+# Executing ONERROR command at macro ./wave.do line 33
+# Break in Module testbench at ../tb/testbench.sv line 82
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 82
+# MACRO ./sim.do PAUSED at line 7
+add wave -position end  sim:/testbench/bit_trans_1/shift_signal
+add wave -position end  sim:/testbench/bit_trans_1/shift_register
+add wave -position end  sim:/testbench/bit_trans_1/rx_finish
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bit_trans
+# 
+# Top level modules:
+# 	bit_trans
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.bit_trans
+# Loading work.edge_detector
+# ** Warning: (vsim-3015) ../tb/testbench.sv(43): [PCDPC] - Port size (1 or 1) does not match connection size (14) for port 'r_LPF_threshold'. The port definition is at: ../../design/bit_trans.sv(6).
+# 
+#         Region: /testbench/bit_trans_1
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx_filter'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/reset_counter'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/counter'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/LPF_threshold'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/rx_finish'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ok'.
+# Executing ONERROR command at macro ./wave.do line 17
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ready'.
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/head'.
+# Executing ONERROR command at macro ./wave.do line 19
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/addr'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data_r'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/r_w'.
+# Executing ONERROR command at macro ./wave.do line 23
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/chk_sum'.
+# Executing ONERROR command at macro ./wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tail'.
+# Executing ONERROR command at macro ./wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_req'.
+# Executing ONERROR command at macro ./wave.do line 27
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_data'.
+# Executing ONERROR command at macro ./wave.do line 28
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_ack'.
+# Executing ONERROR command at macro ./wave.do line 29
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 31
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/send_tx_data'.
+# Executing ONERROR command at macro ./wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/tx'.
+# Executing ONERROR command at macro ./wave.do line 33
+# Break in Module testbench at ../tb/testbench.sv line 82
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 82
+# MACRO ./sim.do PAUSED at line 7
+add wave -position 7  sim:/testbench/bit_trans_1/shift_register
+add wave -position 4  sim:/testbench/bit_trans_1/ps
+add wave -position 7  sim:/testbench/bit_trans_1/rx
+add wave -position 8  sim:/testbench/bit_trans_1/rx_finish
+add wave -position 8  sim:/testbench/bit_trans_1/tx
+add wave -position 8  sim:/testbench/bit_trans_1/rx_palse
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bit_trans
+# 
+# Top level modules:
+# 	bit_trans
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.bit_trans
+# Loading work.edge_detector
+# ** Warning: (vsim-3015) ../tb/testbench.sv(43): [PCDPC] - Port size (1 or 1) does not match connection size (14) for port 'r_LPF_threshold'. The port definition is at: ../../design/bit_trans.sv(6).
+# 
+#         Region: /testbench/bit_trans_1
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx_filter'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/reset_counter'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/counter'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/LPF_threshold'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/rx_finish'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ok'.
+# Executing ONERROR command at macro ./wave.do line 17
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ready'.
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/head'.
+# Executing ONERROR command at macro ./wave.do line 19
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/addr'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data_r'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/r_w'.
+# Executing ONERROR command at macro ./wave.do line 23
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/chk_sum'.
+# Executing ONERROR command at macro ./wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tail'.
+# Executing ONERROR command at macro ./wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_req'.
+# Executing ONERROR command at macro ./wave.do line 27
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_data'.
+# Executing ONERROR command at macro ./wave.do line 28
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_ack'.
+# Executing ONERROR command at macro ./wave.do line 29
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 31
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/send_tx_data'.
+# Executing ONERROR command at macro ./wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/tx'.
+# Executing ONERROR command at macro ./wave.do line 33
+# Break in Module testbench at ../tb/testbench.sv line 82
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 82
+# MACRO ./sim.do PAUSED at line 7
+add wave -position 7  sim:/testbench/bit_trans_1/shift_register
+add wave -position 7  sim:/testbench/bit_trans_1/rx_palse
+add wave -position 7  sim:/testbench/bit_trans_1/rx
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bit_trans
+# 
+# Top level modules:
+# 	bit_trans
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.bit_trans
+# Loading work.edge_detector
+# ** Warning: (vsim-3015) ../tb/testbench.sv(43): [PCDPC] - Port size (1 or 1) does not match connection size (14) for port 'r_LPF_threshold'. The port definition is at: ../../design/bit_trans.sv(6).
+# 
+#         Region: /testbench/bit_trans_1
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx_filter'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/reset_counter'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/counter'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/LPF_threshold'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/rx_finish'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ok'.
+# Executing ONERROR command at macro ./wave.do line 17
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ready'.
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/head'.
+# Executing ONERROR command at macro ./wave.do line 19
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/addr'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data_r'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/r_w'.
+# Executing ONERROR command at macro ./wave.do line 23
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/chk_sum'.
+# Executing ONERROR command at macro ./wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tail'.
+# Executing ONERROR command at macro ./wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_req'.
+# Executing ONERROR command at macro ./wave.do line 27
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_data'.
+# Executing ONERROR command at macro ./wave.do line 28
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_ack'.
+# Executing ONERROR command at macro ./wave.do line 29
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 31
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/send_tx_data'.
+# Executing ONERROR command at macro ./wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/tx'.
+# Executing ONERROR command at macro ./wave.do line 33
+# Break in Module testbench at ../tb/testbench.sv line 82
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 82
+# MACRO ./sim.do PAUSED at line 7
+add wave -position 7  sim:/testbench/rx
+add wave -position 8  sim:/testbench/bit_trans_1/rx_palse
+add wave -position 9  sim:/testbench/bit_trans_1/shift_signal
+add wave -position 9  sim:/testbench/bit_trans_1/shift_register
+add wave -position 5  sim:/testbench/bit_trans_1/ps
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bit_trans
+# 
+# Top level modules:
+# 	bit_trans
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.bit_trans
+# Loading work.edge_detector
+# ** Warning: (vsim-3015) ../tb/testbench.sv(43): [PCDPC] - Port size (1 or 1) does not match connection size (14) for port 'r_LPF_threshold'. The port definition is at: ../../design/bit_trans.sv(6).
+# 
+#         Region: /testbench/bit_trans_1
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx_filter'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/reset_counter'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/counter'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/LPF_threshold'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/rx_finish'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ok'.
+# Executing ONERROR command at macro ./wave.do line 17
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ready'.
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/head'.
+# Executing ONERROR command at macro ./wave.do line 19
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/addr'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data_r'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/r_w'.
+# Executing ONERROR command at macro ./wave.do line 23
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/chk_sum'.
+# Executing ONERROR command at macro ./wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tail'.
+# Executing ONERROR command at macro ./wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_req'.
+# Executing ONERROR command at macro ./wave.do line 27
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_data'.
+# Executing ONERROR command at macro ./wave.do line 28
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_ack'.
+# Executing ONERROR command at macro ./wave.do line 29
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 31
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/send_tx_data'.
+# Executing ONERROR command at macro ./wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/tx'.
+# Executing ONERROR command at macro ./wave.do line 33
+# Break in Module testbench at ../tb/testbench.sv line 82
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 82
+# MACRO ./sim.do PAUSED at line 7
+add wave -position 7  sim:/testbench/bit_trans_1/shift_register
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bit_trans
+# 
+# Top level modules:
+# 	bit_trans
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.bit_trans
+# Loading work.edge_detector
+# ** Warning: (vsim-3015) ../tb/testbench.sv(43): [PCDPC] - Port size (1 or 1) does not match connection size (14) for port 'r_LPF_threshold'. The port definition is at: ../../design/bit_trans.sv(6).
+# 
+#         Region: /testbench/bit_trans_1
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx_filter'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/reset_counter'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/counter'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/LPF_threshold'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/rx_finish'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ok'.
+# Executing ONERROR command at macro ./wave.do line 17
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ready'.
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/head'.
+# Executing ONERROR command at macro ./wave.do line 19
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/addr'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data_r'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/r_w'.
+# Executing ONERROR command at macro ./wave.do line 23
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/chk_sum'.
+# Executing ONERROR command at macro ./wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tail'.
+# Executing ONERROR command at macro ./wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_req'.
+# Executing ONERROR command at macro ./wave.do line 27
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_data'.
+# Executing ONERROR command at macro ./wave.do line 28
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_ack'.
+# Executing ONERROR command at macro ./wave.do line 29
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 31
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/send_tx_data'.
+# Executing ONERROR command at macro ./wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/tx'.
+# Executing ONERROR command at macro ./wave.do line 33
+# Break in Module testbench at ../tb/testbench.sv line 82
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 82
+# MACRO ./sim.do PAUSED at line 7
+add wave -position 7  sim:/testbench/bit_trans_1/shift_register
+add wave -position 7  sim:/testbench/bit_trans_1/rx
+add wave -position 8  sim:/testbench/bit_trans_1/shift_signal
+add wave -position 10  sim:/testbench/bit_trans_1/rx_finish
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bit_trans
+# ** Error: ../../design/bit_trans.sv(170): (vlog-2730) Undefined variable: 'T10'.
+# 
+# ** Error: ../../design/bit_trans.sv(175): (vlog-2730) Undefined variable: 'T10'.
+# 
+# ** Error: D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./compile.do line 10
+# D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv  ../../design/bit_trans.sv"
+do ism
+# Cannot open macro file: ism
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.bit_trans
+# Loading work.edge_detector
+# ** Warning: (vsim-3015) ../tb/testbench.sv(43): [PCDPC] - Port size (1 or 1) does not match connection size (14) for port 'r_LPF_threshold'. The port definition is at: ../../design/bit_trans.sv(6).
+# 
+#         Region: /testbench/bit_trans_1
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx_filter'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/reset_counter'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/counter'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/LPF_threshold'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/rx_finish'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ok'.
+# Executing ONERROR command at macro ./wave.do line 17
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ready'.
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/head'.
+# Executing ONERROR command at macro ./wave.do line 19
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/addr'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data_r'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/r_w'.
+# Executing ONERROR command at macro ./wave.do line 23
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/chk_sum'.
+# Executing ONERROR command at macro ./wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tail'.
+# Executing ONERROR command at macro ./wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_req'.
+# Executing ONERROR command at macro ./wave.do line 27
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_data'.
+# Executing ONERROR command at macro ./wave.do line 28
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_ack'.
+# Executing ONERROR command at macro ./wave.do line 29
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 31
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/send_tx_data'.
+# Executing ONERROR command at macro ./wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/tx'.
+# Executing ONERROR command at macro ./wave.do line 33
+# Break in Module testbench at ../tb/testbench.sv line 82
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 82
+# MACRO ./sim.do PAUSED at line 7
+add wave -position 7  sim:/testbench/rx
+add wave -position 8  sim:/testbench/bit_trans_1/shift_register
+add wave -position 8  sim:/testbench/bit_trans_1/rx_finish
+add wave -position 8  sim:/testbench/bit_trans_1/shift_signal
+add wave -position 7  sim:/testbench/bit_trans_1/ps
+
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bit_trans
+# ** Error: ../../design/bit_trans.sv(170): (vlog-2730) Undefined variable: 'T10'.
+# 
+# ** Error: ../../design/bit_trans.sv(175): (vlog-2730) Undefined variable: 'T10'.
+# 
+# ** Error: D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./compile.do line 10
+# D:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv  ../../design/bit_trans.sv"
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bit_trans
+# 
+# Top level modules:
+# 	bit_trans
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.bit_trans
+# Loading work.edge_detector
+# ** Warning: (vsim-3015) ../tb/testbench.sv(43): [PCDPC] - Port size (1 or 1) does not match connection size (14) for port 'r_LPF_threshold'. The port definition is at: ../../design/bit_trans.sv(6).
+# 
+#         Region: /testbench/bit_trans_1
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx_filter'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/reset_counter'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/counter'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/LPF_threshold'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/rx_finish'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ok'.
+# Executing ONERROR command at macro ./wave.do line 17
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ready'.
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/head'.
+# Executing ONERROR command at macro ./wave.do line 19
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/addr'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data_r'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/r_w'.
+# Executing ONERROR command at macro ./wave.do line 23
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/chk_sum'.
+# Executing ONERROR command at macro ./wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tail'.
+# Executing ONERROR command at macro ./wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_req'.
+# Executing ONERROR command at macro ./wave.do line 27
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_data'.
+# Executing ONERROR command at macro ./wave.do line 28
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_ack'.
+# Executing ONERROR command at macro ./wave.do line 29
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 31
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/send_tx_data'.
+# Executing ONERROR command at macro ./wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/tx'.
+# Executing ONERROR command at macro ./wave.do line 33
+# Break in Module testbench at ../tb/testbench.sv line 82
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 82
+# MACRO ./sim.do PAUSED at line 7
+add wave -position 7  sim:/testbench/rx
+add wave -position 8  sim:/testbench/rx_finish
+add wave -position 9  sim:/testbench/bit_trans_1/shift_register
+add wave -position 9  sim:/testbench/bit_trans_1/shift_signal
+add wave -position 6  sim:/testbench/bit_trans_1/ps
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bit_trans
+# 
+# Top level modules:
+# 	bit_trans
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.bit_trans
+# Loading work.edge_detector
+# ** Warning: (vsim-3015) ../tb/testbench.sv(43): [PCDPC] - Port size (1 or 1) does not match connection size (14) for port 'r_LPF_threshold'. The port definition is at: ../../design/bit_trans.sv(6).
+# 
+#         Region: /testbench/bit_trans_1
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx_filter'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/reset_counter'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/counter'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/LPF_threshold'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/rx_finish'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ok'.
+# Executing ONERROR command at macro ./wave.do line 17
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ready'.
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/head'.
+# Executing ONERROR command at macro ./wave.do line 19
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/addr'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data_r'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/r_w'.
+# Executing ONERROR command at macro ./wave.do line 23
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/chk_sum'.
+# Executing ONERROR command at macro ./wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tail'.
+# Executing ONERROR command at macro ./wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_req'.
+# Executing ONERROR command at macro ./wave.do line 27
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_data'.
+# Executing ONERROR command at macro ./wave.do line 28
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_ack'.
+# Executing ONERROR command at macro ./wave.do line 29
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 31
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/send_tx_data'.
+# Executing ONERROR command at macro ./wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/tx'.
+# Executing ONERROR command at macro ./wave.do line 33
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# ** Warning: (vsim-8315) ../../design/bit_trans.sv(77): No condition is true in the unique/priority if/case statement.
+# 
+# Break in Module testbench at ../tb/testbench.sv line 82
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 82
+# MACRO ./sim.do PAUSED at line 7
+add wave -position 7  sim:/testbench/rx
+add wave -position 8  sim:/testbench/bit_trans_1/shift_register
+add wave -position 8  sim:/testbench/bit_trans_1/shift_signal
+add wave -position 6  sim:/testbench/bit_trans_1/ps
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bit_trans
+# 
+# Top level modules:
+# 	bit_trans
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.bit_trans
+# Loading work.edge_detector
+# ** Warning: (vsim-3015) ../tb/testbench.sv(43): [PCDPC] - Port size (1 or 1) does not match connection size (14) for port 'r_LPF_threshold'. The port definition is at: ../../design/bit_trans.sv(6).
+# 
+#         Region: /testbench/bit_trans_1
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx_filter'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/reset_counter'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/counter'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/LPF_threshold'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/rx_finish'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ok'.
+# Executing ONERROR command at macro ./wave.do line 17
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ready'.
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/head'.
+# Executing ONERROR command at macro ./wave.do line 19
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/addr'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data_r'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/r_w'.
+# Executing ONERROR command at macro ./wave.do line 23
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/chk_sum'.
+# Executing ONERROR command at macro ./wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tail'.
+# Executing ONERROR command at macro ./wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_req'.
+# Executing ONERROR command at macro ./wave.do line 27
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_data'.
+# Executing ONERROR command at macro ./wave.do line 28
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_ack'.
+# Executing ONERROR command at macro ./wave.do line 29
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 31
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/send_tx_data'.
+# Executing ONERROR command at macro ./wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/tx'.
+# Executing ONERROR command at macro ./wave.do line 33
+# Break in Module testbench at ../tb/testbench.sv line 82
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 82
+# MACRO ./sim.do PAUSED at line 7
+add wave -position 7  sim:/testbench/rx
+add wave -position 8  sim:/testbench/bit_trans_1/shift_register
+add wave -position 9  sim:/testbench/bit_trans_1/rx_finish
+add wave -position 8  sim:/testbench/bit_trans_1/shift_signal
+add wave -position 4  sim:/testbench/bit_trans_1/ps
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bit_trans
+# 
+# Top level modules:
+# 	bit_trans
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.bit_trans
+# Loading work.edge_detector
+# ** Warning: (vsim-3015) ../tb/testbench.sv(43): [PCDPC] - Port size (1 or 1) does not match connection size (14) for port 'r_LPF_threshold'. The port definition is at: ../../design/bit_trans.sv(6).
+# 
+#         Region: /testbench/bit_trans_1
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx_filter'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/reset_counter'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/counter'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/LPF_threshold'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/rx_finish'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ok'.
+# Executing ONERROR command at macro ./wave.do line 17
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ready'.
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/head'.
+# Executing ONERROR command at macro ./wave.do line 19
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/addr'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data_r'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/r_w'.
+# Executing ONERROR command at macro ./wave.do line 23
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/chk_sum'.
+# Executing ONERROR command at macro ./wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tail'.
+# Executing ONERROR command at macro ./wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_req'.
+# Executing ONERROR command at macro ./wave.do line 27
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_data'.
+# Executing ONERROR command at macro ./wave.do line 28
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_ack'.
+# Executing ONERROR command at macro ./wave.do line 29
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 31
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/send_tx_data'.
+# Executing ONERROR command at macro ./wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/tx'.
+# Executing ONERROR command at macro ./wave.do line 33
+# Break in Module testbench at ../tb/testbench.sv line 82
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 82
+# MACRO ./sim.do PAUSED at line 7
+add wave -position 7  sim:/testbench/rx
+add wave -position 8  sim:/testbench/rx_finish
+add wave -position 9  sim:/testbench/bit_trans_1/shift_signal
+add wave -position 10  sim:/testbench/bit_trans_1/shift_register
+add wave -position 4  sim:/testbench/bit_trans_1/ps
+add wave -position 5  sim:/testbench/bit_trans_1/bit_count
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bit_trans
+# 
+# Top level modules:
+# 	bit_trans
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.bit_trans
+# Loading work.edge_detector
+# ** Warning: (vsim-3015) ../tb/testbench.sv(43): [PCDPC] - Port size (1 or 1) does not match connection size (14) for port 'r_LPF_threshold'. The port definition is at: ../../design/bit_trans.sv(6).
+# 
+#         Region: /testbench/bit_trans_1
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx_filter'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/reset_counter'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/counter'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/LPF_threshold'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/rx_finish'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ok'.
+# Executing ONERROR command at macro ./wave.do line 17
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ready'.
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/head'.
+# Executing ONERROR command at macro ./wave.do line 19
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/addr'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data_r'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/r_w'.
+# Executing ONERROR command at macro ./wave.do line 23
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/chk_sum'.
+# Executing ONERROR command at macro ./wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tail'.
+# Executing ONERROR command at macro ./wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_req'.
+# Executing ONERROR command at macro ./wave.do line 27
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_data'.
+# Executing ONERROR command at macro ./wave.do line 28
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_ack'.
+# Executing ONERROR command at macro ./wave.do line 29
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 31
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/send_tx_data'.
+# Executing ONERROR command at macro ./wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/tx'.
+# Executing ONERROR command at macro ./wave.do line 33
+# Break in Module testbench at ../tb/testbench.sv line 82
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 82
+# MACRO ./sim.do PAUSED at line 7
+add wave -position 7  sim:/testbench/rx
+add wave -position 8  sim:/testbench/rx_finish
+add wave -position 9  sim:/testbench/bit_trans_1/shift_register
+add wave -position 9  sim:/testbench/bit_trans_1/shift_signal
+add wave -position 4  sim:/testbench/bit_trans_1/ps
+add wave -position 6  sim:/testbench/bit_trans_1/bit_count
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bit_trans
+# 
+# Top level modules:
+# 	bit_trans
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.bit_trans
+# Loading work.edge_detector
+# ** Warning: (vsim-3015) ../tb/testbench.sv(43): [PCDPC] - Port size (1 or 1) does not match connection size (14) for port 'r_LPF_threshold'. The port definition is at: ../../design/bit_trans.sv(6).
+# 
+#         Region: /testbench/bit_trans_1
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx_filter'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/reset_counter'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/counter'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/LPF_threshold'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/rx_finish'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ok'.
+# Executing ONERROR command at macro ./wave.do line 17
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ready'.
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/head'.
+# Executing ONERROR command at macro ./wave.do line 19
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/addr'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data_r'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/r_w'.
+# Executing ONERROR command at macro ./wave.do line 23
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/chk_sum'.
+# Executing ONERROR command at macro ./wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tail'.
+# Executing ONERROR command at macro ./wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_req'.
+# Executing ONERROR command at macro ./wave.do line 27
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_data'.
+# Executing ONERROR command at macro ./wave.do line 28
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_ack'.
+# Executing ONERROR command at macro ./wave.do line 29
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 31
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/send_tx_data'.
+# Executing ONERROR command at macro ./wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/tx'.
+# Executing ONERROR command at macro ./wave.do line 33
+# Break in Module testbench at ../tb/testbench.sv line 82
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 82
+# MACRO ./sim.do PAUSED at line 7
+add wave -position 6  sim:/testbench/rx
+add wave -position 7  sim:/testbench/bit_trans_1/rx_finish
+add wave -position 8  sim:/testbench/bit_trans_1/shift_register
+add wave -position 8  sim:/testbench/bit_trans_1/shift_signal
+add wave -position 6  sim:/testbench/bit_trans_1/ps
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bit_trans
+# 
+# Top level modules:
+# 	bit_trans
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.bit_trans
+# Loading work.edge_detector
+# ** Warning: (vsim-3015) ../tb/testbench.sv(43): [PCDPC] - Port size (1 or 1) does not match connection size (14) for port 'r_LPF_threshold'. The port definition is at: ../../design/bit_trans.sv(6).
+# 
+#         Region: /testbench/bit_trans_1
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx_filter'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/reset_counter'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/counter'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/LPF_threshold'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/rx_finish'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ok'.
+# Executing ONERROR command at macro ./wave.do line 17
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ready'.
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/head'.
+# Executing ONERROR command at macro ./wave.do line 19
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/addr'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data_r'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/r_w'.
+# Executing ONERROR command at macro ./wave.do line 23
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/chk_sum'.
+# Executing ONERROR command at macro ./wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tail'.
+# Executing ONERROR command at macro ./wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_req'.
+# Executing ONERROR command at macro ./wave.do line 27
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_data'.
+# Executing ONERROR command at macro ./wave.do line 28
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_ack'.
+# Executing ONERROR command at macro ./wave.do line 29
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 31
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/send_tx_data'.
+# Executing ONERROR command at macro ./wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/tx'.
+# Executing ONERROR command at macro ./wave.do line 33
+# Break in Module testbench at ../tb/testbench.sv line 82
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 82
+# MACRO ./sim.do PAUSED at line 7
+add wave -position 3  sim:/testbench/bit_trans_1/ps
+add wave -position 4  sim:/testbench/bit_trans_1/bit_count
+add wave -position end  sim:/testbench/bit_trans_1/cnt
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bit_trans
+# 
+# Top level modules:
+# 	bit_trans
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.bit_trans
+# Loading work.edge_detector
+# ** Warning: (vsim-3015) ../tb/testbench.sv(43): [PCDPC] - Port size (1 or 1) does not match connection size (14) for port 'r_LPF_threshold'. The port definition is at: ../../design/bit_trans.sv(6).
+# 
+#         Region: /testbench/bit_trans_1
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx_filter'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/reset_counter'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/counter'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/LPF_threshold'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/rx_finish'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ok'.
+# Executing ONERROR command at macro ./wave.do line 17
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ready'.
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/head'.
+# Executing ONERROR command at macro ./wave.do line 19
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/addr'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data_r'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/r_w'.
+# Executing ONERROR command at macro ./wave.do line 23
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/chk_sum'.
+# Executing ONERROR command at macro ./wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tail'.
+# Executing ONERROR command at macro ./wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_req'.
+# Executing ONERROR command at macro ./wave.do line 27
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_data'.
+# Executing ONERROR command at macro ./wave.do line 28
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_ack'.
+# Executing ONERROR command at macro ./wave.do line 29
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 31
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/send_tx_data'.
+# Executing ONERROR command at macro ./wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/tx'.
+# Executing ONERROR command at macro ./wave.do line 33
+# Break in Module testbench at ../tb/testbench.sv line 82
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 82
+# MACRO ./sim.do PAUSED at line 7
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bit_trans
+# 
+# Top level modules:
+# 	bit_trans
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.bit_trans
+# Loading work.edge_detector
+# ** Warning: (vsim-3015) ../tb/testbench.sv(43): [PCDPC] - Port size (1 or 1) does not match connection size (14) for port 'r_LPF_threshold'. The port definition is at: ../../design/bit_trans.sv(6).
+# 
+#         Region: /testbench/bit_trans_1
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx_filter'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/reset_counter'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/counter'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/LPF_threshold'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/rx_finish'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ok'.
+# Executing ONERROR command at macro ./wave.do line 17
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ready'.
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/head'.
+# Executing ONERROR command at macro ./wave.do line 19
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/addr'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data_r'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/r_w'.
+# Executing ONERROR command at macro ./wave.do line 23
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/chk_sum'.
+# Executing ONERROR command at macro ./wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tail'.
+# Executing ONERROR command at macro ./wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_req'.
+# Executing ONERROR command at macro ./wave.do line 27
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_data'.
+# Executing ONERROR command at macro ./wave.do line 28
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_ack'.
+# Executing ONERROR command at macro ./wave.do line 29
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 31
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/send_tx_data'.
+# Executing ONERROR command at macro ./wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/tx'.
+# Executing ONERROR command at macro ./wave.do line 33
+# Break in Module testbench at ../tb/testbench.sv line 82
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 82
+# MACRO ./sim.do PAUSED at line 7
+add wave -position end  sim:/testbench/bit_trans_1/cnt
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bit_trans
+# 
+# Top level modules:
+# 	bit_trans
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.bit_trans
+# Loading work.edge_detector
+# ** Warning: (vsim-3015) ../tb/testbench.sv(43): [PCDPC] - Port size (1 or 1) does not match connection size (14) for port 'r_LPF_threshold'. The port definition is at: ../../design/bit_trans.sv(6).
+# 
+#         Region: /testbench/bit_trans_1
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx_filter'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/reset_counter'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/counter'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/LPF_threshold'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/rx_finish'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ok'.
+# Executing ONERROR command at macro ./wave.do line 17
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ready'.
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/head'.
+# Executing ONERROR command at macro ./wave.do line 19
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/addr'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data_r'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/r_w'.
+# Executing ONERROR command at macro ./wave.do line 23
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/chk_sum'.
+# Executing ONERROR command at macro ./wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tail'.
+# Executing ONERROR command at macro ./wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_req'.
+# Executing ONERROR command at macro ./wave.do line 27
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_data'.
+# Executing ONERROR command at macro ./wave.do line 28
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_ack'.
+# Executing ONERROR command at macro ./wave.do line 29
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 31
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/send_tx_data'.
+# Executing ONERROR command at macro ./wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/tx'.
+# Executing ONERROR command at macro ./wave.do line 33
+# Break in Module testbench at ../tb/testbench.sv line 82
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 82
+# MACRO ./sim.do PAUSED at line 7
+add wave -position 7  sim:/testbench/bit_trans_1/rx_finish
+add wave -position 8  sim:/testbench/bit_trans_1/shift_register
+add wave -position 8  sim:/testbench/bit_trans_1/shift_signal
+add wave -position 6  sim:/testbench/bit_trans_1/ps
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bit_trans
+# 
+# Top level modules:
+# 	bit_trans
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.bit_trans
+# Loading work.edge_detector
+# ** Warning: (vsim-3015) ../tb/testbench.sv(43): [PCDPC] - Port size (1 or 1) does not match connection size (14) for port 'r_LPF_threshold'. The port definition is at: ../../design/bit_trans.sv(6).
+# 
+#         Region: /testbench/bit_trans_1
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx_filter'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/reset_counter'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/counter'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/LPF_threshold'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/rx_finish'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ok'.
+# Executing ONERROR command at macro ./wave.do line 17
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ready'.
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/head'.
+# Executing ONERROR command at macro ./wave.do line 19
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/addr'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data_r'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/r_w'.
+# Executing ONERROR command at macro ./wave.do line 23
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/chk_sum'.
+# Executing ONERROR command at macro ./wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tail'.
+# Executing ONERROR command at macro ./wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_req'.
+# Executing ONERROR command at macro ./wave.do line 27
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_data'.
+# Executing ONERROR command at macro ./wave.do line 28
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_ack'.
+# Executing ONERROR command at macro ./wave.do line 29
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 31
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/send_tx_data'.
+# Executing ONERROR command at macro ./wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/tx'.
+# Executing ONERROR command at macro ./wave.do line 33
+# Break in Module testbench at ../tb/testbench.sv line 82
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 82
+# MACRO ./sim.do PAUSED at line 7
+add wave -position 7  sim:/testbench/rx
+add wave -position 8  sim:/testbench/bit_trans_1/rx_finish
+add wave -position 9  sim:/testbench/bit_trans_1/shift_register
+add wave -position 9  sim:/testbench/bit_trans_1/shift_signal
+add wave -position 4  sim:/testbench/rst
+add wave -position 3  sim:/testbench/bit_trans_1/rst
+add wave -position 3  sim:/testbench/bit_trans_1/ps
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bit_trans
+# 
+# Top level modules:
+# 	bit_trans
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.bit_trans
+# Loading work.edge_detector
+# ** Warning: (vsim-3015) ../tb/testbench.sv(43): [PCDPC] - Port size (1 or 1) does not match connection size (14) for port 'r_LPF_threshold'. The port definition is at: ../../design/bit_trans.sv(6).
+# 
+#         Region: /testbench/bit_trans_1
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx_filter'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/reset_counter'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/counter'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/LPF_threshold'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/rx_finish'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ok'.
+# Executing ONERROR command at macro ./wave.do line 17
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ready'.
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/head'.
+# Executing ONERROR command at macro ./wave.do line 19
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/addr'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data_r'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/r_w'.
+# Executing ONERROR command at macro ./wave.do line 23
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/chk_sum'.
+# Executing ONERROR command at macro ./wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tail'.
+# Executing ONERROR command at macro ./wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_req'.
+# Executing ONERROR command at macro ./wave.do line 27
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_data'.
+# Executing ONERROR command at macro ./wave.do line 28
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_ack'.
+# Executing ONERROR command at macro ./wave.do line 29
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 31
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/send_tx_data'.
+# Executing ONERROR command at macro ./wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/tx'.
+# Executing ONERROR command at macro ./wave.do line 33
+# Break in Module testbench at ../tb/testbench.sv line 82
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 82
+# MACRO ./sim.do PAUSED at line 7
+add wave -position 7  sim:/testbench/rx
+add wave -position 8  sim:/testbench/bit_trans_1/rx_finish
+add wave -position 9  sim:/testbench/bit_trans_1/shift_signal
+add wave -position 10  sim:/testbench/bit_trans_1/shift_register
+add wave -position 6  sim:/testbench/bit_trans_1/ps
+add wave -position 7  sim:/testbench/bit_trans_1/ns
+add wave -position 8  sim:/testbench/bit_trans_1/bit_count
+add wave -position 10  sim:/testbench/bit_trans_1/cnt
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bit_trans
+# 
+# Top level modules:
+# 	bit_trans
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.bit_trans
+# Loading work.edge_detector
+# ** Warning: (vsim-3015) ../tb/testbench.sv(43): [PCDPC] - Port size (1 or 1) does not match connection size (14) for port 'r_LPF_threshold'. The port definition is at: ../../design/bit_trans.sv(6).
+# 
+#         Region: /testbench/bit_trans_1
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx_filter'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/reset_counter'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/counter'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/LPF_threshold'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/rx_finish'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ok'.
+# Executing ONERROR command at macro ./wave.do line 17
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ready'.
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/head'.
+# Executing ONERROR command at macro ./wave.do line 19
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/addr'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data_r'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/r_w'.
+# Executing ONERROR command at macro ./wave.do line 23
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/chk_sum'.
+# Executing ONERROR command at macro ./wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tail'.
+# Executing ONERROR command at macro ./wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_req'.
+# Executing ONERROR command at macro ./wave.do line 27
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_data'.
+# Executing ONERROR command at macro ./wave.do line 28
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_ack'.
+# Executing ONERROR command at macro ./wave.do line 29
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 31
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/send_tx_data'.
+# Executing ONERROR command at macro ./wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/tx'.
+# Executing ONERROR command at macro ./wave.do line 33
+# Break in Module testbench at ../tb/testbench.sv line 82
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 82
+# MACRO ./sim.do PAUSED at line 7
+add wave -position 4  sim:/testbench/bit_trans_1/ns
+add wave -position 4  sim:/testbench/bit_trans_1/ps
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bit_trans
+# 
+# Top level modules:
+# 	bit_trans
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+do sim.do
+# vsim -voptargs=+acc work.testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.bit_trans
+# Loading work.edge_detector
+# ** Warning: (vsim-3015) ../tb/testbench.sv(43): [PCDPC] - Port size (1 or 1) does not match connection size (14) for port 'r_LPF_threshold'. The port definition is at: ../../design/bit_trans.sv(6).
+# 
+#         Region: /testbench/bit_trans_1
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rx_filter'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/reset_counter'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/counter'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/Low_Pass_Filter_1/LPF_threshold'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/rx_finish'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ok'.
+# Executing ONERROR command at macro ./wave.do line 17
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/pkg_ready'.
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/head'.
+# Executing ONERROR command at macro ./wave.do line 19
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/addr'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/data_r'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/r_w'.
+# Executing ONERROR command at macro ./wave.do line 23
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/chk_sum'.
+# Executing ONERROR command at macro ./wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tail'.
+# Executing ONERROR command at macro ./wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_req'.
+# Executing ONERROR command at macro ./wave.do line 27
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_data'.
+# Executing ONERROR command at macro ./wave.do line 28
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_rx_1/tx_ack'.
+# Executing ONERROR command at macro ./wave.do line 29
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/data'.
+# Executing ONERROR command at macro ./wave.do line 31
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/send_tx_data'.
+# Executing ONERROR command at macro ./wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/testbench/rs232_1/rs232_tx_1/tx'.
+# Executing ONERROR command at macro ./wave.do line 33
+# Break in Module testbench at ../tb/testbench.sv line 82
+# Simulation Breakpoint: Break in Module testbench at ../tb/testbench.sv line 82
+# MACRO ./sim.do PAUSED at line 7
+add wave -position 3  sim:/testbench/bit_trans_1/ps
+add wave -position 4  sim:/testbench/bit_trans_1/ns
+do compile.do
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bit_trans
+# 
+# Top level modules:
+# 	bit_trans
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# WARNING: No extended dataflow license exists
+# **** Error: SelectedSignalQ cmd: Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim
+# ****        can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
+# can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
+#     while executing
+# "set grid $vsimPriv($grid:grid)"
+#     (procedure "ginfo" line 10)
+#     invoked from within
+# "ginfo trees $w"
+#     (procedure "Wave::SelectSigCmd" line 8)
+#     invoked from within
+# "Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $p $tankNamespace "
+add wave -position 9  sim:/testbench/bit_trans_1/shift_signal
+add wave -position 9  sim:/testbench/bit_trans_1/rx_finish
+add wave -position 9  sim:/testbench/bit_trans_1/rx
+add wave -position 10  sim:/testbench/bit_trans_1/shift_register

@@ -1,0 +1,156 @@
+`timescale 1ns/100ps
+
+module bit_trans (
+    input logic clk,
+    input logic rst,
+    input logic r_LPF_threshold,
+    input logic rx,
+    input logic tx,
+    output logic rx_finish,
+    output logic [7:0] shift_register
+);
+
+
+logic rx_palse;
+edge_detector edge_detector_1(
+	.rst(rst),
+    .clk(clk),
+    .enc_filter(rx),
+	.enc_pos(rx_palse)
+);
+
+/* COUNTER */
+logic rst_cnt;
+logic [14:0] cnt;
+always_ff @(posedge clk)
+begin
+    if (rst | rst_cnt) cnt <= 0;
+    else if (enable) cnt <= cnt + 1;
+end
+
+/* shift_register */
+logic shift_signal;
+always_ff @(posedge clk)
+begin
+    if (shift_signal)
+        shift_register <= {rx, shift_register[7:1]};
+    else
+        shift_register <= shift_register;
+end
+
+/* FSM */
+
+typedef enum { START, T1, T2, T3, T4, T5, T6, T7, T8, T9 } fsm_state_enum;
+fsm_state_enum ps, ns;
+
+always_ff @(posedge clk)
+begin
+    if (rst) 
+    begin
+        ps <= START;
+        shift_register <= 0;
+    end
+    else ps <= ns;
+end
+
+always_comb
+begin
+    ns = ps;
+    rst_cnt = 0;
+    shift_signal = 0;
+    rx_finish = 0;
+
+    unique case (ps)
+        START: 
+        begin
+            if (rx_palse) 
+            begin
+                rst_cnt = 1;
+                ns = T1;
+            end
+        end
+        
+        T1:
+        begin
+            if (cnt > 1953) begin
+                // 1302 * 3/2
+                rst_cnt = 1;
+                shift_signal = 1;
+                ns = T2;
+            end
+        end
+
+        T2:
+        begin
+            if (cnt > 1302) begin
+                rst_cnt = 1;
+                shift_signal = 1;
+                ns = T3;
+            end
+        end
+
+        T3:
+        begin
+            if (cnt > 1302) begin
+                rst_cnt = 1;
+                shift_signal = 1;
+                ns = T4;
+            end
+        end
+
+        T4:
+        begin
+            if (cnt > 1302) begin
+                rst_cnt = 1;
+                shift_signal = 1;
+                ns = T5;
+            end
+        end
+
+        T5:
+        begin
+            if (cnt > 1302) begin
+                rst_cnt = 1;
+                shift_signal = 1;
+                ns = T6;
+            end
+        end 
+
+        T6:
+        begin
+            if (cnt > 1302) begin
+                rst_cnt = 1;
+                shift_signal = 1;
+                ns = T7;
+            end
+        end
+
+        T7:
+        begin
+            if (cnt > 1302) begin
+                rst_cnt = 1;
+                shift_signal = 1;
+                ns = T8;
+            end
+        end  
+
+        T8:
+        begin
+            if (cnt > 1302) begin
+                rst_cnt = 1;
+                shift_signal = 1;
+                ns = T9;
+            end
+        end
+        
+        T9:
+        begin
+            ns = START;
+            rx_finish = 1;
+        end
+
+    endcase 
+end
+
+
+endmodule

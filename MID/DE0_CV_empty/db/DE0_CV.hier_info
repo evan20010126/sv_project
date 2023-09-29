@@ -1,0 +1,65 @@
+|top
+clk => clk.IN3
+rst => rst.IN3
+a => a.IN1
+b => b.IN1
+c => c.IN1
+count_a[0] <= mod_a:mod_a_u1.count_a
+count_a[1] <= mod_a:mod_a_u1.count_a
+count_a[2] <= mod_a:mod_a_u1.count_a
+count_a[3] <= mod_a:mod_a_u1.count_a
+crosswalk_light[0] <= mod_c:mod_c_u1.crosswalk_light
+crosswalk_light[1] <= mod_c:mod_c_u1.crosswalk_light
+crosswalk_light[2] <= mod_c:mod_c_u1.crosswalk_light
+road_light[0] <= mod_c:mod_c_u1.road_light
+road_light[1] <= mod_c:mod_c_u1.road_light
+road_light[2] <= mod_c:mod_c_u1.road_light
+
+
+|top|arbiter:arbiter_u1
+clk => ps~1.DATAIN
+rst => ps~3.DATAIN
+a => trg_a.DATAB
+b => trg_b.DATAB
+c => trg_c.DATAB
+trg_a <= trg_a.DB_MAX_OUTPUT_PORT_TYPE
+trg_b <= trg_b.DB_MAX_OUTPUT_PORT_TYPE
+trg_c <= trg_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|mod_a:mod_a_u1
+clk => a_ps.CLK
+clk => count_a[0]~reg0.CLK
+clk => count_a[1]~reg0.CLK
+clk => count_a[2]~reg0.CLK
+clk => count_a[3]~reg0.CLK
+rst => count_a.OUTPUTSELECT
+rst => count_a.OUTPUTSELECT
+rst => count_a.OUTPUTSELECT
+rst => count_a.OUTPUTSELECT
+rst => a_ps.OUTPUTSELECT
+trg_a => a_ns.DATAA
+count_a[0] <= count_a[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count_a[1] <= count_a[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count_a[2] <= count_a[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count_a[3] <= count_a[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|mod_c:mod_c_u1
+crosswalk_light[0] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+crosswalk_light[1] <= <GND>
+crosswalk_light[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+road_light[0] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+road_light[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+road_light[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+clk => ps[0].CLK
+clk => ps[1].CLK
+clk => ps[2].CLK
+clk => ps[3].CLK
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+reset => ps.OUTPUTSELECT
+trg_c => ~NO_FANOUT~
+
+

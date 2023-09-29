@@ -1,0 +1,15 @@
+
+State Machine - |DE0_CV|rs232:rs232_1|memory:mem|ps
+Name ps.STATE_WAIT_DATA ps.STATE_READ ps.STATE_RW ps.STATE_IDLE ps.STATE_WRITE_DATA 
+ps.STATE_IDLE 0 0 0 0 0 
+ps.STATE_RW 0 0 1 1 0 
+ps.STATE_READ 0 1 0 1 0 
+ps.STATE_WAIT_DATA 1 0 0 1 0 
+ps.STATE_WRITE_DATA 0 0 0 1 1 
+
+State Machine - |DE0_CV|rs232:rs232_1|rs232_tx:transmitter|ps
+Name ps.STATE_COMPLETE ps.STATE_TRANSMIT ps.STATE_START ps.00 
+ps.00 0 0 0 0 
+ps.STATE_START 0 0 1 1 
+ps.STATE_TRANSMIT 0 1 0 1 
+ps.STATE_COMPLETE 1 0 0 1 

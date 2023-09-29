@@ -1,0 +1,1202 @@
+# Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# DE0_CV_run_msim_rtl_verilog.do
+# invalid command name "DE0_CV_run_msim_rtl_verilog.do"
+cd simulation
+cd modelsim
+# reading modelsim.ini
+do compile.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:50:39 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../tb/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 20:50:40 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:50:40 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/DE0_CV.sv 
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# End time: 20:50:41 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:50:41 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232.sv 
+# -- Compiling module rs232
+# 
+# Top level modules:
+# 	rs232
+# End time: 20:50:42 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:50:42 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_rx.sv 
+# -- Compiling module rs232_rx
+# 
+# Top level modules:
+# 	rs232_rx
+# End time: 20:50:42 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:50:42 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_tx.sv 
+# -- Compiling module rs232_tx
+# 
+# Top level modules:
+# 	rs232_tx
+# End time: 20:50:43 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:50:43 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/memory.sv 
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# End time: 20:50:43 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:50:44 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/Low_Pass_Filter.sv 
+# -- Compiling module Low_Pass_Filter
+# 
+# Top level modules:
+# 	Low_Pass_Filter
+# End time: 20:50:44 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do sim.do
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
+# Start time: 20:50:46 on Mar 27,2023
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.rs232
+# Loading work.Low_Pass_Filter
+# Loading work.rs232_rx
+# Loading work.rs232_tx
+# Loading work.memory
+# ** Warning: (vsim-3015) ../tb/testbench.sv(24): [PCDPC] - Port size (8) does not match connection size (1) for port 'tx_data'. The port definition is at: ../../design/rs232/rs232.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1 File: ../../design/rs232/rs232.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(31): [PCDPC] - Port size (8) does not match connection size (1) for port 'rx_data'. The port definition is at: ../../design/rs232/rs232_rx.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/receiver File: ../../design/rs232/rs232_rx.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(44): [PCDPC] - Port size (1) does not match connection size (8) for port 'out_data'. The port definition is at: ../../design/rs232/rs232_tx.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/transmitter File: ../../design/rs232/rs232_tx.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(59): [PCDPC] - Port size (8) does not match connection size (1) for port 'rx_data'. The port definition is at: ../../design/rs232/memory.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/mem File: ../../design/rs232/memory.sv
+# .main_pane.structure.interior.cs.body.struct .main_pane.wave.interior.cs.body.pw.wf .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: MARCEL-PC  ProcessID: 3100
+#           Attempting to use alternate WLF file "./wlft2ajq1y".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft2ajq1y
+# ** Note: $stop    : ../tb/testbench.sv(64)
+#    Time: 7500160 ns  Iteration: 0  Instance: /testbench
+# Break in Module testbench at ../tb/testbench.sv line 64
+add wave -position 19  sim:/testbench/rs232_1/receiver/bit_flag
+do compile.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:03:33 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../tb/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 21:03:33 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:03:33 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/DE0_CV.sv 
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# End time: 21:03:33 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:03:33 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232.sv 
+# -- Compiling module rs232
+# 
+# Top level modules:
+# 	rs232
+# End time: 21:03:34 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:03:34 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_rx.sv 
+# -- Compiling module rs232_rx
+# ** Error: (vlog-13069) ../../design/rs232/rs232_rx.sv(106): near "RECEIVE": syntax error, unexpected IDENTIFIER, expecting ',' or '}'.
+# End time: 21:03:34 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./compile.do line 9
+# C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv  ../../design/rs232/rs232_rx.sv"
+do compile.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:03:55 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../tb/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 21:03:55 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:03:55 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/DE0_CV.sv 
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# End time: 21:03:55 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:03:55 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232.sv 
+# -- Compiling module rs232
+# 
+# Top level modules:
+# 	rs232
+# End time: 21:03:55 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:03:56 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_rx.sv 
+# -- Compiling module rs232_rx
+# 
+# Top level modules:
+# 	rs232_rx
+# End time: 21:03:56 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:03:56 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_tx.sv 
+# -- Compiling module rs232_tx
+# 
+# Top level modules:
+# 	rs232_tx
+# End time: 21:03:56 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:03:56 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/memory.sv 
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# End time: 21:03:56 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:03:56 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/Low_Pass_Filter.sv 
+# -- Compiling module Low_Pass_Filter
+# 
+# Top level modules:
+# 	Low_Pass_Filter
+# End time: 21:03:57 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.testbench
+# Loading work.rs232
+# Loading work.Low_Pass_Filter
+# Loading work.rs232_rx
+# Loading work.rs232_tx
+# Loading work.memory
+# ** Warning: (vsim-3015) ../tb/testbench.sv(24): [PCDPC] - Port size (8) does not match connection size (1) for port 'tx_data'. The port definition is at: ../../design/rs232/rs232.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1 File: ../../design/rs232/rs232.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(31): [PCDPC] - Port size (8) does not match connection size (1) for port 'rx_data'. The port definition is at: ../../design/rs232/rs232_rx.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/receiver File: ../../design/rs232/rs232_rx.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(44): [PCDPC] - Port size (1) does not match connection size (8) for port 'out_data'. The port definition is at: ../../design/rs232/rs232_tx.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/transmitter File: ../../design/rs232/rs232_tx.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(59): [PCDPC] - Port size (8) does not match connection size (1) for port 'rx_data'. The port definition is at: ../../design/rs232/memory.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/mem File: ../../design/rs232/memory.sv
+run -all
+# ** Note: $stop    : ../tb/testbench.sv(64)
+#    Time: 7500160 ns  Iteration: 0  Instance: /testbench
+# Break in Module testbench at ../tb/testbench.sv line 64
+add wave -position 16  sim:/testbench/rs232_1/receiver/rx_neg
+do compile.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:07:30 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../tb/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 21:07:30 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:07:30 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/DE0_CV.sv 
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# End time: 21:07:30 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:07:30 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232.sv 
+# -- Compiling module rs232
+# 
+# Top level modules:
+# 	rs232
+# End time: 21:07:30 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:07:30 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_rx.sv 
+# -- Compiling module rs232_rx
+# 
+# Top level modules:
+# 	rs232_rx
+# End time: 21:07:31 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:07:31 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_tx.sv 
+# -- Compiling module rs232_tx
+# 
+# Top level modules:
+# 	rs232_tx
+# End time: 21:07:31 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:07:31 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/memory.sv 
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# End time: 21:07:31 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:07:31 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/Low_Pass_Filter.sv 
+# -- Compiling module Low_Pass_Filter
+# 
+# Top level modules:
+# 	Low_Pass_Filter
+# End time: 21:07:32 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.testbench
+# Loading work.rs232
+# Loading work.Low_Pass_Filter
+# Loading work.rs232_rx
+# Loading work.rs232_tx
+# Loading work.memory
+# ** Warning: (vsim-3015) ../tb/testbench.sv(24): [PCDPC] - Port size (8) does not match connection size (1) for port 'tx_data'. The port definition is at: ../../design/rs232/rs232.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1 File: ../../design/rs232/rs232.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(31): [PCDPC] - Port size (8) does not match connection size (1) for port 'rx_data'. The port definition is at: ../../design/rs232/rs232_rx.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/receiver File: ../../design/rs232/rs232_rx.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(44): [PCDPC] - Port size (1) does not match connection size (8) for port 'out_data'. The port definition is at: ../../design/rs232/rs232_tx.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/transmitter File: ../../design/rs232/rs232_tx.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(59): [PCDPC] - Port size (8) does not match connection size (1) for port 'rx_data'. The port definition is at: ../../design/rs232/memory.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/mem File: ../../design/rs232/memory.sv
+run -all
+# ** Note: $stop    : ../tb/testbench.sv(64)
+#    Time: 7500160 ns  Iteration: 0  Instance: /testbench
+# Break in Module testbench at ../tb/testbench.sv line 64
+do compile.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:10:59 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../tb/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 21:10:59 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:10:59 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/DE0_CV.sv 
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# End time: 21:11:00 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:11:00 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232.sv 
+# -- Compiling module rs232
+# 
+# Top level modules:
+# 	rs232
+# End time: 21:11:00 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:11:00 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_rx.sv 
+# -- Compiling module rs232_rx
+# 
+# Top level modules:
+# 	rs232_rx
+# End time: 21:11:00 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:11:00 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_tx.sv 
+# -- Compiling module rs232_tx
+# 
+# Top level modules:
+# 	rs232_tx
+# End time: 21:11:00 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:11:00 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/memory.sv 
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# End time: 21:11:01 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:11:01 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/Low_Pass_Filter.sv 
+# -- Compiling module Low_Pass_Filter
+# 
+# Top level modules:
+# 	Low_Pass_Filter
+# End time: 21:11:01 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.testbench
+# Loading work.rs232
+# Loading work.Low_Pass_Filter
+# Loading work.rs232_rx
+# Loading work.rs232_tx
+# Loading work.memory
+# ** Warning: (vsim-3015) ../tb/testbench.sv(24): [PCDPC] - Port size (8) does not match connection size (1) for port 'tx_data'. The port definition is at: ../../design/rs232/rs232.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1 File: ../../design/rs232/rs232.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(31): [PCDPC] - Port size (8) does not match connection size (1) for port 'rx_data'. The port definition is at: ../../design/rs232/rs232_rx.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/receiver File: ../../design/rs232/rs232_rx.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(44): [PCDPC] - Port size (1) does not match connection size (8) for port 'out_data'. The port definition is at: ../../design/rs232/rs232_tx.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/transmitter File: ../../design/rs232/rs232_tx.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(59): [PCDPC] - Port size (8) does not match connection size (1) for port 'rx_data'. The port definition is at: ../../design/rs232/memory.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/mem File: ../../design/rs232/memory.sv
+run -all
+# ** Note: $stop    : ../tb/testbench.sv(64)
+#    Time: 7500160 ns  Iteration: 0  Instance: /testbench
+# Break in Module testbench at ../tb/testbench.sv line 64
+do compile.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:27 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../tb/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 21:35:27 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:27 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/DE0_CV.sv 
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# End time: 21:35:27 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:27 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232.sv 
+# -- Compiling module rs232
+# 
+# Top level modules:
+# 	rs232
+# End time: 21:35:28 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:28 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_rx.sv 
+# -- Compiling module rs232_rx
+# ** Error: (vlog-13069) ../../design/rs232/rs232_rx.sv(65): near "end": syntax error, unexpected end, expecting ';'.
+# ** Error: ../../design/rs232/rs232_rx.sv(71): (vlog-2730) Undefined variable: 'BAUD_CNT_MAX_HALF'.
+# ** Error: ../../design/rs232/rs232_rx.sv(73): LHS in procedural continuous assignment may not be a net: BAUD_CNT_MAX_HALF.
+# ** Error: ../../design/rs232/rs232_rx.sv(75): (vlog-2730) Undefined variable: 'BAUD_CNT_MAX'.
+# ** Error: ../../design/rs232/rs232_rx.sv(77): LHS in procedural continuous assignment may not be a net: BAUD_CNT_MAX.
+# ** Error: (vlog-13069) ../../design/rs232/rs232_rx.sv(84): near "always_ff": syntax error, unexpected "SystemVerilog keyword 'always_ff'".
+# ** Error: ../../design/rs232/rs232_rx.sv(188): (vlog-2730) Undefined variable: 'BAUD_CNT_MAX_HALF'.
+# ** Error: ../../design/rs232/rs232_rx.sv(191): (vlog-2730) Undefined variable: 'BAUD_CNT_MAX'.
+# End time: 21:35:28 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 0
+# ** Error: C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./compile.do line 9
+# C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv  ../../design/rs232/rs232_rx.sv"
+do compile.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:54 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../tb/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 21:35:55 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:55 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/DE0_CV.sv 
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# End time: 21:35:55 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:55 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232.sv 
+# -- Compiling module rs232
+# 
+# Top level modules:
+# 	rs232
+# End time: 21:35:55 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:55 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_rx.sv 
+# -- Compiling module rs232_rx
+# 
+# Top level modules:
+# 	rs232_rx
+# End time: 21:35:56 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:56 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_tx.sv 
+# -- Compiling module rs232_tx
+# 
+# Top level modules:
+# 	rs232_tx
+# End time: 21:35:56 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:56 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/memory.sv 
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# End time: 21:35:56 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:56 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/Low_Pass_Filter.sv 
+# -- Compiling module Low_Pass_Filter
+# 
+# Top level modules:
+# 	Low_Pass_Filter
+# End time: 21:35:56 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.testbench
+# Loading work.rs232
+# Loading work.Low_Pass_Filter
+# Loading work.rs232_rx
+# Loading work.rs232_tx
+# Loading work.memory
+# ** Warning: (vsim-3015) ../tb/testbench.sv(24): [PCDPC] - Port size (8) does not match connection size (1) for port 'tx_data'. The port definition is at: ../../design/rs232/rs232.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1 File: ../../design/rs232/rs232.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(31): [PCDPC] - Port size (8) does not match connection size (1) for port 'rx_data'. The port definition is at: ../../design/rs232/rs232_rx.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/receiver File: ../../design/rs232/rs232_rx.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(44): [PCDPC] - Port size (1) does not match connection size (8) for port 'out_data'. The port definition is at: ../../design/rs232/rs232_tx.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/transmitter File: ../../design/rs232/rs232_tx.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(59): [PCDPC] - Port size (8) does not match connection size (1) for port 'rx_data'. The port definition is at: ../../design/rs232/memory.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/mem File: ../../design/rs232/memory.sv
+run -all
+# ** Note: $stop    : ../tb/testbench.sv(64)
+#    Time: 7500160 ns  Iteration: 0  Instance: /testbench
+# Break in Module testbench at ../tb/testbench.sv line 64
+add wave -position 23  sim:/testbench/rs232_1/receiver/addr
+add wave -position 23  sim:/testbench/rs232_1/receiver/head
+add wave -position 25  sim:/testbench/rs232_1/receiver/data
+add wave -position 26  sim:/testbench/rs232_1/receiver/tail
+add wave -position 26  sim:/testbench/rs232_1/receiver/chk_sum
+do compile.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:45:54 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../tb/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 21:45:54 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:45:54 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/DE0_CV.sv 
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# End time: 21:45:54 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:45:55 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232.sv 
+# -- Compiling module rs232
+# 
+# Top level modules:
+# 	rs232
+# End time: 21:45:55 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:45:55 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_rx.sv 
+# -- Compiling module rs232_rx
+# 
+# Top level modules:
+# 	rs232_rx
+# End time: 21:45:55 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:45:55 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_tx.sv 
+# -- Compiling module rs232_tx
+# 
+# Top level modules:
+# 	rs232_tx
+# End time: 21:45:55 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:45:55 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/memory.sv 
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# End time: 21:45:56 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:45:56 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/Low_Pass_Filter.sv 
+# -- Compiling module Low_Pass_Filter
+# 
+# Top level modules:
+# 	Low_Pass_Filter
+# End time: 21:45:56 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.testbench
+# Loading work.rs232
+# Loading work.Low_Pass_Filter
+# Loading work.rs232_rx
+# Loading work.rs232_tx
+# Loading work.memory
+# ** Warning: (vsim-3015) ../tb/testbench.sv(24): [PCDPC] - Port size (8) does not match connection size (1) for port 'tx_data'. The port definition is at: ../../design/rs232/rs232.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1 File: ../../design/rs232/rs232.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(31): [PCDPC] - Port size (8) does not match connection size (1) for port 'rx_data'. The port definition is at: ../../design/rs232/rs232_rx.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/receiver File: ../../design/rs232/rs232_rx.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(44): [PCDPC] - Port size (1) does not match connection size (8) for port 'out_data'. The port definition is at: ../../design/rs232/rs232_tx.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/transmitter File: ../../design/rs232/rs232_tx.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(59): [PCDPC] - Port size (8) does not match connection size (1) for port 'rx_data'. The port definition is at: ../../design/rs232/memory.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/mem File: ../../design/rs232/memory.sv
+run -all
+# ** Note: $stop    : ../tb/testbench.sv(64)
+#    Time: 7500160 ns  Iteration: 0  Instance: /testbench
+# Break in Module testbench at ../tb/testbench.sv line 64
+add wave -position 23  sim:/testbench/rs232_1/receiver/pkg_cnt
+add wave -position 24  sim:/testbench/rs232_1/receiver/pkg_ready
+do compile.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:49:57 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../tb/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 21:49:57 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:49:57 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/DE0_CV.sv 
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# End time: 21:49:57 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:49:57 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232.sv 
+# -- Compiling module rs232
+# 
+# Top level modules:
+# 	rs232
+# End time: 21:49:58 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:49:58 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_rx.sv 
+# -- Compiling module rs232_rx
+# 
+# Top level modules:
+# 	rs232_rx
+# End time: 21:49:58 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:49:58 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_tx.sv 
+# -- Compiling module rs232_tx
+# 
+# Top level modules:
+# 	rs232_tx
+# End time: 21:49:58 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:49:58 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/memory.sv 
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# End time: 21:49:58 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:49:58 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/Low_Pass_Filter.sv 
+# -- Compiling module Low_Pass_Filter
+# 
+# Top level modules:
+# 	Low_Pass_Filter
+# End time: 21:49:59 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.testbench
+# Loading work.rs232
+# Loading work.Low_Pass_Filter
+# Loading work.rs232_rx
+# Loading work.rs232_tx
+# Loading work.memory
+# ** Warning: (vsim-3015) ../tb/testbench.sv(24): [PCDPC] - Port size (8) does not match connection size (1) for port 'tx_data'. The port definition is at: ../../design/rs232/rs232.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1 File: ../../design/rs232/rs232.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(31): [PCDPC] - Port size (8) does not match connection size (1) for port 'rx_data'. The port definition is at: ../../design/rs232/rs232_rx.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/receiver File: ../../design/rs232/rs232_rx.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(44): [PCDPC] - Port size (1) does not match connection size (8) for port 'out_data'. The port definition is at: ../../design/rs232/rs232_tx.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/transmitter File: ../../design/rs232/rs232_tx.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(59): [PCDPC] - Port size (8) does not match connection size (1) for port 'rx_data'. The port definition is at: ../../design/rs232/memory.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/mem File: ../../design/rs232/memory.sv
+run -all
+# ** Note: $stop    : ../tb/testbench.sv(64)
+#    Time: 7500160 ns  Iteration: 0  Instance: /testbench
+# Break in Module testbench at ../tb/testbench.sv line 64
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {//Mac/Home/Desktop/112 SOPC/DE0_CV_rs232/simulation/modelsim/wave.do}
+do compile.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:54:27 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../tb/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 21:54:27 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:54:27 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/DE0_CV.sv 
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# End time: 21:54:28 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:54:28 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232.sv 
+# -- Compiling module rs232
+# 
+# Top level modules:
+# 	rs232
+# End time: 21:54:28 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:54:28 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_rx.sv 
+# -- Compiling module rs232_rx
+# 
+# Top level modules:
+# 	rs232_rx
+# End time: 21:54:28 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:54:28 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_tx.sv 
+# -- Compiling module rs232_tx
+# 
+# Top level modules:
+# 	rs232_tx
+# End time: 21:54:28 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:54:29 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/memory.sv 
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# End time: 21:54:29 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:54:29 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/Low_Pass_Filter.sv 
+# -- Compiling module Low_Pass_Filter
+# 
+# Top level modules:
+# 	Low_Pass_Filter
+# End time: 21:54:29 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.testbench
+# Loading work.rs232
+# Loading work.Low_Pass_Filter
+# Loading work.rs232_rx
+# Loading work.rs232_tx
+# Loading work.memory
+# ** Warning: (vsim-3015) ../tb/testbench.sv(24): [PCDPC] - Port size (8) does not match connection size (1) for port 'tx_data'. The port definition is at: ../../design/rs232/rs232.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1 File: ../../design/rs232/rs232.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(31): [PCDPC] - Port size (8) does not match connection size (1) for port 'rx_data'. The port definition is at: ../../design/rs232/rs232_rx.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/receiver File: ../../design/rs232/rs232_rx.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(44): [PCDPC] - Port size (1) does not match connection size (8) for port 'out_data'. The port definition is at: ../../design/rs232/rs232_tx.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/transmitter File: ../../design/rs232/rs232_tx.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(59): [PCDPC] - Port size (8) does not match connection size (1) for port 'rx_data'. The port definition is at: ../../design/rs232/memory.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/mem File: ../../design/rs232/memory.sv
+run -all
+# ** Note: $stop    : ../tb/testbench.sv(69)
+#    Time: 13750360 ns  Iteration: 0  Instance: /testbench
+# Break in Module testbench at ../tb/testbench.sv line 69
+do compile.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:53:53 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../tb/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 22:53:53 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:53:53 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/DE0_CV.sv 
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# End time: 22:53:53 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:53:53 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232.sv 
+# -- Compiling module rs232
+# 
+# Top level modules:
+# 	rs232
+# End time: 22:53:54 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:53:54 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_rx.sv 
+# -- Compiling module rs232_rx
+# ** Error: ../../design/rs232/rs232_rx.sv(94): (vlog-2730) Undefined variable: 'load_chk_sum'.
+# ** Error: ../../design/rs232/rs232_rx.sv(201): (vlog-2730) Undefined variable: 'load_chk_sum'.
+# End time: 22:53:54 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./compile.do line 9
+# C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv  ../../design/rs232/rs232_rx.sv"
+restart
+do compile.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:54:39 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../tb/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 22:54:39 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:54:39 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/DE0_CV.sv 
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# End time: 22:54:39 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:54:39 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232.sv 
+# -- Compiling module rs232
+# 
+# Top level modules:
+# 	rs232
+# End time: 22:54:39 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:54:39 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_rx.sv 
+# -- Compiling module rs232_rx
+# 
+# Top level modules:
+# 	rs232_rx
+# End time: 22:54:40 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:54:40 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_tx.sv 
+# -- Compiling module rs232_tx
+# 
+# Top level modules:
+# 	rs232_tx
+# End time: 22:54:40 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:54:40 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/memory.sv 
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# End time: 22:54:40 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:54:40 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/Low_Pass_Filter.sv 
+# -- Compiling module Low_Pass_Filter
+# 
+# Top level modules:
+# 	Low_Pass_Filter
+# End time: 22:54:41 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.testbench
+# Loading work.rs232
+# Loading work.Low_Pass_Filter
+# Loading work.rs232_rx
+# Loading work.rs232_tx
+# Loading work.memory
+# ** Warning: (vsim-3015) ../tb/testbench.sv(24): [PCDPC] - Port size (8) does not match connection size (1) for port 'tx_data'. The port definition is at: ../../design/rs232/rs232.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1 File: ../../design/rs232/rs232.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(31): [PCDPC] - Port size (8) does not match connection size (1) for port 'rx_data'. The port definition is at: ../../design/rs232/rs232_rx.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/receiver File: ../../design/rs232/rs232_rx.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(44): [PCDPC] - Port size (1) does not match connection size (8) for port 'out_data'. The port definition is at: ../../design/rs232/rs232_tx.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/transmitter File: ../../design/rs232/rs232_tx.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(59): [PCDPC] - Port size (8) does not match connection size (1) for port 'rx_data'. The port definition is at: ../../design/rs232/memory.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/mem File: ../../design/rs232/memory.sv
+run -all
+# ** Note: $stop    : ../tb/testbench.sv(69)
+#    Time: 13750360 ns  Iteration: 0  Instance: /testbench
+# Break in Module testbench at ../tb/testbench.sv line 69
+add wave -position 30  sim:/testbench/rs232_1/receiver/add_chk_sum
+add wave -position 31  sim:/testbench/rs232_1/receiver/chk_sum_temp
+add wave -position 32  sim:/testbench/rs232_1/receiver/pkg_ok
+add wave -position 31  sim:/testbench/rs232_1/receiver/rx_data
+do compile.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:00:06 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../tb/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 23:00:06 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:00:06 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/DE0_CV.sv 
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# End time: 23:00:07 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:00:07 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232.sv 
+# -- Compiling module rs232
+# 
+# Top level modules:
+# 	rs232
+# End time: 23:00:07 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:00:07 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_rx.sv 
+# -- Compiling module rs232_rx
+# 
+# Top level modules:
+# 	rs232_rx
+# End time: 23:00:07 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:00:07 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_tx.sv 
+# -- Compiling module rs232_tx
+# 
+# Top level modules:
+# 	rs232_tx
+# End time: 23:00:07 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:00:08 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/memory.sv 
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# End time: 23:00:08 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:00:08 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/Low_Pass_Filter.sv 
+# -- Compiling module Low_Pass_Filter
+# 
+# Top level modules:
+# 	Low_Pass_Filter
+# End time: 23:00:08 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.testbench
+# Loading work.rs232
+# Loading work.Low_Pass_Filter
+# Loading work.rs232_rx
+# Loading work.rs232_tx
+# Loading work.memory
+# ** Warning: (vsim-3015) ../tb/testbench.sv(24): [PCDPC] - Port size (8) does not match connection size (1) for port 'tx_data'. The port definition is at: ../../design/rs232/rs232.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1 File: ../../design/rs232/rs232.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(31): [PCDPC] - Port size (8) does not match connection size (1) for port 'rx_data'. The port definition is at: ../../design/rs232/rs232_rx.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/receiver File: ../../design/rs232/rs232_rx.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(44): [PCDPC] - Port size (1) does not match connection size (8) for port 'out_data'. The port definition is at: ../../design/rs232/rs232_tx.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/transmitter File: ../../design/rs232/rs232_tx.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(59): [PCDPC] - Port size (8) does not match connection size (1) for port 'rx_data'. The port definition is at: ../../design/rs232/memory.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/mem File: ../../design/rs232/memory.sv
+run -all
+# ** Note: $stop    : ../tb/testbench.sv(69)
+#    Time: 13750360 ns  Iteration: 0  Instance: /testbench
+# Break in Module testbench at ../tb/testbench.sv line 69
+do compile.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:06:07 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../tb/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 23:06:08 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:06:08 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/DE0_CV.sv 
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# End time: 23:06:08 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:06:08 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232.sv 
+# -- Compiling module rs232
+# 
+# Top level modules:
+# 	rs232
+# End time: 23:06:08 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:06:08 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_rx.sv 
+# -- Compiling module rs232_rx
+# ** Error: ../../design/rs232/rs232_rx.sv(106): (vlog-2730) Undefined variable: 'BAUD_CNT_MAX_HALF'.
+# ** Error: ../../design/rs232/rs232_rx.sv(108): LHS in procedural continuous assignment may not be a net: BAUD_CNT_MAX_HALF.
+# ** Error: ../../design/rs232/rs232_rx.sv(110): (vlog-2730) Undefined variable: 'BAUD_CNT_MAX'.
+# ** Error: ../../design/rs232/rs232_rx.sv(112): LHS in procedural continuous assignment may not be a net: BAUD_CNT_MAX.
+# ** Error: (vlog-13069) ../../design/rs232/rs232_rx.sv(119): near "always_ff": syntax error, unexpected "SystemVerilog keyword 'always_ff'".
+# ** Error: ../../design/rs232/rs232_rx.sv(236): (vlog-2730) Undefined variable: 'BAUD_CNT_MAX_HALF'.
+# ** Error: ../../design/rs232/rs232_rx.sv(239): (vlog-2730) Undefined variable: 'BAUD_CNT_MAX'.
+# End time: 23:06:09 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 7, Warnings: 0
+# ** Error: C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./compile.do line 9
+# C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv  ../../design/rs232/rs232_rx.sv"
+do compile.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:06:36 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../tb/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 23:06:36 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:06:36 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/DE0_CV.sv 
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# End time: 23:06:36 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:06:36 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232.sv 
+# -- Compiling module rs232
+# 
+# Top level modules:
+# 	rs232
+# End time: 23:06:37 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:06:37 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_rx.sv 
+# -- Compiling module rs232_rx
+# 
+# Top level modules:
+# 	rs232_rx
+# End time: 23:06:37 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:06:37 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_tx.sv 
+# -- Compiling module rs232_tx
+# 
+# Top level modules:
+# 	rs232_tx
+# End time: 23:06:37 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:06:37 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/memory.sv 
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# End time: 23:06:38 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:06:38 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/Low_Pass_Filter.sv 
+# -- Compiling module Low_Pass_Filter
+# 
+# Top level modules:
+# 	Low_Pass_Filter
+# End time: 23:06:38 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.testbench
+# Loading work.rs232
+# Loading work.Low_Pass_Filter
+# Loading work.rs232_rx
+# Loading work.rs232_tx
+# Loading work.memory
+# ** Warning: (vsim-3015) ../tb/testbench.sv(24): [PCDPC] - Port size (8) does not match connection size (1) for port 'tx_data'. The port definition is at: ../../design/rs232/rs232.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1 File: ../../design/rs232/rs232.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(31): [PCDPC] - Port size (8) does not match connection size (1) for port 'rx_data'. The port definition is at: ../../design/rs232/rs232_rx.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/receiver File: ../../design/rs232/rs232_rx.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(44): [PCDPC] - Port size (1) does not match connection size (8) for port 'out_data'. The port definition is at: ../../design/rs232/rs232_tx.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/transmitter File: ../../design/rs232/rs232_tx.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(59): [PCDPC] - Port size (8) does not match connection size (1) for port 'rx_data'. The port definition is at: ../../design/rs232/memory.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/mem File: ../../design/rs232/memory.sv
+run -all
+# ** Note: $stop    : ../tb/testbench.sv(69)
+#    Time: 13750360 ns  Iteration: 0  Instance: /testbench
+# Break in Module testbench at ../tb/testbench.sv line 69
+do compile.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:08:34 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../tb/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 23:08:34 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:08:34 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/DE0_CV.sv 
+# -- Compiling module DE0_CV
+# 
+# Top level modules:
+# 	DE0_CV
+# End time: 23:08:34 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:08:34 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232.sv 
+# -- Compiling module rs232
+# 
+# Top level modules:
+# 	rs232
+# End time: 23:08:35 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:08:35 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_rx.sv 
+# -- Compiling module rs232_rx
+# 
+# Top level modules:
+# 	rs232_rx
+# End time: 23:08:35 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:08:35 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/rs232_tx.sv 
+# -- Compiling module rs232_tx
+# 
+# Top level modules:
+# 	rs232_tx
+# End time: 23:08:35 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:08:35 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/rs232/memory.sv 
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# End time: 23:08:36 on Mar 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:08:36 on Mar 27,2023
+# vlog -reportprogress 300 -sv ../../design/Low_Pass_Filter.sv 
+# -- Compiling module Low_Pass_Filter
+# 
+# Top level modules:
+# 	Low_Pass_Filter
+# End time: 23:08:36 on Mar 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.testbench
+# Loading work.rs232
+# Loading work.Low_Pass_Filter
+# Loading work.rs232_rx
+# Loading work.rs232_tx
+# Loading work.memory
+# ** Warning: (vsim-3015) ../tb/testbench.sv(24): [PCDPC] - Port size (8) does not match connection size (1) for port 'tx_data'. The port definition is at: ../../design/rs232/rs232.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1 File: ../../design/rs232/rs232.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(31): [PCDPC] - Port size (8) does not match connection size (1) for port 'rx_data'. The port definition is at: ../../design/rs232/rs232_rx.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/receiver File: ../../design/rs232/rs232_rx.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(44): [PCDPC] - Port size (1) does not match connection size (8) for port 'out_data'. The port definition is at: ../../design/rs232/rs232_tx.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/transmitter File: ../../design/rs232/rs232_tx.sv
+# ** Warning: (vsim-3015) ../../design/rs232/rs232.sv(59): [PCDPC] - Port size (8) does not match connection size (1) for port 'rx_data'. The port definition is at: ../../design/rs232/memory.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/rs232_1/mem File: ../../design/rs232/memory.sv
+run -all
+# ** Note: $stop    : ../tb/testbench.sv(69)
+#    Time: 13750360 ns  Iteration: 0  Instance: /testbench
+# Break in Module testbench at ../tb/testbench.sv line 69
+run -all
+# End time: 23:11:42 on Mar 27,2023, Elapsed time: 2:20:56
+# Errors: 30, Warnings: 50

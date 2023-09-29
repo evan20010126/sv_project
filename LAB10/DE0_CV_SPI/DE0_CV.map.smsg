@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at SPI_rx.sv(7): object "tx_req" differs only in case from object "TX_REQ" in the same scope File: D:/Quartus/code/DE0_CV_SPI/design/SPI_rx.sv Line: 7
+Warning (10268): Verilog HDL information at SPI.sv(67): always construct contains both blocking and non-blocking assignments File: D:/Quartus/code/DE0_CV_SPI/design/SPI.sv Line: 67

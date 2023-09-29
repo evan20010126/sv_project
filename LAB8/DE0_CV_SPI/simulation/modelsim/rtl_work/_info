@@ -1,0 +1,184 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\code\sv_project\LAB8\DE0_CV_SPI\simulation\modelsim
+vDE0_CV
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z2 ImdD:M^B:PBi642X]72IO@0
+Z3 V_FB=BbUiGKAcbT:1SE[Sn3
+Z4 !s105 DE0_CV_sv_unit
+S1
+Z5 dD:\code\sv_project\LAB8\DE0_CV_SPI\simulation\modelsim
+Z6 w1683676220
+Z7 8../../design/DE0_CV.sv
+Z8 F../../design/DE0_CV.sv
+L0 6
+Z9 OV;L;10.1d;51
+r1
+31
+Z10 o-sv -O0
+Z11 n@d@e0_@c@v
+Z12 !s100 RQjlghzEC:o53?eFj32Xg2
+Z13 !s108 1683684639.974000
+Z14 !s107 ../../design/DE0_CV.sv|
+Z15 !s90 -reportprogress|300|-sv|../../design/DE0_CV.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vedge_detector
+R1
+Z16 IYd5G:BQLHBAaSi;gNcg`d3
+Z17 V7B@]RzI4E@I8<do;dmMH:0
+Z18 !s105 edge_detector_sv_unit
+S1
+R5
+Z19 w1683674321
+Z20 8../../design/edge_detector.sv
+Z21 F../../design/edge_detector.sv
+L0 1
+R9
+r1
+31
+R10
+!i10b 1
+Z22 !s100 W6ga[WbX>HYBOh5^laalO0
+!s85 0
+Z23 !s108 1683684640.456000
+Z24 !s107 ../../design/edge_detector.sv|
+Z25 !s90 -reportprogress|300|-sv|../../design/edge_detector.sv|
+!s101 -O0
+vedge_detector_pos
+R1
+!i10b 1
+!s100 lfL2h1JFehdYPiKX9Bdfi0
+Ie5RXQSbGn[6P_^RnTZ7CZ3
+Z26 VL]0>=EAX85DnkQ0YTGn7h3
+Z27 !s105 edge_detector_pos_sv_unit
+S1
+R5
+Z28 w1683674316
+8../../design/edge_detector_pos.sv
+F../../design/edge_detector_pos.sv
+L0 2
+R9
+r1
+!s85 0
+31
+!s108 1683684640.757000
+!s107 ../../design/edge_detector_pos.sv|
+!s90 -reportprogress|300|-sv|../../design/edge_detector_pos.sv|
+!s101 -O0
+R10
+vpll
+R1
+Z29 IVWVAbjoR60=`XkH`SOW=M1
+Z30 VEAj1PL?[eCH7A<jZ<JYdz0
+S1
+R5
+Z31 w1682520971
+Z32 8../../pll.v
+Z33 F../../pll.v
+L0 8
+R9
+r1
+31
+R10
+Z34 !s100 d@]RKP4VMFnS[MclECF[_0
+Z35 !s105 pll_v_unit
+Z36 !s108 1683684639.418000
+Z37 !s107 ../../pll.v|
+Z38 !s90 -reportprogress|300|-sv|../../pll.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vpll_0002
+R1
+Z39 I6Il84^5:9fIdCFEZY5oeX0
+Z40 VFf[1We>dB4O=`ZlFm^X0d0
+S1
+R5
+Z41 w1682520953
+Z42 8../../pll/pll_0002.v
+Z43 F../../pll/pll_0002.v
+L0 2
+R9
+r1
+31
+R10
+Z44 !s100 ;I86VM9R;08fCk9hjo>9h2
+Z45 !s105 pll_0002_v_unit
+Z46 !s108 1683684639.774000
+Z47 !s107 ../../pll/pll_0002.v|
+Z48 !s90 -reportprogress|300|-sv|../../pll/pll_0002.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSPI
+R1
+Z49 IMlZzS<D;0;T`J0zVFO7S=3
+Z50 VUORXSDf?n;=79<kh4M[o50
+Z51 !s105 SPI_sv_unit
+S1
+R5
+Z52 w1683684636
+Z53 8../../design/SPI.sv
+Z54 F../../design/SPI.sv
+L0 4
+R9
+r1
+31
+R10
+Z55 n@s@p@i
+Z56 !s100 nmOW:3Afm]N>IE5j;SSXJ3
+Z57 !s108 1683684640.072000
+Z58 !s107 ../../design/SPI.sv|
+Z59 !s90 -reportprogress|300|-sv|../../design/SPI.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vSPI_rx
+R1
+Z60 IBmORhPTUBO7U:RU6=@XVo3
+Z61 V2MjV=I:QJecU=W`NKDm6T3
+S1
+R5
+Z62 w1682789174
+Z63 8../../design/SPI_rx.sv
+Z64 F../../design/SPI_rx.sv
+L0 1
+R9
+r1
+31
+R10
+Z65 n@s@p@i_rx
+Z66 !s100 7AF8P9BnV6>D0Q]`_CmF;1
+Z67 !s105 SPI_rx_sv_unit
+Z68 !s108 1683684640.167000
+Z69 !s107 ../../design/SPI_rx.sv|
+Z70 !s90 -reportprogress|300|-sv|../../design/SPI_rx.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vtb_spi
+R1
+Z71 IUJji7_1QKmfW2Z3Q6QhB;3
+Z72 V5gFWZzA<^g_AConzEQZe62
+S1
+R5
+Z73 w1683678871
+Z74 8../tb/tb_spi.sv
+Z75 F../tb/tb_spi.sv
+L0 3
+R9
+r1
+31
+R10
+Z76 !s100 9b<Zzc>`G8PS_Il4_5FCI3
+Z77 !s105 tb_spi_sv_unit
+Z78 !s108 1683684639.305000
+Z79 !s107 ../tb/tb_spi.sv|
+Z80 !s90 -reportprogress|300|-sv|../tb/tb_spi.sv|
+!i10b 1
+!s85 0
+!s101 -O0
